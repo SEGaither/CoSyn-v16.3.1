@@ -2,48 +2,92 @@
 
 **Current Core Release:** v16.3.1
 
-CoSyn is a governance framework for structured human-AI collaboration. It defines a protocol the human and AI model follow during a session — covering turn lifecycle, persona enforcement, mode routing, editing discipline, and extension composition — so that the collaboration stays coherent, auditable, and aligned with user intent.
+CoSyn is a governance framework for structured human-AI collaboration. It defines a session protocol covering turn lifecycle, persona enforcement, mode routing, editing discipline, and extension composition — so that the collaboration stays coherent, auditable, and aligned with user intent.
 
->It helps reduce:
-LLM guessing — makes uncertainty and missing information explicit instead of filling gaps.
-Scope drift — keeps the model working on what was actually requested.
-Lost decisions — preserves prior user choices instead of reopening or overriding them.
-Inconsistent behavior — gives the LLM a stable operating framework across tasks and sessions.
-Instruction conflicts — defines hierarchy and fail-closed rules instead of letting the model improvise.
-Uncontrolled editing — limits changes to what the user actually authorized.
-Persona/tone drift — keeps the appropriate working role and behavior aligned.
-Context and continuity loss — provides structure for carrying important project state forward.
-AI overreach — keeps authority with the human and defines what the model may and may not decide.
-“Helpful” bullshit — reduces unnecessary expansion, assumptions, and invented work that gets in the way of meaningful use.
+**CoSyn operates as interpreted governance.** Its artifacts are context that a capable model reads and applies during a session. CoSyn does not execute independently, does not run as a background process, and makes no claim to enforcement capabilities beyond a model's own instruction-following behavior. An LLM must actually read and apply the Core for CoSyn to affect its behavior. Supplying only the repository name or URL to a model that cannot retrieve files will have no effect.
 
-## Quick Start — Testing CoSyn with an LLM
+**Governance status:** PROPOSED / UNDER REFINEMENT. These artifacts have not been formally ratified by the CoSyn creator. Status is declared in each artifact's header.
 
-Simply knowing this repository exists is not enough. To use CoSyn, the Core files must be read into your LLM's context and applied as governing instructions. Here is how:
+---
 
-**Step 1 — Load the Core**
+## What Is CoSyn
 
-Point your LLM at this repository and instruct it to read the files in `CoSyn-v16.3.1/`. You can do this by pasting the files directly, using a tool that reads from URLs, or supplying them via a system prompt. Then give the model an instruction like:
+CoSyn structures the collaboration between a human and an AI model. When a capable model reads and applies the Core, the protocol governs:
 
-> "Read the CoSyn v16.3.1 Core files in this repository and operate under them as the governing instructions for this session. Preserve their hierarchy and conflict rules. Then proceed with my request."
+- turn scope and lifecycle (what may happen in a given turn)
+- persona routing and enforcement gate
+- mode selection and switching rules
+- editing and output discipline (what may be changed, and how)
+- fail-closed conflict handling (ambiguous instructions produce a stop, not a guess)
+- extension and project-profile binding
 
-**Step 2 — Compare behavior**
+**What CoSyn helps reduce:**
 
-Try the same task or question with and without the Core loaded. Observable effects may include:
+- LLM guessing — makes uncertainty and missing information explicit instead of filling gaps
+- Scope drift — keeps the model working on what was actually requested
+- Lost decisions — preserves prior user choices instead of reopening or overriding them
+- Inconsistent behavior — gives the LLM a stable operating framework across tasks and sessions
+- Instruction conflicts — defines hierarchy and fail-closed rules instead of letting the model improvise
+- Uncontrolled editing — limits changes to what the user actually authorized
+- Persona/tone drift — keeps the appropriate working role and behavior aligned
+- Context and continuity loss — provides structure for carrying important project state forward
+- AI overreach — keeps authority with the human and defines what the model may and may not decide
+- "Helpful" bullshit — reduces unnecessary expansion, assumptions, and invented work that gets in the way of meaningful use
 
-- Tighter scope control — the model stays within what was actually requested
-- Less guessing — uncertain or missing information is surfaced rather than filled in
-- Stronger uncertainty handling — the model flags what it doesn't know rather than inferring
-- Preservation of user decisions — the model does not override choices already made
-- More controlled editing — edits stay within authorized scope
-- Fail-closed conflict handling — ambiguous or conflicting instructions produce a stop rather than a guess
+Observable behavior depends on the instruction-following capabilities of the specific model. CoSyn does not technically enforce behavior outside the model's own capacity to follow instructions.
 
-**Important:** Results depend on the instruction-following capabilities of the specific LLM. CoSyn does not technically enforce behavior outside the model's own ability to follow instructions. It is a structured protocol that a capable model applies — not an external enforcement layer.
+---
 
-## How CoSyn Works
+## Try CoSyn
 
-CoSyn v16 operates as **interpreted governance** in conversational use. Its artifacts are context that a capable model applies during response construction. CoSyn does not execute independently, does not run as a background process, and does not claim transactional persistence, atomic storage, rollback guarantees, or external API integration. It is a protocol, not an executable runtime.
+Copy this prompt into your LLM, project instruction field, or system prompt. If the model can access GitHub, it will load the Core directly. If it cannot access the repository, it must say so — it must not continue as if it read files it did not retrieve.
 
-## Current Core
+```
+Load CoSyn v16.3.1 as governing protocol for this session.
+
+CoSyn v16.3.1 Core files are at:
+https://github.com/SEGaither/CoSyn-v16.3.1/tree/v16.3.1/CoSyn-v16.3.1/
+
+Retrieve and read all 13 files in that directory:
+- cosyn-constitution-v16.3.0.md
+- persona-governor-v16.3.0.md
+- stack-architect-v16.3.0.md
+- ptr-specification-v16.3.0.md
+- mode-registry-v16.3.0.md
+- editing-discipline-v16.3.0.md
+- anti-ai-signature-gate-v16.3.0.md
+- cosyn-v16-extension-contract-v16.3.0.md
+- cosyn-v16-bind-template-v16.3.0.json
+- capability-ownership-map-v16.3.0.json
+- canonical-manifest-v16.3.0.json
+- integrity-manifest-v16.3.0.json
+- core-package-manifest-v16.3.0.json
+
+If you cannot access any file, report the specific blocking problem and stop.
+Do not continue as if you read files you did not actually retrieve.
+
+Once loaded: treat the Core as governing instructions for this session, subject
+to any higher-priority host or platform instructions that cannot be overridden.
+Preserve CoSyn's authority chain:
+  Constitution > Governor > Architect > Runtime > Profile > Model
+
+If local Tier-2 or Tier-3 governance files are present in this project or
+context, apply them after the Core per CoSyn's precedence rules.
+Their absence does not prevent a Core-only session.
+
+Do not claim enforcement capabilities beyond your actual instruction-following
+behavior.
+
+State the active CoSyn version, then proceed with the user's next request.
+```
+
+**What to look for when it works:** Try the same task with and without the Core loaded. Observable differences may include tighter scope control, explicit surfacing of uncertainty rather than inferred answers, preserved user decisions, controlled editing within authorized scope, and fail-closed handling of ambiguous instructions. Results depend on the model's capabilities.
+
+---
+
+## Understand CoSyn
+
+### Current Core
 
 The current published Core is in:
 
@@ -51,9 +95,7 @@ The current published Core is in:
 CoSyn-v16.3.1/
 ```
 
-This directory contains the 13 governance artifacts that constitute the CoSyn v16.3 Core. Internal artifact version identifiers carry the v16.3.0 label; the CoSyn-v16.3.1 directory represents the corrected packaging of those artifacts.
-
-**Governance artifact status:** PROPOSED / UNDER REFINEMENT. These artifacts have not been formally ratified by the CoSyn creator. Status is declared in each artifact's header.
+This directory contains 13 governance artifacts. Internal artifact version identifiers carry the v16.3.0 label; the `CoSyn-v16.3.1/` directory is the corrected packaging of those artifacts.
 
 Core artifacts:
 - `cosyn-constitution-v16.3.0.md` — constitutional root; highest authority
@@ -70,24 +112,37 @@ Core artifacts:
 - `integrity-manifest-v16.3.0.json` — integrity hashes
 - `core-package-manifest-v16.3.0.json` — package composition manifest
 
-## Prior Versions and Development Provenance
+### Using CoSyn
 
-Prior versions and development records are retained for traceability:
+- **Pin a specific release.** Use the `v16.3.1` tag or the commit it resolves to for deterministic results. Do not depend on HEAD.
+- **Tier-2 and Tier-3 material is project-local.** Projects supply their own Tier-2 (project profile) and Tier-3 (task-specific) layers. These are not distributed from this repository.
+- **Authority precedence within CoSyn:** `Constitution > Governor > Architect > Runtime > Profile > Model`.
 
-- `CoSyn-v16.1.0/` — v16.1.0 Core artifacts
-- `CoSyn-v16.2.0/` — v16.2.0 Core artifacts
-- `CoSyn-v16.3.0/` — v16.3.0 working directory with preflight records and baseline
-- `CoSyn-v16.0.0.zip` — v16.0.0 archived release
-- `CoSyn-v16.0.0-FINAL-REPORT.md`, `CoSyn-v16.1.0-FINAL-REPORT.md`, etc. — version reports
-- `build/` — derived artifacts, validation records, and provenance maps
+---
 
-## Using CoSyn
+## Audit How It Was Built
 
-Projects that use CoSyn Core should **pin a specific release tag or commit** rather than depending on HEAD.
+This repository intentionally retains the full development history — earlier versions, design records, defect discoveries, repair work, adversarial testing, semantic falsification results, and validation reports are all preserved and inspectable. Nothing has been cleaned up or reconciled to present a polished final package.
 
-Tier-2 (project-profile) and Tier-3 (task-specific bolt-on) material is project-local and is not distributed from this repository. Projects retrieve the shared Core from this repository and supply their own Tier-2/Tier-3 layers.
+For the complete provenance map and guide, see **[PROVENANCE.md](PROVENANCE.md)**.
 
-Authority precedence within CoSyn: `Constitution > Governor > Architect > Runtime > Profile > Model`.
+Key entry points:
+
+| Material | Location |
+|---|---|
+| Design and planning | [`cgs-v16-design-plan-provenance.md`](cgs-v16-design-plan-provenance.md), [`add-prov-record-cgsv16-hierarchical-plan-v1.1.0.md`](add-prov-record-cgsv16-hierarchical-plan-v1.1.0.md) |
+| v16.0.0 release report | [`CoSyn-v16.0.0-FINAL-REPORT.md`](CoSyn-v16.0.0-FINAL-REPORT.md) |
+| v16.1.0 corrective pass provenance | [`CoSyn-v16.1.0-PROVENANCE-RECORD.md`](CoSyn-v16.1.0-PROVENANCE-RECORD.md) |
+| v16.1.0 adversarial test report | [`CoSyn-v16.1.0-ADVERSARIAL-TEST-REPORT.md`](CoSyn-v16.1.0-ADVERSARIAL-TEST-REPORT.md) |
+| v16.3.0 defect ledger | [`CoSyn-v16.3.0/_preflight/defect-ledger-v16.3.0.json`](CoSyn-v16.3.0/_preflight/defect-ledger-v16.3.0.json) |
+| v16.3.0 semantic repair report | [`CoSyn-v16.3.0/_preflight/sonnet-semantic-repair-report-v16.3.0.json`](CoSyn-v16.3.0/_preflight/sonnet-semantic-repair-report-v16.3.0.json) |
+| v16.3.0 falsification report | [`CoSyn-v16.3.0/_preflight/semantic-falsification-report-v16.3.0.json`](CoSyn-v16.3.0/_preflight/semantic-falsification-report-v16.3.0.json) |
+| v16.3.0 validation report | [`CoSyn-v16.3.0/_preflight/deterministic-validation-report-v16.3.0.json`](CoSyn-v16.3.0/_preflight/deterministic-validation-report-v16.3.0.json) |
+| Publication provenance and tag correction | [`PUBLICATION-PROVENANCE.md`](PUBLICATION-PROVENANCE.md) |
+
+Earlier Core versions are visible at `CoSyn-v16.1.0/`, `CoSyn-v16.2.0/`, and `CoSyn-v16.3.0/` alongside the current `CoSyn-v16.3.1/`. They are historical. Do not use them as active governance.
+
+---
 
 ## License
 
