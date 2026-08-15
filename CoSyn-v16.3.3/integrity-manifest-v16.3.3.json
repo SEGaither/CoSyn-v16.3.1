@@ -1,0 +1,92 @@
+﻿{
+  "entries": [
+    {
+      "size": 11591,
+      "filename": "anti-ai-signature-gate-v16.3.3.md",
+      "sha256": "95948d5ba5b5c436ad630caa240285a80250ed074a33893916a42a20dd0e32e0"
+    },
+    {
+      "size": 2613,
+      "filename": "canonical-manifest-v16.3.3.json",
+      "sha256": "8095a526d3a75b5e835bba9277a1a50ba29fb786396f6e93af26d2e6f020086f"
+    },
+    {
+      "size": 7086,
+      "filename": "capability-ownership-map-v16.3.3.json",
+      "sha256": "bee1f96180bdf4e8aba9e24dc4b3ac74811697bf2fc54b077fdaf613997ec8cf"
+    },
+    {
+      "size": 4512,
+      "filename": "core-package-manifest-v16.3.3.json",
+      "sha256": "aa6d512316f7cff12bda320ebd71f722a73be80560f524fafe8600ac5a91aedf"
+    },
+    {
+      "size": 38270,
+      "filename": "cosyn-constitution-v16.3.3.md",
+      "sha256": "c979fa6b35bae083ca8e1aeaf57cef3c99c8e9755e2e467c8b208b27d012f539"
+    },
+    {
+      "size": 5961,
+      "filename": "cosyn-v16-bind-template-v16.3.3.json",
+      "sha256": "5ec6efb90e42ece8c9df45e6ea8c95154b799538232d45166690e24569847a37"
+    },
+    {
+      "size": 12661,
+      "filename": "cosyn-v16-extension-contract-v16.3.3.md",
+      "sha256": "f8e44bd1712e949ebd504c40559dd94907d8f169f7a38a6ac86b7dcbd6073d92"
+    },
+    {
+      "size": 7005,
+      "filename": "editing-discipline-v16.3.3.md",
+      "sha256": "45b3effc1fd809d05e5a66f2c9b999f5f1ccc791a3edfa4f4e149184e407fb12"
+    },
+    {
+      "size": 6799,
+      "filename": "mode-registry-v16.3.3.md",
+      "sha256": "9eb2fea8a78ba9a2d71f7f838452315c1e425f6d19df53d417865c03d4390e57"
+    },
+    {
+      "size": 28551,
+      "filename": "persona-governor-v16.3.3.md",
+      "sha256": "392cf1046ea4b3f3d93f9fc0d55d0d5cd3b6ea9246969e530dcad316c39d5e48"
+    },
+    {
+      "size": 36614,
+      "filename": "ptr-specification-v16.3.3.md",
+      "sha256": "c446420fafc65a586a70ba1da2370393615fdac233b334866470333bf65450e0"
+    },
+    {
+      "size": 17869,
+      "filename": "stack-architect-v16.3.3.md",
+      "sha256": "285186141057efe52ac97d9df91d351a97720d1ccc75d65a53a92d0d93f8df2f"
+    }
+  ],
+  "algorithm": "SHA-256",
+  "trust_model": {
+    "external_trust_anchor": "CoSyn-v16.3.3.zip SHA-256 covers the entire package including this manifest. Verify the ZIP SHA-256 first, then validate file hashes within.",
+    "failure_behavior": {
+      "file_hash_mismatch": "fail_closed — hash_mismatch failure per extension-contract §5",
+      "malformed_integrity_data": "fail_closed — treat as manifest_actual_file_mismatch failure category",
+      "stale_integrity_data": "detected by file/hash mismatch — fail_closed as hash_mismatch",
+      "missing_integrity_data": "fail_closed — treat as hash_mismatch failure category",
+      "trust_anchor_mismatch": "halt package load — ZIP SHA-256 does not match declared value"
+    },
+    "self_hash": false,
+    "validation_order": [
+      "1. Verify external CoSyn-v16.3.3.zip SHA-256 against the declared package hash.",
+      "2. Extract package. Confirm all manifest_files entries are present.",
+      "3. Load this integrity manifest.",
+      "4. For each entry in this manifest, verify the actual file SHA-256 matches the declared sha256.",
+      "5. Verify this manifest itself is covered by the ZIP SHA-256 (step 1).",
+      "6. Fail closed on any discrepancy."
+    ],
+    "self_hash_note": "This manifest does not hash itself. Non-circular by design."
+  },
+  "package_identity": "CoSyn-v16.3.3",
+  "note": "Excludes this manifest itself (non-circular). Integrity of this manifest is anchored by the external CoSyn-v16.3.3.zip SHA-256.",
+  "manifest_id": "integrity-manifest-v16.3.3",
+  "file_count": 12,
+  "manifest_version": "16.3.3",
+  "generated_utc": "2026-08-15T22:53:30Z",
+  "repair_state": "FINAL v16.3.3 corrected-set hashes calculated from the rendered files. These hashes are valid for this corrected set."
+}

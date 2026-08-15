@@ -1,0 +1,75 @@
+﻿{
+  "manifest_id": "canonical-manifest-v16.3.3",
+  "manifest_version": "16.3.3",
+  "label": "CANONICAL",
+  "label_note": "'CANONICAL' is a structural descriptor meaning this is the sole authoritative semantic index of Core artifacts by role and authority level. It does not mean Creator-ratified. Ratification status is declared separately in the 'status' field.",
+  "scope": "CoSyn v16.3.3 Core artifacts",
+  "authority_ceiling": "cosyn-constitution-v16.3.3.md",
+  "status": "PROPOSED / READY FOR CREATOR REVIEW",
+  "generated_utc": "2026-08-15T00:00:00Z",
+  "notes": "Integrity hashes recorded in integrity-manifest-v16.3.3.json; this manifest is the semantic index of Core artifacts by role and authority level.",
+  "files": [
+    {
+      "name": "cosyn-constitution-v16.3.3.md",
+      "role": "constitutional_root",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "name": "persona-governor-v16.3.3.md",
+      "role": "subordinate_enforcement",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "name": "stack-architect-v16.3.3.md",
+      "role": "subordinate_routing",
+      "authority_level": "subordinate_routing"
+    },
+    {
+      "name": "ptr-specification-v16.3.3.md",
+      "role": "subordinate_specification",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "name": "mode-registry-v16.3.3.md",
+      "role": "subordinate_registry",
+      "authority_level": "subordinate_registry"
+    },
+    {
+      "name": "editing-discipline-v16.3.3.md",
+      "role": "subordinate_discipline",
+      "authority_level": "subordinate_discipline"
+    },
+    {
+      "name": "anti-ai-signature-gate-v16.3.3.md",
+      "role": "subordinate_discipline",
+      "authority_level": "subordinate_discipline"
+    },
+    {
+      "name": "cosyn-v16-extension-contract-v16.3.3.md",
+      "role": "subordinate_specification",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "name": "cosyn-v16-bind-template-v16.3.3.json",
+      "role": "core_bind_template_instance",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "name": "capability-ownership-map-v16.3.3.json",
+      "role": "package_metadata_capability_index",
+      "authority_level": "informative_metadata"
+    },
+    {
+      "name": "canonical-manifest-v16.3.3.json",
+      "role": "package_metadata_canonical_index"
+    },
+    {
+      "name": "integrity-manifest-v16.3.3.json",
+      "role": "package_metadata_integrity_hashes"
+    },
+    {
+      "name": "core-package-manifest-v16.3.3.json",
+      "role": "package_metadata_composition_manifest"
+    }
+  ]
+}

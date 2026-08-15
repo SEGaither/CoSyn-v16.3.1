@@ -1,0 +1,187 @@
+﻿{
+  "artifact_id": "capability-ownership-map-v16.3.3",
+  "artifact_version": "16.3.3",
+  "role": "Derived ownership index — maps each governed capability identifier to the single Core artifact that authoritatively owns it. This artifact is informative metadata only; it is not a governance authority.",
+  "authority_ceiling": "cosyn-constitution-v16.3.3.md",
+  "status": "PROPOSED / READY FOR CREATOR REVIEW",
+  "generated_utc": "2026-08-15T00:00:00Z",
+  "source": "Derived from capabilities_supplied declarations in core-package-manifest-v16.3.3.json",
+  "ownership_map": [
+    {
+      "capability_id": "constitutional.governance-authority",
+      "owning_artifact": "cosyn-constitution-v16.3.3.md",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.ptr-principles-cp1-cp7",
+      "owning_artifact": "cosyn-constitution-v16.3.3.md",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.canonical-turn-lifecycle",
+      "owning_artifact": "cosyn-constitution-v16.3.3.md",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.execution-model",
+      "owning_artifact": "cosyn-constitution-v16.3.3.md",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.governance-gates",
+      "owning_artifact": "cosyn-constitution-v16.3.3.md",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.failure-classification-class0",
+      "owning_artifact": "cosyn-constitution-v16.3.3.md",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.probabilistic-robustness-layer",
+      "owning_artifact": "cosyn-constitution-v16.3.3.md",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.evaluation-harness-and-telemetry-authority",
+      "owning_artifact": "cosyn-constitution-v16.3.3.md",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "enforcement.persona-governor",
+      "owning_artifact": "persona-governor-v16.3.3.md",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.prap-gate",
+      "owning_artifact": "persona-governor-v16.3.3.md",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.ptr-enforcement-gate",
+      "owning_artifact": "persona-governor-v16.3.3.md",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.presentation-gate",
+      "owning_artifact": "persona-governor-v16.3.3.md",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.finalization-gate",
+      "owning_artifact": "persona-governor-v16.3.3.md",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.mode-lock-integrity",
+      "owning_artifact": "persona-governor-v16.3.3.md",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.pcr-strict-mode-and-scope-enforcement",
+      "owning_artifact": "persona-governor-v16.3.3.md",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.telemetry-gate",
+      "owning_artifact": "persona-governor-v16.3.3.md",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.package-composition-gate",
+      "owning_artifact": "persona-governor-v16.3.3.md",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "architecture.stack-architect",
+      "owning_artifact": "stack-architect-v16.3.3.md",
+      "authority_level": "subordinate_routing"
+    },
+    {
+      "capability_id": "architecture.authority-precedence",
+      "owning_artifact": "stack-architect-v16.3.3.md",
+      "authority_level": "subordinate_routing"
+    },
+    {
+      "capability_id": "architecture.canonical-turn-lifecycle-routing",
+      "owning_artifact": "stack-architect-v16.3.3.md",
+      "authority_level": "subordinate_routing"
+    },
+    {
+      "capability_id": "architecture.ptr-routing",
+      "owning_artifact": "stack-architect-v16.3.3.md",
+      "authority_level": "subordinate_routing"
+    },
+    {
+      "capability_id": "architecture.package-composition-routing",
+      "owning_artifact": "stack-architect-v16.3.3.md",
+      "authority_level": "subordinate_routing"
+    },
+    {
+      "capability_id": "ptr.record-schema-and-lifecycle",
+      "owning_artifact": "ptr-specification-v16.3.3.md",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.current-state-schema",
+      "owning_artifact": "ptr-specification-v16.3.3.md",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.classification-dimensions",
+      "owning_artifact": "ptr-specification-v16.3.3.md",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.state-transitions-and-precedence",
+      "owning_artifact": "ptr-specification-v16.3.3.md",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.protection-and-rejection-guards",
+      "owning_artifact": "ptr-specification-v16.3.3.md",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.telemetry-field-schema",
+      "owning_artifact": "ptr-specification-v16.3.3.md",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.failure-semantics-and-recovery",
+      "owning_artifact": "ptr-specification-v16.3.3.md",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.pcr-promotion-framework",
+      "owning_artifact": "ptr-specification-v16.3.3.md",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "mode-registry.schema-and-base-mode-set",
+      "owning_artifact": "mode-registry-v16.3.3.md",
+      "authority_level": "subordinate_registry"
+    },
+    {
+      "capability_id": "editing-discipline.universal",
+      "owning_artifact": "editing-discipline-v16.3.3.md",
+      "authority_level": "subordinate_discipline"
+    },
+    {
+      "capability_id": "anti-ai-signature-gate.base-detection-and-rewrite",
+      "owning_artifact": "anti-ai-signature-gate-v16.3.3.md",
+      "authority_level": "subordinate_discipline"
+    },
+    {
+      "capability_id": "extension-contract.bolt-on-binding",
+      "owning_artifact": "cosyn-v16-extension-contract-v16.3.3.md",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "package-manifest.canonical-manifest-and-integrity",
+      "owning_artifact": "canonical-manifest-v16.3.3.json",
+      "authority_level": "package_metadata_canonical_index",
+      "note": "Integrity hashes are owned by integrity-manifest-v16.3.3.json. This capability covers the semantic index function only."
+    }
+  ]
+}
