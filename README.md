@@ -4,6 +4,18 @@
 
 CoSyn is a governance framework for structured human-AI collaboration. It defines a protocol the human and AI model follow during a session — covering turn lifecycle, persona enforcement, mode routing, editing discipline, and extension composition — so that the collaboration stays coherent, auditable, and aligned with user intent.
 
+>It helps reduce:
+LLM guessing — makes uncertainty and missing information explicit instead of filling gaps.
+Scope drift — keeps the model working on what was actually requested.
+Lost decisions — preserves prior user choices instead of reopening or overriding them.
+Inconsistent behavior — gives the LLM a stable operating framework across tasks and sessions.
+Instruction conflicts — defines hierarchy and fail-closed rules instead of letting the model improvise.
+Uncontrolled editing — limits changes to what the user actually authorized.
+Persona/tone drift — keeps the appropriate working role and behavior aligned.
+Context and continuity loss — provides structure for carrying important project state forward.
+AI overreach — keeps authority with the human and defines what the model may and may not decide.
+“Helpful” bullshit — reduces unnecessary expansion, assumptions, and invented work that gets in the way of meaningful use.
+
 ## Quick Start — Testing CoSyn with an LLM
 
 Simply knowing this repository exists is not enough. To use CoSyn, the Core files must be read into your LLM's context and applied as governing instructions. Here is how:
