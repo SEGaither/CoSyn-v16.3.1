@@ -1,0 +1,320 @@
+{
+  "manifest_id": "source-freeze-manifest",
+  "manifest_version": "1.0.0",
+  "generated_utc": "2026-08-13T21:15:16.4069613Z",
+  "source_roots": [
+    "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+    "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2"
+  ],
+  "file_count": 44,
+  "entries": [
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\anti_ai_signature_gate_skill.md",
+      "size": 9460,
+      "sha256": "7B8430D2F0E7220B974AD35B01878F7A8950DA65E0EF2D3BE2A8DB37AB8C331D",
+      "last_write_utc": "2026-08-05T12:05:05.4193092Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\bindngo_v1.4.2_CGS_15.0.2.json",
+      "size": 3152,
+      "sha256": "5E00D0FA845D162D3351CF8982537603FB8B41E865E25793547FAE5BEC15D67D",
+      "last_write_utc": "2026-08-05T12:05:05.4256216Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\BindTemplate_v1.5.2_CGS_15.0.2.json",
+      "size": 3941,
+      "sha256": "A0B9A3D7C69A95AA7DD81FA0BE8857103D3DE80E0B99EED59AB80721D67A2252",
+      "last_write_utc": "2026-08-05T12:05:05.3742037Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\CANONICAL_MANIFEST_v1.2.2.json",
+      "size": 392,
+      "sha256": "E31A10D99EF40250F6EB66FBE8A9BF92AA425CEB4FF3C323335F5481B8444CEA",
+      "last_write_utc": "2026-08-13T01:48:30.2235889Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\CGS_v15.0.2.md",
+      "size": 30388,
+      "sha256": "57BD57FAD9BEDFF83619E3C9A071DBAA8C1DF9025FD32C766C8D449B86C85339",
+      "last_write_utc": "2026-08-05T12:05:05.3797080Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\Editing_Preferences.md",
+      "size": 3472,
+      "sha256": "2F24A2CAA7720F873F5F5CE8069D87746A93558D0079FB7B3D4C6CFB70106E3D",
+      "last_write_utc": "2026-08-05T12:05:05.3860956Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\mode_registry_v1.2.2.md",
+      "size": 6435,
+      "sha256": "106B2B0560220B8DCD426A383C4C755BADB299A00F330B2799959EB1BF2C85E4",
+      "last_write_utc": "2026-08-13T01:48:30.2189160Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\PACKAGE_MANIFEST.json",
+      "size": 1205,
+      "sha256": "594E8216344DBF9ACC56ADEB1AFA55BC029727E2987022E283F8210668745800",
+      "last_write_utc": "2026-08-05T12:05:05.4426569Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\PersonaGovernor_v2.5.2.md",
+      "size": 28166,
+      "sha256": "C07D683EBFD7A61788127B179EDA2B8EB6A1FF350E870B26E12774E69075DA80",
+      "last_write_utc": "2026-08-05T12:05:05.3993558Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\PTR_Specification_v1.2.2.md",
+      "size": 36175,
+      "sha256": "BE8FCAC1259801AB0F5B01B536B8E707587800E35E8FE6A3E4517BDFE21AD42F",
+      "last_write_utc": "2026-08-13T01:48:30.2039953Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\Response_Instructions_v1.1.md",
+      "size": 1380,
+      "sha256": "828F3C710CCD6E7768BB3A67D81D67F666CAF33F3E9D4D65270263AF44649339",
+      "last_write_utc": "2026-08-05T12:05:05.4077336Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\SHA256SUMS.txt",
+      "size": 1113,
+      "sha256": "AD0EA5E713D3CF863152593E04624F54904AE0D29611DB5B75E99220B319D2CF",
+      "last_write_utc": "2026-08-05T12:05:05.4490848Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\StackArchitect_v2.4.2_verified.md",
+      "size": 16410,
+      "sha256": "35A2D716DF53123838B65C98C059A946CFFB151DC07570FB1F0491845E46C0C1",
+      "last_write_utc": "2026-08-05T12:05:05.4132882Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\User_Voice_and_Style_Reference_v1.0.0.md",
+      "size": 9568,
+      "sha256": "F956AA00F33E6594DFB3BD83DAE9C6A7CAA08FFEF07E170BBF29DA264A90C161",
+      "last_write_utc": "2026-08-06T15:58:08.8892099Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\user-preferences.md",
+      "size": 4187,
+      "sha256": "64D77D4843BC3ED0E1172CB60543730435F9026CED53C66CDC18F0C17C3A521F",
+      "last_write_utc": "2026-08-05T12:05:05.4376626Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2\\user-response-behavior-profile.md",
+      "size": 6812,
+      "sha256": "693908D2DFF28A3919C5163FD73E1FB20D553B866B3E0274F386568E42BEACA9",
+      "last_write_utc": "2026-08-09T13:49:37.2137204Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\AntiAISignatureReview_CfW_v1.0.1.md",
+      "size": 8213,
+      "sha256": "B3B8CA41DC76E3B9C45CE3F566486A1C3DCA0CB8892329FB034BC39E41B61616",
+      "last_write_utc": "2026-08-02T19:15:48.4720219Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\BindTemplate_CfW_v1.0.1.json",
+      "size": 8400,
+      "sha256": "F24F057C5D08256AC6013DB54D5A95375749530DAAD5A3C04E0FEFCC0A47867B",
+      "last_write_utc": "2026-08-02T19:15:48.4850921Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\CGS_CfW_v1.0.1.md",
+      "size": 13309,
+      "sha256": "9C601836DBC93DCE2DF24265CE558F215C4BF887199F58DA8EF2E97D8EE95E40",
+      "last_write_utc": "2026-08-02T19:15:48.4927097Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\DefaultGenericFictionProfile_CfW_v1.0.1.md",
+      "size": 6283,
+      "sha256": "292DB030AD023416B1053C512A39605A426E10DE166A39DC50B6C5BBA027631D",
+      "last_write_utc": "2026-08-02T19:15:48.4995288Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\DefaultGenericWorkflowProfile_CfW_v1.0.1.md",
+      "size": 12942,
+      "sha256": "AF62BA58F68CE4407A48E3F8435FF2023213712ABB6CDBA0BA5F224040704744",
+      "last_write_utc": "2026-08-02T19:15:48.5068434Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\Editing_Critique_Preservation_Conversion_CfW_v1.0.1.md",
+      "size": 13244,
+      "sha256": "B066C5A42F84C0AC7E881B62439290AE4F76ED7C283F40DEDE3DA280D5823AD7",
+      "last_write_utc": "2026-08-02T19:15:48.5168434Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\Editing_Preferences_v1.2.md",
+      "size": 8125,
+      "sha256": "2DCE148E40D7E0669DCE0C4990FEDFC720168082C01C511AA365C7EFC304E1A9",
+      "last_write_utc": "2026-08-06T01:47:06.3722294Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\EXCLUDED_RUNTIME_CONCEPTS_CfW_v1.0.1.md",
+      "size": 9463,
+      "sha256": "3B8476C1A510ED668343B606532DF7731C80C1D6C7155CBB1BB98917CF470A9B",
+      "last_write_utc": "2026-08-02T19:15:48.5130786Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\FictionControlBoundaryModel_CfW_v1.0.1.md",
+      "size": 14312,
+      "sha256": "FE70F7D6B4674375FEC7C3FEEF49CADCF1124BDED8A049C04022CF332D0FDA1D",
+      "last_write_utc": "2026-08-02T19:15:48.5266298Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\FictionProjectProfileSchema_CfW_v1.0.1.md",
+      "size": 8183,
+      "sha256": "63FB9A94C01F6AA1F584E1E79F767988CECCD2762EDC6253FA02A3B71B7550C0",
+      "last_write_utc": "2026-08-02T19:15:48.5340277Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\FictionStateModel_CfW_v1.0.1.md",
+      "size": 19383,
+      "sha256": "4E8FABC7731068816D2F139A5AB2B74E04C407B096229052DA9A8816B7268D0B",
+      "last_write_utc": "2026-08-02T19:15:48.5415572Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\FictionWorkflowProfileSchema_CfW_v1.0.1.md",
+      "size": 14083,
+      "sha256": "337D57180E08797B0A6C7F6EFC2345476D856B3DB4CECAEE579720B8854BB999",
+      "last_write_utc": "2026-08-02T19:15:48.5465550Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\Generic_First_Manuscript_Draft_Protocol_v1.0.0.docx",
+      "size": 42449,
+      "sha256": "F966D48306B73F283331EB377BB51918060277C083A05733ED23E480ABA58E26",
+      "last_write_utc": "2026-08-05T13:06:05.8583474Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\IMPLEMENTATION_REPORT_CfW_v1.0.1.md",
+      "size": 10713,
+      "sha256": "BE1782E6D8A5461564EA0D3F7C0E6557562B87C6667616C5154AE93BC44F7DB8",
+      "last_write_utc": "2026-08-02T19:15:48.5549601Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\Manifest_CoSyn_for_Writing_v1.0.1.json",
+      "size": 15271,
+      "sha256": "8C3F297C9662B3BAED13F2704C59A4402B1F76CCAD4568CF9AC50DE9EFE442F4",
+      "last_write_utc": "2026-08-02T19:15:48.5570483Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\ModeRegistry_CfW_v1.0.1.md",
+      "size": 14432,
+      "sha256": "5CC3249A1B54723F2615D611D6D6BFF39C7E5B95BB244B547462B18D3C35E5F4",
+      "last_write_utc": "2026-08-02T19:15:48.5682645Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\PCR_Protocol_CfW_v1.0.1.md",
+      "size": 9884,
+      "sha256": "E8226201CA02B784CB49777E26528E719542B164F5A0C242B9DE768ADA288E8E",
+      "last_write_utc": "2026-08-02T19:15:48.5740308Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\PCR_Template_CfW_v1.0.1.md",
+      "size": 8947,
+      "sha256": "8123B7BB52A7A071D36111FB142B6C99BB1956DDB478D323272ABB0524CED0BB",
+      "last_write_utc": "2026-08-02T19:15:48.5824350Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\PersonaGovernor_CfW_v1.0.1.md",
+      "size": 12450,
+      "sha256": "B84DBBF51C524464F827263C52A1E8C1588AC74C9A93B4BCC4241B1A94604B0B",
+      "last_write_utc": "2026-08-02T19:15:48.5947830Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\PTR_Specification_CfW_v1.0.1.md",
+      "size": 12100,
+      "sha256": "59F6CB4A55ED6773AF4D3C25FCB5E359342E206C5A27C506DAF21DFE6B32A891",
+      "last_write_utc": "2026-08-02T19:15:48.5887659Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\README_CoSyn_for_Writing_v1.0.1.md",
+      "size": 11247,
+      "sha256": "13FEAD06016E2025A9EFCDF3447B3D89AAE0B2472282729FFB04AC27B320029B",
+      "last_write_utc": "2026-08-02T19:15:48.5967929Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\RecoveryProtocol_CfW_v1.0.1.md",
+      "size": 10278,
+      "sha256": "8734CE1760C3A93D8A288F1FA759503FB38A61776B70B6BB3F217FC5162833BE",
+      "last_write_utc": "2026-08-02T19:15:48.6081997Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\SessionInitialization_CfW_v1.0.1.md",
+      "size": 12603,
+      "sha256": "18F821087900F2E5BD71896EC7D0619A2ED7A5F052CC01DBEE2C99BA774BC143",
+      "last_write_utc": "2026-08-02T19:15:48.6169141Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\SOURCE_LINEAGE_CfW_v1.0.1.md",
+      "size": 8189,
+      "sha256": "4DC40CFBE7D57304AF5C6243C1F1A757C4BE86F563C31595DA4BE1C1C50D3E09",
+      "last_write_utc": "2026-08-02T19:15:48.6139685Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\StackArchitect_CfW_v1.0.1.md",
+      "size": 11752,
+      "sha256": "8B94CCA52A96A2AD624A1281B0EC1DF0D2306FAD2489FDD4ECBE61FA08F14142",
+      "last_write_utc": "2026-08-02T19:15:48.6282812Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\User_Voice_and_Style_Reference_v1.0.0.md",
+      "size": 9568,
+      "sha256": "F956AA00F33E6594DFB3BD83DAE9C6A7CAA08FFEF07E170BBF29DA264A90C161",
+      "last_write_utc": "2026-08-06T15:58:08.8892099Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\user-response-behavior-profile.md",
+      "size": 6812,
+      "sha256": "693908D2DFF28A3919C5163FD73E1FB20D553B866B3E0274F386568E42BEACA9",
+      "last_write_utc": "2026-08-09T13:49:37.2137204Z"
+    },
+    {
+      "source_root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+      "path": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2\\writing-team-personas-v2.2.0.md",
+      "size": 61955,
+      "sha256": "EB376ED81B8B259052C84C58ED98744F7BF195D365A67CA82AA68EF282616078",
+      "last_write_utc": "2026-08-12T21:44:06.0949597Z"
+    }
+  ]
+}

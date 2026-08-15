@@ -1,0 +1,169 @@
+{
+  "record_type": "unresolved_defect_ledger",
+  "script_version": "1.0.2",
+  "target_version": "16.3.0",
+  "source_baseline": "CoSyn-v16.1.0",
+  "forbidden_source": "CoSyn-v16.2.0",
+  "status": "PREFLIGHT_INITIALIZED_NOT_EDITED",
+  "defects": [
+    {
+      "id": "D01",
+      "title": "PTR optional note field contradicts schema closure",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "ptr-specification-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Resolve note-field schema contradiction only; synchronize directly dependent PTR schema/example text.",
+      "evidence": []
+    },
+    {
+      "id": "D02",
+      "title": "PTR one-record-per-completed-turn contradicts PTR failure semantics",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "ptr-specification-v16.1.0.md",
+        "cosyn-constitution-v16.1.0.md",
+        "persona-governor-v16.1.0.md",
+        "stack-architect-v16.1.0.md",
+        "cosyn-v16-bind-template-v16.1.0.json"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Make completed-turn, failed-record, recovery, turn_id, ledger_sequence, prior_state_pointer, and state_version semantics coherent.",
+      "evidence": []
+    },
+    {
+      "id": "D03",
+      "title": "PTR normative schema-version example is stale",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "ptr-specification-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Correct current normative example schema identity without rewriting historical examples.",
+      "evidence": []
+    },
+    {
+      "id": "D04",
+      "title": "Integrity-manifest contract is logically impossible",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "core-package-manifest-v16.1.0.json",
+        "integrity-manifest-v16.1.0.json",
+        "cosyn-constitution-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Synchronize the non-self-hashing integrity model and external ZIP trust-anchor semantics.",
+      "evidence": []
+    },
+    {
+      "id": "D05",
+      "title": "Core and bolt-on compatibility policy contradicts mixed-version prohibition",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "core-package-manifest-v16.1.0.json",
+        "stack-architect-v16.1.0.md",
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "cosyn-v16-bind-template-v16.1.0.json",
+        "cosyn-constitution-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Establish one synchronized deterministic compatibility policy; do not impose unapproved y.z lockstep.",
+      "evidence": []
+    },
+    {
+      "id": "D06",
+      "title": "Mode Registry misclassifies Creative Writing workflow phases as modes",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "mode-registry-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Separate Core mode semantics from bolt-on workflow-phase semantics without editing the Creative Writing bolt-on.",
+      "evidence": []
+    },
+    {
+      "id": "D07",
+      "title": "Core hard-codes task-specific bolt-on filenames or versions",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "mode-registry-v16.1.0.md",
+        "cosyn-v16-bind-template-v16.1.0.json",
+        "anti-ai-signature-gate-v16.1.0.md",
+        "ptr-specification-v16.1.0.md",
+        "persona-governor-v16.1.0.md",
+        "stack-architect-v16.1.0.md",
+        "cosyn-constitution-v16.1.0.md",
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "core-package-manifest-v16.1.0.json",
+        "canonical-manifest-v16.1.0.json"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Remove operational hard-coded task-specific bolt-on filenames/versions; preserve legitimate historical provenance.",
+      "evidence": []
+    },
+    {
+      "id": "D08",
+      "title": "Candidate status semantics are unsynchronized",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "cosyn-constitution-v16.1.0.md",
+        "persona-governor-v16.1.0.md",
+        "stack-architect-v16.1.0.md",
+        "ptr-specification-v16.1.0.md",
+        "mode-registry-v16.1.0.md",
+        "editing-discipline-v16.1.0.md",
+        "anti-ai-signature-gate-v16.1.0.md",
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "cosyn-v16-bind-template-v16.1.0.json",
+        "canonical-manifest-v16.1.0.json",
+        "core-package-manifest-v16.1.0.json"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Synchronize working/final candidate status without implying Creator ratification.",
+      "evidence": []
+    },
+    {
+      "id": "D09",
+      "title": "Capability ownership map is referenced but not shipped",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "cosyn-constitution-v16.1.0.md",
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "canonical-manifest-v16.1.0.json",
+        "core-package-manifest-v16.1.0.json",
+        "integrity-manifest-v16.1.0.json"
+      ],
+      "required_new_files": [
+        "capability-ownership-map-v16.3.0.json"
+      ],
+      "authorized_change": "Add derived ownership metadata/index only; it must not become a new governance authority.",
+      "evidence": []
+    },
+    {
+      "id": "D10",
+      "title": "Canonical manifest role and scope semantics are incorrect",
+      "status": "REQUIRED",
+      "disposition": null,
+      "allowed_files": [
+        "cosyn-constitution-v16.1.0.md",
+        "canonical-manifest-v16.1.0.json",
+        "integrity-manifest-v16.1.0.json",
+        "core-package-manifest-v16.1.0.json"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Synchronize semantic-index scope, constitutional-root classification, and identity-vs-integrity responsibilities.",
+      "evidence": []
+    }
+  ]
+}

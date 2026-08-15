@@ -1,0 +1,121 @@
+{
+  "manifest_id": "creative-writing-integrity-manifest-v16.0.0",
+  "manifest_version": "16.0.0",
+  "package_identity": "creative-writing-v16.0.0",
+  "algorithm": "SHA-256",
+  "generated_utc": "2026-08-13T21:52:24.7108117Z",
+  "note": "Excludes this manifest itself. Integrity of this manifest is verified externally via git tracking or external hash record.",
+  "file_count": 22,
+  "entries": [
+    {
+      "filename": "anti-ai-fiction-naturalness-v16.0.0.md",
+      "size": 8283,
+      "sha256": "45BD357D7DAD2D87B5BA9F5391E5D85E7C61E1E52DF242CE892EA2A266B38288"
+    },
+    {
+      "filename": "bind/creative-writing-bind-template-v16.0.0.json",
+      "size": 7046,
+      "sha256": "E4FE8EEB5C1C828CF89FEE0FAB6F7EF851074B034B3C73D8C3FD1643989BD852"
+    },
+    {
+      "filename": "creative-writing-package-manifest-v16.0.0.json",
+      "size": 8123,
+      "sha256": "4873D3A9E00AEA179EC46F85EC06B5824935320455B51E86240C409EC853BDFE"
+    },
+    {
+      "filename": "fiction-control-boundary-model-v16.0.0.md",
+      "size": 15527,
+      "sha256": "8F204FA999878160758CB8EF847099E47FBFB495234F5D3069239AE8E8C90063"
+    },
+    {
+      "filename": "fiction-pcr-protocol-v16.0.0.md",
+      "size": 11080,
+      "sha256": "E8718DEBBE22B59BCD8C4750F4DE0F0C7B9273662C773C0E731E43201E856A7C"
+    },
+    {
+      "filename": "fiction-recovery-protocol-v16.0.0.md",
+      "size": 11486,
+      "sha256": "9CCB74CDD2BA52C854BD0398E1DD4601B8FA97B0CA43A5C1B5720A0B373211A3"
+    },
+    {
+      "filename": "fiction-session-initialization-v16.0.0.md",
+      "size": 13776,
+      "sha256": "B8FF56E41B6E54117EB5825E5B6024C5F98EFEDCF5D267381AE9215771CBBA22"
+    },
+    {
+      "filename": "fiction-state-model-v16.0.0.md",
+      "size": 20485,
+      "sha256": "BA38034A15A8C4C0BECDE5E737015DFBF1BE03FFC79D9718FF060C628EE4195B"
+    },
+    {
+      "filename": "README-creative-writing-v16.0.0.md",
+      "size": 7170,
+      "sha256": "074289BE9575978EEA49E234F106E7038C7F60B72F1BBED070B204F9901001EC"
+    },
+    {
+      "filename": "reference/bookfox-batch-03-purview-reference-v16.0.0.md",
+      "size": 36338,
+      "sha256": "19159E0448847DEAB33E1AD98C04FB5EAF033FBA1BB60F2FC245F6A95555A7F6"
+    },
+    {
+      "filename": "reference/excluded-runtime-concepts-v16.0.0.md",
+      "size": 10514,
+      "sha256": "8BBE6541BE9182119FF41699CD30B0EF1EAA862FC59DB989C59C33D1836458F3"
+    },
+    {
+      "filename": "reference/Generic_First_Manuscript_Draft_Protocol_v1.0.0.docx",
+      "size": 42449,
+      "sha256": "F966D48306B73F283331EB377BB51918060277C083A05733ED23E480ABA58E26"
+    },
+    {
+      "filename": "reference/implementation-report-legacy-cfw-v1.0.1.md",
+      "size": 11833,
+      "sha256": "9575FC1E48FC95204B05DA2058F09B2EC822ED4C9BC65C5348A813E23EA2E972"
+    },
+    {
+      "filename": "reference/source-lineage-legacy-cfw-v1.0.1.md",
+      "size": 9304,
+      "sha256": "65DA26DDF34DBD07F76D4CB3B8001F07E36AA618D95C547435C143B85E2BD413"
+    },
+    {
+      "filename": "schemas/fiction-project-profile-schema-v16.0.0.md",
+      "size": 9269,
+      "sha256": "2858CC8FA572338DD99741C99002FD6163ABC8C6E7C2C046665C17ECB50CC7B2"
+    },
+    {
+      "filename": "schemas/fiction-workflow-profile-schema-v16.0.0.md",
+      "size": 15130,
+      "sha256": "83E3EE506BC73C11DF025669188512FA03055EFA0E2D53DA891048934C3C92F9"
+    },
+    {
+      "filename": "templates/default-generic-fiction-profile-v16.0.0.md",
+      "size": 7334,
+      "sha256": "6E24980650C5FC6B378A77369FC1266B720FB5B2B3EEA9B10C34F5332526C782"
+    },
+    {
+      "filename": "templates/default-generic-workflow-profile-v16.0.0.md",
+      "size": 14045,
+      "sha256": "F518453A678FEFFC644E15A251416179FAA1542581AC1842809E01253B1E91D7"
+    },
+    {
+      "filename": "templates/fiction-pcr-template-v16.0.0.md",
+      "size": 9998,
+      "sha256": "A417AC25D2FC45ABC2FFEA6B2703CFBB151960D43935B865281C0EBD5ADD8993"
+    },
+    {
+      "filename": "writing-editing-critique-preservation-conversion-v16.0.0.md",
+      "size": 14485,
+      "sha256": "D4EC2171D03C278C02048B22E0EDFEC2186A8B50AD3292B2D720EAB268724147"
+    },
+    {
+      "filename": "writing-mode-registry-v16.0.0.md",
+      "size": 15612,
+      "sha256": "D21E7DE1D705D47D57687E64C3ABB2FA3B728C410B2F505D56E4014124141E94"
+    },
+    {
+      "filename": "writing-team-personas-v16.0.0.md",
+      "size": 29263,
+      "sha256": "07605F577826FF92F75DAB32841B25DEFA3FC29A1DF347749BAB6BAA0E51F7C2"
+    }
+  ]
+}

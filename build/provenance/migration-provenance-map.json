@@ -1,0 +1,277 @@
+{
+  "artifact_id": "migration-provenance-map",
+  "artifact_version": "1.0.0",
+  "generated_utc": "2026-08-13T00:00:00Z",
+  "purpose": "Per-derived-artifact provenance for CoSyn-v16.0.0 Core and creative-writing-v16.0.0 bolt-on. Each entry identifies source basis, source SHA-256, retained content, excluded content, moved content, semantic changes, and reason for each material change.",
+  "source_freeze_reference": "build/manifests/source-freeze-manifest.json",
+  "classification_reference": "build/provenance/source-classification-map.json",
+  "capability_ownership_reference": "build/provenance/capability-ownership-map.json",
+  "entries": [
+    {
+      "derived_artifact": "CoSyn-v16.0.0/cosyn-constitution-v16.0.0.md",
+      "source_basis": [{ "filename": "CGS_v15.0.2.md", "sha256_source_freeze_ref": "57bd57fad9bedff83619e3c9a071dbaa8c1df9025fd32c766c8d449b86c85339" }],
+      "retained_content": ["Purpose", "Core Design Principles (CDP-1..4)", "Constitutional PTR Principles CP1-CP7", "Canonical Turn Lifecycle", "Execution Model", "Governance Gates (ICC/ASTG/BSG/EDH/ECFD/EAC/RAPS/CCD/AGE/TPP/PG/SIG/UISIG)", "Failure Classification Class 0", "Probabilistic Robustness Layer (OSCL/EGR/CIT/UFRS/SSCS/GFCLC)", "Evaluation Harness Layer", "Telemetry Authority and Categories", "Governance Comparison Mode", "Governance Regression Detector", "Intended Outcomes"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Rename artifact from 'CoSyn Governance Stack (CGS) v15.0.2' to 'CoSyn Core Constitution v16.0.0'", "reason": "v16 renaming per approved architecture" },
+        { "change": "Retarget PTR spec pin to ptr-specification-v16.0.0.md", "reason": "v16 subordinate spec; corrects v15 stale reference to PTR_Specification_v1.1.0.md (v15 actually shipped v1.2.2)" },
+        { "change": "Retarget Persona Governor pin to persona-governor-v16.0.0.md", "reason": "v16 subordinate" },
+        { "change": "Retarget Stack Architect pin to stack-architect-v16.0.0.md", "reason": "v16 subordinate" },
+        { "change": "Retarget Mode Registry pin to mode-registry-v16.0.0.md", "reason": "v16 subordinate; corrects v15 stale reference to mode_registry_v1.0.1.md (v15 actually shipped v1.2.2)" },
+        { "change": "Added §17 Composition and Extension Authority", "reason": "v16 introduces explicit extension contract binding position for Tier 2, bolt-ons, Tier 3" },
+        { "change": "Added §18 Legacy Boundary", "reason": "v16 explicitly declares no implicit compatibility with CGS v15 or CfW v1.x" },
+        { "change": "Corrected document-ID drift (v15 source had header v15.0.2 but footer v15.0.1)", "reason": "Semantic synchronization" },
+        { "change": "Added Package-Composition failure to Class 0 list", "reason": "v16 introduces fail-closed composition gate" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/persona-governor-v16.0.0.md",
+      "source_basis": [{ "filename": "PersonaGovernor_v2.5.2.md", "sha256_source_freeze_ref": "c07d683ebfd7a61788127b179eda2b8eb6a1ff350e870b26e12774e69075da80" }],
+      "retained_content": ["Purpose", "Scope and Authority", "Enforcement Model", "Core Enforcement Invariants", "Presentation Gate sub-gates (Option Labeling/Persona Headers/Unlabeled Alternatives/Usable Path/UI Instruction Integrity)", "PRAP Gate", "PTR Enforcement Gate", "Robustness Gates (SFP/BTP/Drift/PSD-1/PCR Scope Enforcement)", "Compatibility Aliases (CRS->PCR)", "SCP Output Minimality Gate", "Default Safe Binding Presentation Gate", "Finalization Gate", "Advisory Tip Gate", "Closure Handler (NFAR/EOS)", "Trace This", "Halting Conditions", "Mode and Execution Order Enforcement", "PCR Strict Mode", "Telemetry Gate", "Class 0/1 semantics"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Retarget parent to cosyn-constitution-v16.0.0.md", "reason": "v16 authority chain" },
+        { "change": "Retarget PTR/Mode Registry references to v16 filenames", "reason": "v16 subordinate references; corrects v15 stale references (v15 pinned v1.1.0/v1.0.1 despite actual v1.2.2 shipped)" },
+        { "change": "Added §12 Package-Composition Gate", "reason": "v16 introduces bind-time composition enforcement per extension contract" },
+        { "change": "Added Composition Discipline to Core Enforcement Invariants", "reason": "v16 composition semantics" },
+        { "change": "Added Composition drift to Drift Detection list", "reason": "v16 composition monitoring" },
+        { "change": "Added silent package composition to Class 0 example list", "reason": "v16 fail-closed composition" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/stack-architect-v16.0.0.md",
+      "source_basis": [{ "filename": "StackArchitect_v2.4.2_verified.md", "sha256_source_freeze_ref": "35a2d716df53123838b65c98c059a946cffb151dc07570fb1f0491845e46c0c1" }],
+      "retained_content": ["Scope", "Purpose", "Non-Goals", "Authority Precedence", "Stack Composition Rules", "Routing Discipline (all sub-routes)", "Artifact Classification", "Non-Bypassable Gate Routing", "Deployment Hardening Routing Requirements", "State and Version Hygiene", "CGS Pipeline Routing", "Mode Lock Integrity"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Retarget parent references and subordinate version pins to v16", "reason": "v16 authority chain and semantic sync" },
+        { "change": "Added Package-Composition Routing to Deployment Hardening list", "reason": "v16 composition routing" },
+        { "change": "Added Bolt-on layer and Project layer to Artifact Classification", "reason": "v16 architecture" },
+        { "change": "Added Tier-2/bolt-on/Tier-3 rows to Authority Precedence", "reason": "v16 hierarchical stack" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/ptr-specification-v16.0.0.md",
+      "source_basis": [{ "filename": "PTR_Specification_v1.2.2.md" }],
+      "retained_content": ["Sections 1-25 substantively verbatim: Authority and Subordination; Terminology; Canonical Turn Lifecycle Reference; Record Types; Turn 1 Bootstrap; PTR Record Schema (Common/Conditional/Nullability); Record-Type Schemas; Current PTR State Schema; Classification Dimensions (Authority/Lifecycle/Disposition/Reuse/Protection/Retention/Classification Status); State Delta Schema; Permitted State Transitions; State-Transition Precedence; Archive Reasons; Rejection Guards and Protected-Item Handling; Telemetry Fields; Render Controls; No Chain-of-Thought Exposure; Selective Retrieval; Correction and Supersession; PCR-Candidate Behavior and Ratified PCR Promotion; Failure Semantics and Recovery; Halt Conditions; Schema Compatibility; Terminology Migration; Normative Examples"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Version identifier updated to 16.0.0; example ptr_schema_version updated to '16.0.0'", "reason": "v16 semantic sync" },
+        { "change": "Retarget authority chain references to v16 Constitution/Governor/Architect/Bind Template", "reason": "v16 authority" },
+        { "change": "Added §20 note that bolt-ons MAY extend PCR schemas but MUST NOT restate promotion ratification rules", "reason": "v16 extension-contract single-ownership boundary" },
+        { "change": "Added §21.9 note that bolt-ons MAY define domain-specific recovery triggers but MUST NOT weaken §21.1 invariant or §21.5 acceptance criteria", "reason": "v16 extension-contract single-ownership boundary" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/mode-registry-v16.0.0.md",
+      "source_basis": [{ "filename": "mode_registry_v1.2.2.md" }],
+      "retained_content": ["Registration Schema", "Prohibited Fields", "Four Registered Modes (domain_insider, risk_auditor, compliance_platform_normative, dual_track_labeled)", "Gate Inheritance rule", "Amendment discipline"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Retarget authority chain to v16", "reason": "v16 sync" },
+        { "change": "Added §5 Bolt-On Registry Extensions rule", "reason": "v16 extension-contract single-ownership boundary; permits bolt-on to add domain-specific modes without restating schema" },
+        { "change": "Added Package-Composition to gate-inheritance list", "reason": "v16 composition gate" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/editing-discipline-v16.0.0.md",
+      "source_basis": [
+        { "filename": "Editing_Preferences.md (CGS v1.1)" },
+        { "filename": "Editing_Preferences_v1.2.md (CfW)" }
+      ],
+      "retained_content": ["Core Rule", "Operating Modes CREATE/EDIT/REVIEW", "Canonical Source Rule", "Delta Discipline", "Preservation Rule", "Regression Check", "Repair Rule", "Source-Code Mental Model", "Failure Pattern to Avoid", "One-Line Standard"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Adopted CfW v1.2 semantics as more evolved variant; CGS v1.1 subsumed", "reason": "v1.2 supersedes v1.1 substantively" },
+        { "change": "Reframed from 'Editing Preferences' to 'Editing Discipline'", "reason": "v16: content is universal structural discipline, not user preference; user-specific preferences deferred to Tier 2" },
+        { "change": "Added §11 Bolt-on Extensions rule", "reason": "v16 extension-contract single-ownership; CW bolt-on extends discipline for fiction editing" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/anti-ai-signature-gate-v16.0.0.md",
+      "source_basis": [{ "filename": "anti_ai_signature_gate_skill.md", "sha256_source_freeze_ref": "7b8430d2f0e7220b974ad35b01878f7a8950da65e0ef2d3be2a8db37ab8c331d" }],
+      "retained_content": ["Bottom Line", "Core Rule", "Primary Failure Pattern (Synthetic Transferability)", "High-Risk AI Signatures (all six)", "Positive Human Signals (all five)", "Gate Logic Pre-Emission Questions", "Blocking Conditions", "Rewrite Priorities", "Message Evaluation Grid", "Operational Use", "Deterministic Rule", "One-Line Standard", "Human Message Construction Pattern (Sequence/Constraints/Validation Checks/Minimal Template/Example Mapping/Extended Deterministic Rule)"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Added v16 authority header and frontmatter", "reason": "v16 identity" },
+        { "change": "Added §14 Bolt-on Extensions rule", "reason": "v16 extension-contract single-ownership; CW bolt-on retargets to fiction prose with naturalness standard" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/cosyn-v16-extension-contract-v16.0.0.md",
+      "source_basis": [
+        { "filename": "bindngo_v1.4.2_CGS_15.0.2.json (composition intent basis)" },
+        { "filename": "BindTemplate_v1.5.2_CGS_15.0.2.json (template intent basis)" }
+      ],
+      "retained_content": ["Governing composition intent: authority relationships, subordinate spec binding, canonical turn lifecycle binding, schema compatibility"],
+      "excluded_content": ["Both v15 binding artifacts collapsed; stale semantic version references removed"],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "New v16 artifact synthesizing v15 binding intent into an explicit extension contract", "reason": "v16 architecture: distinguish extension contract (owned by Core) from bind template instances" },
+        { "change": "Added Manifest Requirements, Extension Contract for Bolt-Ons, Composition Algorithm, Conflict Detection Categories (fail-closed), Reserved Binding Positions, Naming Convention, Failure Response, Provenance and Integrity Requirements, Non-Runtime Statement", "reason": "v16 hierarchical modular composition semantics" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/cosyn-v16-bind-template-v16.0.0.json",
+      "source_basis": [
+        { "filename": "bindngo_v1.4.2_CGS_15.0.2.json" },
+        { "filename": "BindTemplate_v1.5.2_CGS_15.0.2.json" }
+      ],
+      "retained_content": ["Authority relationship (Constitution > Governor > Architect)", "Schema compatibility fields", "Canonical turn lifecycle sequence", "PTR-enabled flag", "PCR trigger policy field", "Terminology migration record"],
+      "excluded_content": ["Stale v15 subordinate version pins (PTR v1.1.0, mode_registry v1.0.1) that did not match actual v15 shipped files"],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Two v15 binding artifacts collapsed into one v16 Core bind template", "reason": "v16 architectural simplification; extension contract now owns the contract semantics and bind templates are concrete instances" },
+        { "change": "Retarget all subordinate references to v16 filenames", "reason": "v16 sync" },
+        { "change": "Added reserved_binding_positions block for Tier 2, bolt-on layer, Tier 3", "reason": "v16 hierarchical stack" },
+        { "change": "Added legacy_compatibility block declaring no v15/CfW compatibility", "reason": "v16 legacy boundary" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/canonical-manifest-v16.0.0.json",
+      "source_basis": [{ "filename": "CANONICAL_MANIFEST_v1.2.2.json (schema intent basis)" }],
+      "retained_content": ["Concept of subordinate-spec canonical binding index"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Regenerated for v16 Core file set; hashes moved to separate integrity manifest for cleaner separation", "reason": "v16 modular manifest system" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/integrity-manifest-v16.0.0.json",
+      "source_basis": [{ "filename": "SHA256SUMS.txt (intent basis)" }],
+      "retained_content": ["SHA-256 integrity hashing convention"],
+      "excluded_content": ["SHA256SUMS.txt was materially stale (referenced old versions of PTR/mode_registry not matching actual files); regenerated from scratch"],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "New v16 integrity manifest computed from actual v16 Core files", "reason": "v16 correctness; no propagation of stale hash entries" }
+      ]
+    },
+    {
+      "derived_artifact": "CoSyn-v16.0.0/core-package-manifest-v16.0.0.json",
+      "source_basis": [{ "filename": "PACKAGE_MANIFEST.json (superseded)" }],
+      "retained_content": ["Concept of authoritative package listing"],
+      "excluded_content": ["v15 PACKAGE_MANIFEST was materially stale (subordinate spec references pinned wrong versions; missing several actually-shipped files)"],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Regenerated per v16 extension-contract §2 requirements", "reason": "v16 manifest schema" }
+      ]
+    },
+    {
+      "derived_artifact": "creative-writing-v16.0.0/writing-team-personas-v16.0.0.md",
+      "source_basis": [{ "filename": "writing-team-personas-v2.2.0.md" }],
+      "retained_content": ["Sections 0-13 verbatim: Integrated Operating Model; Purpose; Core Operating Rule; Authority and Role Separation; Professional Personas (Author-Authority/Writer/Novelist/Editor/Publisher/Reader/Screenwriter); Persona Selection and Active-Persona State; Analysis vs Modification Authority; Persona Handoffs; Conflict Resolution; Role-Bleed Prohibitions; Existing-Artifact Rule; Source and Authorship Rule; Project Invocation Pattern; Persona Purview Routing for Classified Source Material; Completion Standard; One-Line Standard", "Appendix B Synchronization Notes"],
+      "excluded_content": [],
+      "moved_content": [
+        { "content": "Appendix A — Bookfox Batch 03 Professional Persona Purview Reference (25 classified source records, transcripts 51-75)", "moved_to": "creative-writing-v16.0.0/reference/bookfox-batch-03-purview-reference-v16.0.0.md", "reason": "Per approved architectural decision: separate embedded reference material from active persona governance and retain as subordinate reference material" }
+      ],
+      "semantic_changes": [
+        { "change": "Added v16 authority header block", "reason": "v16 identity" },
+        { "change": "Added §0 Provenance and Split Rationale documenting the Bookfox separation", "reason": "v16 provenance completeness" },
+        { "change": "Added §9 note that Existing-Artifact Rule extends Core editing-discipline-v16.0.0.md as persona-authority overlay", "reason": "v16 extension-contract dependency declaration" },
+        { "change": "Added §7 note that package-level conflicts are governed by Core extension contract, not by persona-conflict rules", "reason": "v16 authority boundary clarification (Core owns package conflicts; personas own writing-role conflicts)" },
+        { "change": "Added Appendix B v16.0.0 entry documenting the v16-specific changes", "reason": "v16 provenance"}
+      ]
+    },
+    {
+      "derived_artifact": "creative-writing-v16.0.0/reference/bookfox-batch-03-purview-reference-v16.0.0.md",
+      "source_basis": [{ "filename": "writing-team-personas-v2.2.0.md (Appendix A only, extracted)" }],
+      "retained_content": ["Appendix A verbatim: 25 classified source records with topic and purview classifications, parsing rules, purview index, source-record content across Writer / Novelist / Editor primary purviews"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Added v16 authority header identifying artifact as subordinate reference material (informative, not active governance)", "reason": "v16 identity and role clarity" }
+      ]
+    },
+    {
+      "derived_artifact": "creative-writing-v16.0.0/anti-ai-fiction-naturalness-v16.0.0.md",
+      "source_basis": [{ "filename": "AntiAISignatureReview_CfW_v1.0.1.md" }],
+      "retained_content": ["Purpose", "Retargeting rule", "11-item Naturalness Standard", "Application Discipline", "Failure Handling (Class 1 near-miss, Class 0 formulaic pattern, never suppress evaluation)", "Scope-Adjacent Emissions (Critique/Conversion/Preservation)", "Author Control Interaction", "Non-Runtime Reminder", "Cross-References"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Retarget Core dependency reference from 'CGS v15.0.1 Anti-AI Signature Gate' to 'anti-ai-signature-gate-v16.0.0.md'", "reason": "v16 sync" },
+        { "change": "Retarget PersonaGovernor reference to persona-governor-v16.0.0.md", "reason": "v16 sync" },
+        { "change": "Retarget Editing_Critique_Preservation_Conversion_CfW references to writing-editing-critique-preservation-conversion-v16.0.0.md", "reason": "v16 sync" },
+        { "change": "Retarget FictionStateModel_CfW references to fiction-state-model-v16.0.0.md", "reason": "v16 sync" },
+        { "change": "Added §0 Provenance and Extension Declaration documenting extension-contract dependency", "reason": "v16 extension-contract single-ownership boundary" }
+      ]
+    },
+    {
+      "derived_artifact_group": "creative-writing-v16.0.0/{fiction-control-boundary-model,fiction-state-model,writing-editing-critique-preservation-conversion,fiction-pcr-protocol,fiction-recovery-protocol,fiction-session-initialization,writing-mode-registry}-v16.0.0.md and creative-writing-v16.0.0/schemas/{fiction-project-profile-schema,fiction-workflow-profile-schema}-v16.0.0.md and creative-writing-v16.0.0/templates/{default-generic-fiction-profile,default-generic-workflow-profile,fiction-pcr-template}-v16.0.0.md and creative-writing-v16.0.0/reference/{excluded-runtime-concepts,implementation-report-legacy-cfw,source-lineage-legacy-cfw}-v16.0.0.md",
+      "source_basis_group": "CfW v1.0.1 writing-specific package members preserved verbatim as v16 derivation bases",
+      "retained_content": "Full interior content preserved byte-substantively from CfW v1.0.1 source basis",
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Filename normalized to v16 naming convention", "reason": "v16 naming" },
+        { "change": "Prepended v16 authority-header HTML comment declaring package tier, role, authority level, authority ceiling, Core dependencies, source basis, and status. Header explicitly states it supersedes any legacy CfW/CGS authority declaration inside the interior content for v16 composition purposes", "reason": "v16 authority declaration without modifying interior writing-craft semantics" },
+        { "change": "Interior legacy references to CfW/CGS v15 authorities are preserved unchanged", "reason": "Historical fidelity to source; v16 authority is asserted via the prepended header per single-ownership pattern; users bind Core + CW bolt-on per v16 bind template, not per interior legacy references" }
+      ],
+      "notes": "Where an interior CfW artifact declares 'Tier 4 (ratified CfW governance)' or references 'CGS v15.0.1' or 'PersonaGovernor_CfW_v1.0.1' etc., those declarations pertain to the source basis. Under v16, the authority chain is asserted by the v16 header block, the creative-writing-package-manifest-v16.0.0.json, and the creative-writing-bind-template-v16.0.0.json — each of which binds Core (v16.0.0) as the governing authority ceiling. This is the mission-authorized deterministic-authority-preservation pattern: preserve substantive writing-craft semantics verbatim; assert v16 governance externally via manifest + bind + header."
+    },
+    {
+      "derived_artifact": "creative-writing-v16.0.0/reference/Generic_First_Manuscript_Draft_Protocol_v1.0.0.docx",
+      "source_basis": [{ "filename": "Generic_First_Manuscript_Draft_Protocol_v1.0.0.docx" }],
+      "retained_content": ["Binary preserved byte-for-byte"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Copied to bolt-on reference directory unchanged", "reason": "Binary reference material; not derived" }
+      ]
+    },
+    {
+      "derived_artifact": "creative-writing-v16.0.0/README-creative-writing-v16.0.0.md",
+      "source_basis": [{ "filename": "README_CoSyn_for_Writing_v1.0.1.md (intent basis)" }],
+      "retained_content": ["Overall bolt-on README concept: overview, adoption, activation model, index"],
+      "excluded_content": ["v1.0.1 CfW-specific readme text (rewritten for v16)"],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "New v16 README documenting v16 bolt-on structure, boundary with Core, membership, activation model, applicability declaration, non-runtime statement, provenance", "reason": "v16 identity" }
+      ]
+    },
+    {
+      "derived_artifact": "creative-writing-v16.0.0/creative-writing-package-manifest-v16.0.0.json",
+      "source_basis": [{ "filename": "Manifest_CoSyn_for_Writing_v1.0.1.json (schema intent)" }],
+      "retained_content": ["Package identity, member listing, activation model concept, source-lineage concept"],
+      "excluded_content": ["v1.0.1 CfW-only artifacts listed as members; stale artifact enumeration (v1.0.0 supersession list — no longer applicable to v16)"],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Regenerated per v16 extension-contract §2 manifest requirements", "reason": "v16 manifest schema" },
+        { "change": "Added capabilities_supplied and capabilities_extended blocks per extension contract", "reason": "v16 explicit capability ownership and extension declaration" },
+        { "change": "Added applicability_declaration for wrong-context load protection", "reason": "v16 fail-closed rule" },
+        { "change": "Added cfw_side_stale_artifacts_excluded_from_v16 block", "reason": "v16 provenance completeness" }
+      ]
+    },
+    {
+      "derived_artifact": "creative-writing-v16.0.0/creative-writing-integrity-manifest-v16.0.0.json",
+      "source_basis": "New (SHA-256 hashes computed at derivation)",
+      "retained_content": ["Integrity hashing convention"],
+      "excluded_content": [],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "New v16 integrity manifest computed from actual v16 bolt-on files", "reason": "v16 correctness" }
+      ]
+    },
+    {
+      "derived_artifact": "creative-writing-v16.0.0/bind/creative-writing-bind-template-v16.0.0.json",
+      "source_basis": [{ "filename": "BindTemplate_CfW_v1.0.1.json (bolt-on template intent basis)" }],
+      "retained_content": ["Bolt-on binding template concept"],
+      "excluded_content": ["v1.0.1 CfW-specific binding shape (superseded by v16-shaped bind template conforming to Core extension contract)"],
+      "moved_content": [],
+      "semantic_changes": [
+        { "change": "Regenerated as v16-compliant bind template", "reason": "v16 extension contract compliance" },
+        { "change": "Added capabilities_supplied_by_bolt_on and capabilities_extended_by_bolt_on blocks with does_not_modify guarantees", "reason": "v16 extension-contract explicit boundaries" },
+        { "change": "Added applicability_declaration", "reason": "v16 wrong-context load protection" },
+        { "change": "Added conflict_handling.fail_closed_categories referencing all v16 extension-contract §5 categories", "reason": "v16 fail-closed behavior" }
+      ]
+    }
+  ]
+}

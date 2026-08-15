@@ -1,0 +1,66 @@
+{
+  "manifest_id": "integrity-manifest-v16.0.0",
+  "manifest_version": "16.0.0",
+  "package_identity": "CoSyn-v16.0.0",
+  "algorithm": "SHA-256",
+  "generated_utc": "2026-08-13T21:52:24.6683484Z",
+  "note": "Excludes this manifest itself. Integrity of this manifest is verified externally via git tracking or external hash record.",
+  "file_count": 11,
+  "entries": [
+    {
+      "filename": "anti-ai-signature-gate-v16.0.0.md",
+      "size": 10275,
+      "sha256": "CAB6F2E4FCEA675A25151E8842899667CCED0C4F254F8A10D9126827600A15A7"
+    },
+    {
+      "filename": "canonical-manifest-v16.0.0.json",
+      "size": 2172,
+      "sha256": "2CEAAFD0D03945B6A5FD8B0D584DCCF44CF45CA7D44C4D0714EC2889D2E978B1"
+    },
+    {
+      "filename": "core-package-manifest-v16.0.0.json",
+      "size": 3922,
+      "sha256": "F988AC3E7BA268122093F5DA39277C09713E8BFFD6D52FEB3A29B44C2DE06345"
+    },
+    {
+      "filename": "cosyn-constitution-v16.0.0.md",
+      "size": 34984,
+      "sha256": "20A5206887492C3D2E76260BF8EE9956A3A1E024B4AB742186D518CFE1E72522"
+    },
+    {
+      "filename": "cosyn-v16-bind-template-v16.0.0.json",
+      "size": 5932,
+      "sha256": "6A3D458BB7F565FBEE2981E7A416FDA7EBA111F0E5E9315C60637EB2C20D67C1"
+    },
+    {
+      "filename": "cosyn-v16-extension-contract-v16.0.0.md",
+      "size": 12067,
+      "sha256": "327D5D932B9534AC98B9C4BAFE62AC306A9DF1C75E6D55CD67FF27ECDF43BEA5"
+    },
+    {
+      "filename": "editing-discipline-v16.0.0.md",
+      "size": 5629,
+      "sha256": "B2DEB08185B36C31B9EB4F003BED7088583D860E9CD0715F26AFA3AEA92B5EC3"
+    },
+    {
+      "filename": "mode-registry-v16.0.0.md",
+      "size": 6559,
+      "sha256": "4E54C589A911A11F6F21A5D0BF7D89F54C02E6913321DCA795EAB13FBF39D2B0"
+    },
+    {
+      "filename": "persona-governor-v16.0.0.md",
+      "size": 27926,
+      "sha256": "4A8E6C310DD91636AB0B4699B94A7CAF7753AFFD4C0EB236B400CDB658C14AFC"
+    },
+    {
+      "filename": "ptr-specification-v16.0.0.md",
+      "size": 36123,
+      "sha256": "C93205F07BDD45E8E8C5407AC31D7242BF09B87964ACE675D43FCAA0C5917D8C"
+    },
+    {
+      "filename": "stack-architect-v16.0.0.md",
+      "size": 17686,
+      "sha256": "DBA21E35F455C48CF03E8589F24BB4227A9BAB5FC416E2EB60A5ED0F353D6C91"
+    }
+  ]
+}

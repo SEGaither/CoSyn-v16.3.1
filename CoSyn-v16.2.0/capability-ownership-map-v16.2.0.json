@@ -1,0 +1,205 @@
+{
+  "artifact": "capability-ownership-map-v16.2.0.json",
+  "version": "16.2.0",
+  "package_tier": "1_core",
+  "authority_level": "informative_reference",
+  "authority_ceiling": "cosyn-constitution-v16.2.0.md",
+  "role": "Derived package metadata artifact. Maps every capabilities_supplied identifier that appears in any CoSyn v16.2.0 Core artifact to the single authoritative artifact that owns it. Used by the Package-Composition Gate to detect duplicate-capability-ownership conflicts per cosyn-v16-extension-contract-v16.2.0.md §5.",
+  "status": "PROPOSED / UNDER REFINEMENT",
+  "generated": "2026-08-14",
+  "schema_note": "Each entry declares: capability_id (matches capabilities_supplied field in core-package-manifest-v16.2.0.json), owning_artifact (the single Core artifact substantively responsible for that capability), and owning_artifact_authority_level (the authority level declared in that artifact). Capability ownership is authoritative when declared here; bolt-ons that declare capabilities_extended MUST resolve their extension targets to a capability_id in this map.",
+
+  "capability_ownership": [
+
+    {
+      "capability_id": "constitutional.governance-authority",
+      "owning_artifact": "cosyn-constitution-v16.2.0.md",
+      "owning_artifact_authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.ptr-principles-cp1-cp7",
+      "owning_artifact": "cosyn-constitution-v16.2.0.md",
+      "owning_artifact_authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.canonical-turn-lifecycle",
+      "owning_artifact": "cosyn-constitution-v16.2.0.md",
+      "owning_artifact_authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.execution-model",
+      "owning_artifact": "cosyn-constitution-v16.2.0.md",
+      "owning_artifact_authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.governance-gates",
+      "owning_artifact": "cosyn-constitution-v16.2.0.md",
+      "owning_artifact_authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.failure-classification-class0",
+      "owning_artifact": "cosyn-constitution-v16.2.0.md",
+      "owning_artifact_authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.probabilistic-robustness-layer",
+      "owning_artifact": "cosyn-constitution-v16.2.0.md",
+      "owning_artifact_authority_level": "constitutional_root"
+    },
+    {
+      "capability_id": "constitutional.evaluation-harness-and-telemetry-authority",
+      "owning_artifact": "cosyn-constitution-v16.2.0.md",
+      "owning_artifact_authority_level": "constitutional_root"
+    },
+
+    {
+      "capability_id": "enforcement.persona-governor",
+      "owning_artifact": "persona-governor-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.prap-gate",
+      "owning_artifact": "persona-governor-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.ptr-enforcement-gate",
+      "owning_artifact": "persona-governor-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.presentation-gate",
+      "owning_artifact": "persona-governor-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.finalization-gate",
+      "owning_artifact": "persona-governor-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.mode-lock-integrity",
+      "owning_artifact": "persona-governor-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.pcr-strict-mode-and-scope-enforcement",
+      "owning_artifact": "persona-governor-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.telemetry-gate",
+      "owning_artifact": "persona-governor-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_enforcement"
+    },
+    {
+      "capability_id": "enforcement.package-composition-gate",
+      "owning_artifact": "persona-governor-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_enforcement"
+    },
+
+    {
+      "capability_id": "architecture.stack-architect",
+      "owning_artifact": "stack-architect-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_routing"
+    },
+    {
+      "capability_id": "architecture.authority-precedence",
+      "owning_artifact": "stack-architect-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_routing"
+    },
+    {
+      "capability_id": "architecture.canonical-turn-lifecycle-routing",
+      "owning_artifact": "stack-architect-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_routing"
+    },
+    {
+      "capability_id": "architecture.ptr-routing",
+      "owning_artifact": "stack-architect-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_routing"
+    },
+    {
+      "capability_id": "architecture.package-composition-routing",
+      "owning_artifact": "stack-architect-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_routing"
+    },
+
+    {
+      "capability_id": "ptr.record-schema-and-lifecycle",
+      "owning_artifact": "ptr-specification-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.current-state-schema",
+      "owning_artifact": "ptr-specification-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.classification-dimensions",
+      "owning_artifact": "ptr-specification-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.state-transitions-and-precedence",
+      "owning_artifact": "ptr-specification-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.protection-and-rejection-guards",
+      "owning_artifact": "ptr-specification-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.telemetry-field-schema",
+      "owning_artifact": "ptr-specification-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.failure-semantics-and-recovery",
+      "owning_artifact": "ptr-specification-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_specification"
+    },
+    {
+      "capability_id": "ptr.pcr-promotion-framework",
+      "owning_artifact": "ptr-specification-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_specification"
+    },
+
+    {
+      "capability_id": "mode-registry.schema-and-base-mode-set",
+      "owning_artifact": "mode-registry-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_registry"
+    },
+
+    {
+      "capability_id": "editing-discipline.universal",
+      "owning_artifact": "editing-discipline-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_discipline"
+    },
+
+    {
+      "capability_id": "anti-ai-signature-gate.base-detection-and-rewrite",
+      "owning_artifact": "anti-ai-signature-gate-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_discipline"
+    },
+
+    {
+      "capability_id": "extension-contract.bolt-on-binding",
+      "owning_artifact": "cosyn-v16-extension-contract-v16.2.0.md",
+      "owning_artifact_authority_level": "subordinate_discipline"
+    },
+
+    {
+      "capability_id": "package-manifest.canonical-manifest-and-integrity",
+      "owning_artifact": "canonical-manifest-v16.2.0.json",
+      "owning_artifact_authority_level": "informative_reference",
+      "note": "canonical-manifest-v16.2.0.json is the primary owner, providing the semantic index of the Core package file set (roles, authority metadata). integrity-manifest-v16.2.0.json provides SHA-256 hash coverage anchoring package integrity and is referenced by this capability as the external trust anchor; it is not a standalone capability owner."
+    }
+
+  ],
+
+  "capability_count": 35,
+  "coverage_assertion": "This map covers every capability_id enumerated in capabilities_supplied of core-package-manifest-v16.2.0.json. Every capability_id maps to exactly one owning_artifact. No capability_id is absent. No capability_id appears in more than one entry.",
+
+  "usage_note": "Bolt-ons that declare capabilities_extended MUST resolve each capability_id to an entry in this map. A bolt-on that declares authoritative ownership of any capability_id listed here is a duplicate-capability-ownership conflict per cosyn-v16-extension-contract-v16.2.0.md §5, and composition MUST fail closed. This artifact has informative_reference authority only: it does not create, modify, or govern any capability. Authoritative governance resides in each owning_artifact."
+}

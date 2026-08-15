@@ -1,0 +1,507 @@
+{
+  "record_type": "pre_edit_change_map",
+  "script_version": "1.0.2",
+  "target_version": "16.3.0",
+  "baseline_version": "16.1.0",
+  "historical_version": "16.2.0",
+  "edit_policy": {
+    "patch_only": true,
+    "whole_file_regeneration_forbidden": true,
+    "whole_file_reconstruction_forbidden": true,
+    "protected_remainder": "All copied baseline content outside an authorized defect delta or mechanically required version/identity dependency remains protected.",
+    "source_for_corrections": "CoSyn-v16.1.0 only",
+    "historical_v16_2_role": "Evidence only; never source for v16.3.0 correction.",
+    "preflight_control_directory": "_preflight; excluded from governed Core package."
+  },
+  "defects": [
+    {
+      "id": "D01",
+      "title": "PTR optional note field contradicts schema closure",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "ptr-specification-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Resolve note-field schema contradiction only; synchronize directly dependent PTR schema/example text.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D01",
+          "label": "schema closure",
+          "pattern": "(?i)undefined fields|undefined field",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 173,
+              "text": "- Undefined fields are prohibited; adding a new field requires a subsequent PTR Specification version."
+            }
+          ]
+        },
+        {
+          "defect_id": "D01",
+          "label": "optional note",
+          "pattern": "(?i)\\bnote\\b",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 189,
+              "text": "- optional short `note` field permitted."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "title": "PTR one-record-per-completed-turn contradicts PTR failure semantics",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "ptr-specification-v16.1.0.md",
+        "cosyn-constitution-v16.1.0.md",
+        "persona-governor-v16.1.0.md",
+        "stack-architect-v16.1.0.md",
+        "cosyn-v16-bind-template-v16.1.0.json"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Make completed-turn, failed-record, recovery, turn_id, ledger_sequence, prior_state_pointer, and state_version semantics coherent.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D02",
+          "label": "exactly-one/completed-turn invariant",
+          "pattern": "(?i)(every completed.*turn.*exactly one|exactly one.*(PTR|ledger).*entry|one record.*completed turn)",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 64,
+              "text": "Each completed user-assistant turn produces exactly one PTR ledger entry of one of the following types. Record types are enumerated; new record types require a subsequent PTR Specification version."
+            },
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 79,
+              "text": "- Every completed user-assistant turn creates exactly one PTR ledger entry beginning with Turn 1."
+            }
+          ]
+        },
+        {
+          "defect_id": "D02",
+          "label": "failed record not committed / finalized snapshot emitted",
+          "pattern": "(?i)(invalid PTR record.*not.*committed|finalized (response )?snapshot.*emit|snapshot.*emitted unchanged)",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 57,
+              "text": "9. The unchanged finalized snapshot is emitted to the user."
+            },
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 521,
+              "text": "4. The invalid PTR record is not committed as valid to the ledger."
+            },
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 678,
+              "text": "- Finalized snapshot remains emitted unchanged (§21.1)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "title": "PTR normative schema-version example is stale",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "ptr-specification-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Correct current normative example schema identity without rewriting historical examples.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D03",
+          "label": "stale normative ptr_schema_version",
+          "pattern": "\"ptr_schema_version\"\\s*:\\s*\"16\\.0\\.0\"",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 636,
+              "text": "\"ptr_schema_version\": \"16.0.0\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "title": "Integrity-manifest contract is logically impossible",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "core-package-manifest-v16.1.0.json",
+        "integrity-manifest-v16.1.0.json",
+        "cosyn-constitution-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Synchronize the non-self-hashing integrity model and external ZIP trust-anchor semantics.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D04",
+          "label": "all manifest_files integrity coverage",
+          "pattern": "(?i)(cover|hash).*(all|every).*manifest_files",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "cosyn-v16-extension-contract-v16.1.0.md",
+              "line": 60,
+              "text": "| `integrity_hashes` or `integrity_hashes_reference` | SHA-256 hashes of all `manifest_files` entries. Either: (a) an inline object keyed by filename with SHA-256 values (`integrity_hashes` field), or (b) a named reference to a dedicated integrity manifest artifact within the package (`integrity_hashes_reference` field containing the filename). When using a dedicated integrity manifest: it MUST cover all `manifest_files` entries; it MUST NOT hash itself (non-circular design); its own integrity is anchored externally by the package ZIP SHA-256. Missing, malformed, or stale hash data fails closed. |"
+            }
+          ]
+        },
+        {
+          "defect_id": "D04",
+          "label": "integrity manifest self-hash exclusion",
+          "pattern": "(?i)(must not|does not|exclude).*hash.*(itself|self)|self-hash",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "cosyn-v16-extension-contract-v16.1.0.md",
+              "line": 60,
+              "text": "| `integrity_hashes` or `integrity_hashes_reference` | SHA-256 hashes of all `manifest_files` entries. Either: (a) an inline object keyed by filename with SHA-256 values (`integrity_hashes` field), or (b) a named reference to a dedicated integrity manifest artifact within the package (`integrity_hashes_reference` field containing the filename). When using a dedicated integrity manifest: it MUST cover all `manifest_files` entries; it MUST NOT hash itself (non-circular design); its own integrity is anchored externally by the package ZIP SHA-256. Missing, malformed, or stale hash data fails closed. |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "title": "Core and bolt-on compatibility policy contradicts mixed-version prohibition",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "core-package-manifest-v16.1.0.json",
+        "stack-architect-v16.1.0.md",
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "cosyn-v16-bind-template-v16.1.0.json",
+        "cosyn-constitution-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Establish one synchronized deterministic compatibility policy; do not impose unapproved y.z lockstep.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D05",
+          "label": "mixed-version prohibition",
+          "pattern": "(?i)mixed-version.*prohibit",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "stack-architect-v16.1.0.md",
+              "line": 88,
+              "text": "- Mixed-version stacks are **prohibited** by default; allowed only when an explicit user authorization and an explicitly documented precedence exception are both present."
+            }
+          ]
+        },
+        {
+          "defect_id": "D05",
+          "label": "minimum compatible bolt-on generation",
+          "pattern": "minimum_compatible_bolt_on_generation",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "core-package-manifest-v16.1.0.json",
+              "line": 63,
+              "text": "\"minimum_compatible_bolt_on_generation\": \"16.0.0\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "title": "Mode Registry misclassifies Creative Writing workflow phases as modes",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "mode-registry-v16.1.0.md"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Separate Core mode semantics from bolt-on workflow-phase semantics without editing the Creative Writing bolt-on.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D06",
+          "label": "fiction phase treated as mode",
+          "pattern": "(?i)(fiction.*phase|creative writing.*phase|phases.*registered mode|registered mode.*phase)",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "mode-registry-v16.1.0.md",
+              "line": 118,
+              "text": "Task-specific bolt-ons MAY define additional registered modes for their domain (e.g., the Creative Writing bolt-on defines twelve fiction phases in `writing-mode-registry-v16.0.0.md`). Bolt-on registry extensions MUST:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "title": "Core hard-codes task-specific bolt-on filenames or versions",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "mode-registry-v16.1.0.md",
+        "cosyn-v16-bind-template-v16.1.0.json",
+        "anti-ai-signature-gate-v16.1.0.md",
+        "ptr-specification-v16.1.0.md",
+        "persona-governor-v16.1.0.md",
+        "stack-architect-v16.1.0.md",
+        "cosyn-constitution-v16.1.0.md",
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "core-package-manifest-v16.1.0.json",
+        "canonical-manifest-v16.1.0.json"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Remove operational hard-coded task-specific bolt-on filenames/versions; preserve legitimate historical provenance.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D07",
+          "label": "hard-coded creative-writing package/version",
+          "pattern": "creative-writing-v16\\.\\d+\\.\\d+",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "cosyn-constitution-v16.1.0.md",
+              "line": 24,
+              "text": "- Writing-specific persona governance: absent from source Constitution; owned by `creative-writing-v16.0.0` bolt-on."
+            },
+            {
+              "file": "cosyn-v16-bind-template-v16.1.0.json",
+              "line": 128,
+              "text": "\"example_shipped_this_generation\": \"creative-writing-v16.0.0 (see creative-writing-v16.0.0 package + bind/creative-writing-bind-template-v16.0.0.json)\""
+            },
+            {
+              "file": "cosyn-v16-extension-contract-v16.1.0.md",
+              "line": 134,
+              "text": "- Task-specific bolt-ons: `<specific-expertise>-v16.y.z` (e.g., `creative-writing-v16.0.0`)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "title": "Candidate status semantics are unsynchronized",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "cosyn-constitution-v16.1.0.md",
+        "persona-governor-v16.1.0.md",
+        "stack-architect-v16.1.0.md",
+        "ptr-specification-v16.1.0.md",
+        "mode-registry-v16.1.0.md",
+        "editing-discipline-v16.1.0.md",
+        "anti-ai-signature-gate-v16.1.0.md",
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "cosyn-v16-bind-template-v16.1.0.json",
+        "canonical-manifest-v16.1.0.json",
+        "core-package-manifest-v16.1.0.json"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Synchronize working/final candidate status without implying Creator ratification.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D08",
+          "label": "candidate status declarations",
+          "pattern": "(?i)(PROPOSED\\s*/\\s*READY FOR CREATOR REVIEW|PROPOSED\\s*[—-]\\s*pending Creator ratification|Canonical\\s*[—-]\\s*optional render)",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "anti-ai-signature-gate-v16.1.0.md",
+              "line": 9,
+              "text": "status: PROPOSED / READY FOR CREATOR REVIEW"
+            },
+            {
+              "file": "anti-ai-signature-gate-v16.1.0.md",
+              "line": 265,
+              "text": "*Document ID: anti-ai-signature-gate-v16.1.0 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-13*"
+            },
+            {
+              "file": "canonical-manifest-v16.1.0.json",
+              "line": 8,
+              "text": "\"status\": \"PROPOSED / READY FOR CREATOR REVIEW\","
+            },
+            {
+              "file": "core-package-manifest-v16.1.0.json",
+              "line": 86,
+              "text": "\"This package is CoSyn-v16.1.0, a Creator-authorized corrective refinement of CoSyn-v16.0.0. Status: PROPOSED / READY FOR CREATOR REVIEW. It has not been ratified by the CoSyn creator. CCT development authority did not include ratification.\""
+            },
+            {
+              "file": "cosyn-constitution-v16.1.0.md",
+              "line": 8,
+              "text": "**Status:** PROPOSED / READY FOR CREATOR REVIEW"
+            },
+            {
+              "file": "cosyn-constitution-v16.1.0.md",
+              "line": 494,
+              "text": "**Status:** Canonical — optional render"
+            },
+            {
+              "file": "cosyn-constitution-v16.1.0.md",
+              "line": 702,
+              "text": "*Document ID: cosyn-constitution-v16.1.0 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-13*"
+            },
+            {
+              "file": "cosyn-v16-bind-template-v16.1.0.json",
+              "line": 5,
+              "text": "\"status\": \"PROPOSED / READY FOR CREATOR REVIEW\","
+            },
+            {
+              "file": "cosyn-v16-extension-contract-v16.1.0.md",
+              "line": 8,
+              "text": "**Status:** PROPOSED — pending Creator ratification"
+            },
+            {
+              "file": "cosyn-v16-extension-contract-v16.1.0.md",
+              "line": 170,
+              "text": "*End of `cosyn-v16-extension-contract-v16.1.0.md` — PROPOSED / READY FOR CREATOR REVIEW*"
+            },
+            {
+              "file": "editing-discipline-v16.1.0.md",
+              "line": 8,
+              "text": "**Status:** PROPOSED / READY FOR CREATOR REVIEW"
+            },
+            {
+              "file": "editing-discipline-v16.1.0.md",
+              "line": 196,
+              "text": "*Document ID: editing-discipline-v16.1.0 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-13*"
+            },
+            {
+              "file": "mode-registry-v16.1.0.md",
+              "line": 8,
+              "text": "**Status:** PROPOSED / READY FOR CREATOR REVIEW"
+            },
+            {
+              "file": "mode-registry-v16.1.0.md",
+              "line": 147,
+              "text": "*Document ID: mode-registry-v16.1.0 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-13*"
+            },
+            {
+              "file": "persona-governor-v16.1.0.md",
+              "line": 8,
+              "text": "**Status:** PROPOSED / READY FOR CREATOR REVIEW"
+            },
+            {
+              "file": "persona-governor-v16.1.0.md",
+              "line": 590,
+              "text": "*Document ID: persona-governor-v16.1.0 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-13*"
+            },
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 8,
+              "text": "**Status:** PROPOSED / READY FOR CREATOR REVIEW"
+            },
+            {
+              "file": "ptr-specification-v16.1.0.md",
+              "line": 701,
+              "text": "*Document ID: ptr-specification-v16.1.0 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-13*"
+            },
+            {
+              "file": "stack-architect-v16.1.0.md",
+              "line": 8,
+              "text": "**Status:** PROPOSED / READY FOR CREATOR REVIEW"
+            },
+            {
+              "file": "stack-architect-v16.1.0.md",
+              "line": 288,
+              "text": "*Document ID: stack-architect-v16.1.0 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-13*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "title": "Capability ownership map is referenced but not shipped",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "cosyn-constitution-v16.1.0.md",
+        "cosyn-v16-extension-contract-v16.1.0.md",
+        "canonical-manifest-v16.1.0.json",
+        "core-package-manifest-v16.1.0.json",
+        "integrity-manifest-v16.1.0.json"
+      ],
+      "required_new_files": [
+        "capability-ownership-map-v16.3.0.json"
+      ],
+      "authorized_change": "Add derived ownership metadata/index only; it must not become a new governance authority.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D09",
+          "label": "capability ownership map reference",
+          "pattern": "(?i)capability-ownership-map",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "cosyn-v16-extension-contract-v16.1.0.md",
+              "line": 33,
+              "text": "2. Each governing capability has exactly one authoritative owner (see `capability-ownership-map.json`)."
+            },
+            {
+              "file": "cosyn-v16-extension-contract-v16.1.0.md",
+              "line": 55,
+              "text": "| `capabilities_supplied` | Enumerated capability identifiers (see capability-ownership-map) that this package authoritatively owns |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "title": "Canonical manifest role and scope semantics are incorrect",
+      "status": "MAPPED_NOT_EDITED",
+      "allowed_files": [
+        "cosyn-constitution-v16.1.0.md",
+        "canonical-manifest-v16.1.0.json",
+        "integrity-manifest-v16.1.0.json",
+        "core-package-manifest-v16.1.0.json"
+      ],
+      "required_new_files": [],
+      "authorized_change": "Synchronize semantic-index scope, constitutional-root classification, and identity-vs-integrity responsibilities.",
+      "protected_remainder": true,
+      "anchor_evidence": [
+        {
+          "defect_id": "D10",
+          "label": "canonical manifest hash-role wording",
+          "pattern": "(?i)canonical-manifest.*(SHA-256|hash)",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "cosyn-constitution-v16.1.0.md",
+              "line": 647,
+              "text": "| `canonical-manifest-v16.1.0.json` | 16.1.0 | Canonical binding of subordinate specifications by filename and SHA-256 |"
+            }
+          ]
+        },
+        {
+          "defect_id": "D10",
+          "label": "subordinate-only canonical-manifest scope",
+          "pattern": "(?i)Core subordinate artifacts",
+          "minimum_matches": 1,
+          "matches": [
+            {
+              "file": "canonical-manifest-v16.1.0.json",
+              "line": 6,
+              "text": "\"scope\": \"CoSyn v16.1.0 Core subordinate artifacts\","
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "manifest_id": "integrity-manifest-v16.3.0",
+  "manifest_version": "16.3.0",
+  "package_identity": "CoSyn-v16.3.0",
+  "algorithm": "SHA-256",
+  "generated_utc": "2026-08-14T00:00:00Z",
+  "repair_state": "SHA-256 values below are v16.1.0 baseline placeholders. They require recalculation against final v16.3.0 file content at package verification. Do not treat these hashes as valid until recalculated.",
+  "trust_model": {
+    "self_hash": false,
+    "self_hash_note": "This manifest does not hash itself. Non-circular by design.",
+    "external_trust_anchor": "CoSyn-v16.3.0.zip SHA-256 covers the entire package including this manifest. Verify the ZIP SHA-256 first, then validate file hashes within.",
+    "validation_order": [
+      "1. Verify external CoSyn-v16.3.0.zip SHA-256 against the declared package hash.",
+      "2. Extract package. Confirm all manifest_files entries are present.",
+      "3. Load this integrity manifest.",
+      "4. For each entry in this manifest, verify the actual file SHA-256 matches the declared sha256.",
+      "5. Verify this manifest itself is covered by the ZIP SHA-256 (step 1).",
+      "6. Fail closed on any discrepancy."
+    ],
+    "failure_behavior": {
+      "missing_integrity_data": "fail_closed — treat as hash_mismatch failure category",
+      "malformed_integrity_data": "fail_closed — treat as manifest_actual_file_mismatch failure category",
+      "stale_integrity_data": "detected by file/hash mismatch — fail_closed as hash_mismatch",
+      "file_hash_mismatch": "fail_closed — hash_mismatch failure per extension-contract §5",
+      "trust_anchor_mismatch": "halt package load — ZIP SHA-256 does not match declared value"
+    }
+  },
+  "note": "Excludes this manifest itself (non-circular). Integrity of this manifest is anchored by the external CoSyn-v16.3.0.zip SHA-256.",
+  "file_count": 12,
+  "entries": [
+    {
+      "filename": "anti-ai-signature-gate-v16.3.0.md",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "canonical-manifest-v16.3.0.json",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "capability-ownership-map-v16.3.0.json",
+      "size": null,
+      "sha256": null,
+      "hash_note": "New artifact added in v16.3.0 (D09). Hash to be calculated at final package verification."
+    },
+    {
+      "filename": "core-package-manifest-v16.3.0.json",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "cosyn-constitution-v16.3.0.md",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "cosyn-v16-bind-template-v16.3.0.json",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "cosyn-v16-extension-contract-v16.3.0.md",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "editing-discipline-v16.3.0.md",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "mode-registry-v16.3.0.md",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "persona-governor-v16.3.0.md",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "ptr-specification-v16.3.0.md",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    },
+    {
+      "filename": "stack-architect-v16.3.0.md",
+      "size": null,
+      "sha256": null,
+      "hash_note": "Recalculation required — file modified during v16.3.0 semantic repair."
+    }
+  ]
+}

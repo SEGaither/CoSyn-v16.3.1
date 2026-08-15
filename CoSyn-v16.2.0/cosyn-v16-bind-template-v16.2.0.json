@@ -1,0 +1,158 @@
+{
+  "template_name": "CoSyn v16 Core Bind Template",
+  "template_version": "16.2.0",
+  "template_type": "bind_template_core_instance_of_extension_contract",
+  "status": "PROPOSED / UNDER REFINEMENT",
+  "package_tier": "1_core",
+  "authority_level": "subordinate_specification",
+  "authority_ceiling": "cosyn-constitution-v16.2.0.md",
+  "predecessor": "cosyn-v16-bind-template-v16.1.0.json (SHA-256 B50D62F416C2F63EE327828E67F247DCC36B80E24CE963BC94647285F50561D6)",
+  "governs": "the Core binding of Constitution + Governor + Architect + subordinate specifications + subordinate registries + subordinate disciplines",
+  "extension_contract_reference": "cosyn-v16-extension-contract-v16.2.0.md",
+  "core_bindings": {
+    "constitution": {
+      "artifact": "cosyn-constitution-v16.2.0.md",
+      "version": "16.2.0",
+      "authority": "constitutional_root"
+    },
+    "governor": {
+      "artifact": "persona-governor-v16.2.0.md",
+      "version": "16.2.0",
+      "authority": "subordinate_enforcement"
+    },
+    "architect": {
+      "artifact": "stack-architect-v16.2.0.md",
+      "version": "16.2.0",
+      "authority": "subordinate_routing"
+    },
+    "ptr_specification": {
+      "artifact": "ptr-specification-v16.2.0.md",
+      "version": "16.2.0",
+      "authority": "subordinate_specification",
+      "schema_owner": true,
+      "ptr_schema_version_field": "ptr_schema_version",
+      "schema_owner_sections": {
+        "record_schema": "6",
+        "current_ptr_state_schema": "8",
+        "state_delta_schema": "10",
+        "telemetry_fields": "15",
+        "failure_semantics": "21"
+      }
+    },
+    "mode_registry": {
+      "artifact": "mode-registry-v16.2.0.md",
+      "version": "16.2.0",
+      "authority": "subordinate_registry"
+    },
+    "editing_discipline": {
+      "artifact": "editing-discipline-v16.2.0.md",
+      "version": "16.2.0",
+      "authority": "subordinate_discipline"
+    },
+    "anti_ai_signature_gate": {
+      "artifact": "anti-ai-signature-gate-v16.2.0.md",
+      "version": "16.2.0",
+      "authority": "subordinate_discipline"
+    },
+    "extension_contract": {
+      "artifact": "cosyn-v16-extension-contract-v16.2.0.md",
+      "version": "16.2.0",
+      "authority": "subordinate_specification"
+    }
+  },
+  "authority_relationship": {
+    "chain": "Constitution > Governor > Architect",
+    "governor_subordinate_to_architect": false,
+    "architect_provides_routing_discipline_only": true,
+    "notes": "Persona Governor is subordinate to Constitution only. Governor execution is routed through Stack Architect routing discipline; this does not subordinate Governor's authority to Architect."
+  },
+  "ptr_enabled": true,
+  "pcr_trigger_policy": "explicit-command-only",
+  "pcr_trigger_policy_allowed": [
+    "explicit-command-only",
+    "automatic-on-eos",
+    "both"
+  ],
+  "terminology_migration": {
+    "tpr_to_ptr": "complete",
+    "crs_to_pcr": "complete"
+  },
+  "schema_compatibility": {
+    "constitution_min": "16.2.0",
+    "governor_min": "16.2.0",
+    "architect_min": "16.2.0",
+    "ptr_specification_min": "16.2.0",
+    "mode_registry_min": "16.2.0",
+    "editing_discipline_min": "16.2.0",
+    "anti_ai_signature_gate_min": "16.2.0",
+    "extension_contract_min": "16.2.0",
+    "ptr_record_schema_version_check_field": "ptr_schema_version",
+    "current_ptr_state_schema_version_check_field": "ptr_schema_version"
+  },
+  "canonical_turn_lifecycle_binding": {
+    "authority": "cosyn-constitution-v16.2.0.md",
+    "sequence": [
+      "user_turn_received",
+      "predecessor_state_validated_or_bootstrap",
+      "governance_and_reasoning",
+      "finalization_presentation_gate_produces_finalized_snapshot",
+      "snapshot_immutable",
+      "ptr_record_creation_from_snapshot",
+      "ptr_validation",
+      "telemetry_recording",
+      "user_visible_emission_of_unchanged_snapshot",
+      "next_turn_predecessor_validation"
+    ],
+    "invariants": {
+      "ptr_cannot_modify_finalized_snapshot": true,
+      "telemetry_cannot_modify_finalized_snapshot": true,
+      "no_second_visible_emission_path": true
+    },
+    "finalized_snapshot_terminology": ["finalized", "frozen", "emission-locked"],
+    "user_visible_emission_terminology": "user-visible emission"
+  },
+  "reserved_binding_positions": {
+    "tier2_user_profile": {
+      "attachment_point": "below Core, above applicable bolt-ons",
+      "reserved_capability_categories": [
+        "user-response",
+        "user-voice-style",
+        "user-editing-preference",
+        "user-memory-context-control"
+      ],
+      "package_shipped_this_generation": false,
+      "note": "Tier-2 package is not built in this Core generation. Binding position defined so later attachment does not require Core redesign."
+    },
+    "bolt_on_layer": {
+      "attachment_point": "below Tier-2 (or below Core if Tier-2 absent), above Tier-3",
+      "applicability_gated": true,
+      "compatibility_note": "A bolt-on is compatible when its declared required_core_generation is satisfied by loaded Core v16.2.0 and no conflict category per cosyn-v16-extension-contract-v16.2.0 §5 is present. Bolt-ons carry their own y.z refinement lineage within CoSyn generation 16; y.z differences within the same generation are not prohibited mixed-version compositions. Reference any applicable bolt-on by its capability family identifier, not by a fixed filename, to avoid stale-reference traps as bolt-ons increment version."
+    },
+    "tier3_project_layer": {
+      "attachment_point": "below applicable bolt-ons",
+      "reserved_capability_categories": [
+        "project_canon",
+        "project_instructions",
+        "project_authoritative_decisions",
+        "project_pcr_state",
+        "project_specific_artifacts"
+      ],
+      "package_shipped_this_generation": false
+    }
+  },
+  "legacy_compatibility": {
+    "cgs_v15": "none",
+    "cfw_v1_x": "none",
+    "adapter_packages_authorized": []
+  },
+  "sync": {
+    "synced_to_constitution": "cosyn-constitution-v16.2.0",
+    "synced_to_governor": "persona-governor-v16.2.0",
+    "synced_to_architect": "stack-architect-v16.2.0",
+    "synced_to_ptr_specification": "ptr-specification-v16.2.0",
+    "synced_to_mode_registry": "mode-registry-v16.2.0",
+    "synced_to_editing_discipline": "editing-discipline-v16.2.0",
+    "synced_to_anti_ai_signature_gate": "anti-ai-signature-gate-v16.2.0",
+    "synced_to_extension_contract": "cosyn-v16-extension-contract-v16.2.0"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "authoritative_baseline_inventory": "D:\\cosyn-gov\\Chat-gov-files\\CGS-v16\\CoSyn-v16.3.0\\_preflight\\baseline-inventory-v16.1.0.json",
+  "active_file_mappings": [
+    {
+      "sha256": "9D68BAC3CE08180306CAA715F573F63B9BEBB2185B646EEAA9140EE7D8BC8181",
+      "size": 11612,
+      "v16_1_0_filename": "anti-ai-signature-gate-v16.1.0.md",
+      "v16_3_0_filename": "anti-ai-signature-gate-v16.3.0.md"
+    },
+    {
+      "sha256": "75BA25C8FBBCBFC546194690CB023E3449C7F09C86336DA80BB447D02473DE1B",
+      "size": 3527,
+      "v16_1_0_filename": "integrity-manifest-v16.1.0.json",
+      "v16_3_0_filename": "integrity-manifest-v16.3.0.json"
+    },
+    {
+      "sha256": "42948E7EA30E1E470480BF26FCF2A2D2755559B8B4483A02EF44D9291FA7C86E",
+      "size": 17806,
+      "v16_1_0_filename": "stack-architect-v16.1.0.md",
+      "v16_3_0_filename": "stack-architect-v16.3.0.md"
+    },
+    {
+      "sha256": "97A4FF7D9D03A31F6DE066728BC5DD4C36B67B8A9EFF93A54FF8C5555C3030F8",
+      "size": 28326,
+      "v16_1_0_filename": "persona-governor-v16.1.0.md",
+      "v16_3_0_filename": "persona-governor-v16.3.0.md"
+    },
+    {
+      "sha256": "D211A9C6D9A925CD25E03E460827AB3234B84F40C92CE122ADC0F742057F6E34",
+      "size": 6677,
+      "v16_1_0_filename": "mode-registry-v16.1.0.md",
+      "v16_3_0_filename": "mode-registry-v16.3.0.md"
+    },
+    {
+      "sha256": "6A29B058F235A23C148AA48844479E0B4EE0E6895716FCCFB22E53FCE7A7732A",
+      "size": 4383,
+      "v16_1_0_filename": "core-package-manifest-v16.1.0.json",
+      "v16_3_0_filename": "core-package-manifest-v16.3.0.json"
+    },
+    {
+      "sha256": "CFF621363DF6C5E5D4675635C02C517CD6DDF6F27AED207112922DBAE3BA8506",
+      "size": 38066,
+      "v16_1_0_filename": "cosyn-constitution-v16.1.0.md",
+      "v16_3_0_filename": "cosyn-constitution-v16.3.0.md"
+    },
+    {
+      "sha256": "06BD3117350B6FD6BF1F78F461F98E3AE93A1F6315D7A03904BB170D9EFB5892",
+      "size": 7103,
+      "v16_1_0_filename": "editing-discipline-v16.1.0.md",
+      "v16_3_0_filename": "editing-discipline-v16.3.0.md"
+    },
+    {
+      "sha256": "12EEAC1B4B58E40E53DF4414A82930CB37765DB9E7A1095C2E5072191C0115D2",
+      "size": 36245,
+      "v16_1_0_filename": "ptr-specification-v16.1.0.md",
+      "v16_3_0_filename": "ptr-specification-v16.3.0.md"
+    },
+    {
+      "sha256": "2FF1A5205AE6B32B93C14CC7E73D6A4566F7287EF4C2420008112132884ECA82",
+      "size": 2381,
+      "v16_1_0_filename": "canonical-manifest-v16.1.0.json",
+      "v16_3_0_filename": "canonical-manifest-v16.3.0.json"
+    },
+    {
+      "sha256": "B50D62F416C2F63EE327828E67F247DCC36B80E24CE963BC94647285F50561D6",
+      "size": 5921,
+      "v16_1_0_filename": "cosyn-v16-bind-template-v16.1.0.json",
+      "v16_3_0_filename": "cosyn-v16-bind-template-v16.3.0.json"
+    },
+    {
+      "sha256": "40F6B762382D51B7635C2C3FFD69BF6BA5D3EFFB012D3074F10E5366F07C4826",
+      "size": 12677,
+      "v16_1_0_filename": "cosyn-v16-extension-contract-v16.1.0.md",
+      "v16_3_0_filename": "cosyn-v16-extension-contract-v16.3.0.md"
+    }
+  ],
+  "unrelated_preexisting_root_entries": [],
+  "active_copy_identity_pass": true,
+  "active_root": "D:\\cosyn-gov\\Chat-gov-files\\CGS-v16\\CoSyn-v16.3.0",
+  "baseline_files": [
+    {
+      "sha256": "9D68BAC3CE08180306CAA715F573F63B9BEBB2185B646EEAA9140EE7D8BC8181",
+      "filename": "anti-ai-signature-gate-v16.1.0.md",
+      "size": 11612
+    },
+    {
+      "sha256": "75BA25C8FBBCBFC546194690CB023E3449C7F09C86336DA80BB447D02473DE1B",
+      "filename": "integrity-manifest-v16.1.0.json",
+      "size": 3527
+    },
+    {
+      "sha256": "42948E7EA30E1E470480BF26FCF2A2D2755559B8B4483A02EF44D9291FA7C86E",
+      "filename": "stack-architect-v16.1.0.md",
+      "size": 17806
+    },
+    {
+      "sha256": "97A4FF7D9D03A31F6DE066728BC5DD4C36B67B8A9EFF93A54FF8C5555C3030F8",
+      "filename": "persona-governor-v16.1.0.md",
+      "size": 28326
+    },
+    {
+      "sha256": "D211A9C6D9A925CD25E03E460827AB3234B84F40C92CE122ADC0F742057F6E34",
+      "filename": "mode-registry-v16.1.0.md",
+      "size": 6677
+    },
+    {
+      "sha256": "6A29B058F235A23C148AA48844479E0B4EE0E6895716FCCFB22E53FCE7A7732A",
+      "filename": "core-package-manifest-v16.1.0.json",
+      "size": 4383
+    },
+    {
+      "sha256": "CFF621363DF6C5E5D4675635C02C517CD6DDF6F27AED207112922DBAE3BA8506",
+      "filename": "cosyn-constitution-v16.1.0.md",
+      "size": 38066
+    },
+    {
+      "sha256": "06BD3117350B6FD6BF1F78F461F98E3AE93A1F6315D7A03904BB170D9EFB5892",
+      "filename": "editing-discipline-v16.1.0.md",
+      "size": 7103
+    },
+    {
+      "sha256": "12EEAC1B4B58E40E53DF4414A82930CB37765DB9E7A1095C2E5072191C0115D2",
+      "filename": "ptr-specification-v16.1.0.md",
+      "size": 36245
+    },
+    {
+      "sha256": "2FF1A5205AE6B32B93C14CC7E73D6A4566F7287EF4C2420008112132884ECA82",
+      "filename": "canonical-manifest-v16.1.0.json",
+      "size": 2381
+    },
+    {
+      "sha256": "B50D62F416C2F63EE327828E67F247DCC36B80E24CE963BC94647285F50561D6",
+      "filename": "cosyn-v16-bind-template-v16.1.0.json",
+      "size": 5921
+    },
+    {
+      "sha256": "40F6B762382D51B7635C2C3FFD69BF6BA5D3EFFB012D3074F10E5366F07C4826",
+      "filename": "cosyn-v16-extension-contract-v16.1.0.md",
+      "size": 12677
+    }
+  ],
+  "d01_d10_repairs_performed": false,
+  "ready_for_sonnet_semantic_repair": true,
+  "status": "SUCCESS",
+  "root_v16_1_governance_files_remaining": 0,
+  "semantic_edits_performed": false,
+  "baseline_identity_pass": true,
+  "timestamp": "2026-08-14T16:23:58Z",
+  "phase": "haiku_mechanical_preparation",
+  "baseline_directory": "D:\\cosyn-gov\\Chat-gov-files\\CGS-v16\\CoSyn-v16.3.0\\_baseline-v16.1.0"
+}

@@ -1,0 +1,119 @@
+{
+  "record_type": "sonnet_semantic_repair_state_report",
+  "generated_utc": "2026-08-14T00:00:00Z",
+  "session_note": "Resumed from interrupted prior session. Prior session confirmed: only core-package-manifest mechanical identity change (package_identity, package_version). All remaining D01-D10 corrections and mechanical sync applied in this session.",
+  "repair_status": "ALL_AUTHORIZED_CORRECTIONS_APPLIED",
+  "baseline": "CoSyn-v16.1.0 (_baseline-v16.1.0/)",
+  "forbidden_source": "CoSyn-v16.2.0 — not used",
+  "defect_resolution": {
+    "D01": {
+      "title": "PTR optional note field contradicts schema closure",
+      "status": "RESOLVED",
+      "files_modified": ["ptr-specification-v16.3.0.md"],
+      "summary": "Added note field to schema table (§6.1); updated §4 description to reference §6.1 definition."
+    },
+    "D02": {
+      "title": "PTR one-record-per-completed-turn contradicts PTR failure semantics",
+      "status": "RESOLVED",
+      "files_modified": ["ptr-specification-v16.3.0.md"],
+      "summary": "Added failure-turn caveat to §4 and §5 invariant: failed-validation turns produce no committed valid entry; subsequent recovery record accounts for the turn. persona-governor and stack-architect deferred correctly to ptr-specification §21 — no contradicting statements found."
+    },
+    "D03": {
+      "title": "PTR normative schema-version example is stale",
+      "status": "RESOLVED",
+      "files_modified": ["ptr-specification-v16.3.0.md"],
+      "summary": "Updated normative example ptr_schema_version from 16.0.0 to 16.3.0."
+    },
+    "D04": {
+      "title": "Integrity-manifest contract is logically impossible",
+      "status": "RESOLVED",
+      "files_modified": [
+        "cosyn-v16-extension-contract-v16.3.0.md",
+        "integrity-manifest-v16.3.0.json",
+        "cosyn-constitution-v16.3.0.md"
+      ],
+      "summary": "Extension-contract coverage statement updated to include 'except itself'. integrity-manifest external_trust_anchor updated to v16.3.0. Constitution D10 table corrected to separate hash role (integrity-manifest) from semantic-index role (canonical-manifest)."
+    },
+    "D05": {
+      "title": "Core and bolt-on compatibility policy contradicts mixed-version prohibition",
+      "status": "RESOLVED",
+      "files_modified": [
+        "cosyn-constitution-v16.3.0.md",
+        "core-package-manifest-v16.3.0.json",
+        "cosyn-v16-bind-template-v16.3.0.json",
+        "cosyn-v16-extension-contract-v16.3.0.md"
+      ],
+      "summary": "minimum_compatible_bolt_on_generation updated from '16.0.0' to '16.x (mixed-version stacks require explicit authorization — see stack-architect-v16.3.0.md §5)'. Constitution package info section updated to match. stack-architect §5 already stated correct exception policy."
+    },
+    "D06": {
+      "title": "Mode Registry misclassifies Creative Writing workflow phases as modes",
+      "status": "RESOLVED",
+      "files_modified": ["mode-registry-v16.3.0.md"],
+      "summary": "§5 text updated to clarify that bolt-on workflow phases are not Core modes; bolt-ons must submit entries conforming to §3 for any mode registration."
+    },
+    "D07": {
+      "title": "Core hard-codes task-specific bolt-on filenames or versions",
+      "status": "RESOLVED",
+      "files_modified": [
+        "cosyn-constitution-v16.3.0.md",
+        "cosyn-v16-bind-template-v16.3.0.json",
+        "cosyn-v16-extension-contract-v16.3.0.md",
+        "mode-registry-v16.3.0.md",
+        "anti-ai-signature-gate-v16.3.0.md",
+        "editing-discipline-v16.3.0.md"
+      ],
+      "summary": "All operational hard-coded versioned bolt-on filenames removed or generalized. Legitimate historical provenance references in §0 sections preserved. persona-governor and stack-architect contained no versioned bolt-on filenames."
+    },
+    "D08": {
+      "title": "Candidate status semantics are unsynchronized",
+      "status": "RESOLVED",
+      "files_modified": [
+        "cosyn-constitution-v16.3.0.md",
+        "persona-governor-v16.3.0.md",
+        "stack-architect-v16.3.0.md",
+        "ptr-specification-v16.3.0.md",
+        "mode-registry-v16.3.0.md",
+        "editing-discipline-v16.3.0.md",
+        "anti-ai-signature-gate-v16.3.0.md",
+        "cosyn-v16-extension-contract-v16.3.0.md",
+        "cosyn-v16-bind-template-v16.3.0.json",
+        "canonical-manifest-v16.3.0.json",
+        "core-package-manifest-v16.3.0.json"
+      ],
+      "summary": "All status fields synchronized to 'PROPOSED / UNDER REFINEMENT'. All document footers updated to match. No implied Creator ratification."
+    },
+    "D09": {
+      "title": "Capability ownership map is referenced but not shipped",
+      "status": "RESOLVED",
+      "files_modified": [
+        "canonical-manifest-v16.3.0.json",
+        "integrity-manifest-v16.3.0.json",
+        "core-package-manifest-v16.3.0.json"
+      ],
+      "new_files_created": ["capability-ownership-map-v16.3.0.json"],
+      "summary": "capability-ownership-map-v16.3.0.json created as derived informative metadata index. Added to manifest_files in core-package-manifest, to files array in canonical-manifest, and to entries in integrity-manifest. Not declared a governance authority."
+    },
+    "D10": {
+      "title": "Canonical manifest role and scope semantics are incorrect",
+      "status": "RESOLVED",
+      "files_modified": [
+        "cosyn-constitution-v16.3.0.md",
+        "canonical-manifest-v16.3.0.json"
+      ],
+      "summary": "canonical-manifest scope corrected from 'Core subordinate artifacts' to 'Core artifacts'. label_note and notes updated to describe semantic-index role (not SHA-256 role). Constitution artifact table descriptions updated to separate canonical-manifest (semantic index) from integrity-manifest (hash coverage)."
+    }
+  },
+  "mechanical_sync": {
+    "status": "COMPLETE",
+    "summary": "All 12 Core files renamed from v16.1.0 to v16.3.0 by Haiku mechanical prep (confirmed). All internal filename references, schema version declarations, authority ceiling references, package identity strings, compatibility statement versions, and document ID footers updated from v16.1.0 to v16.3.0 in all files. Historical provenance references in §0 sections preserved unmodified."
+  },
+  "integrity_manifest_note": "SHA-256 values in integrity-manifest-v16.3.0.json are null placeholders requiring recalculation at final package verification. This is expected at the semantic repair phase; hash recalculation is a packaging task outside Sonnet phase scope.",
+  "out_of_scope_confirmed": [
+    "Final validation",
+    "Semantic falsification",
+    "Convergence certification",
+    "Packaging",
+    "Ratification",
+    "READY FOR CREATOR REVIEW status"
+  ]
+}

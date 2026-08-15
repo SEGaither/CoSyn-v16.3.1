@@ -1,0 +1,81 @@
+{
+  "record_type": "historical_failed_candidate_inventory",
+  "script_version": "1.0.2",
+  "historical_version": "16.2.0",
+  "role": "Flawed historical evidence only; never a repair source.",
+  "historical_directory_present": true,
+  "historical_directory": "D:\\cosyn-gov\\Chat-gov-files\\CGS-v16\\CoSyn-v16.2.0",
+  "historical_directory_usable": true,
+  "historical_directory_evidence_status": "VALID_NONEMPTY_EVIDENCE",
+  "historical_directory_observation": null,
+  "historical_zip_present": false,
+  "historical_zip": null,
+  "historical_zip_sha256": null,
+  "historical_zip_fingerprint_available": false,
+  "historical_zip_evidence_status": "NOT_PRESENT",
+  "historical_zip_observation": null,
+  "historical_zip_inventory_file_count_when_required": null,
+  "file_count": 12,
+  "files": [
+    {
+      "relative_path": "anti-ai-signature-gate-v16.2.0.md",
+      "bytes": 12014,
+      "sha256": "B3166C34385FE5EA6C82B0B7912BAA499B3F27C250D3426E325FC5E89547B76D"
+    },
+    {
+      "relative_path": "canonical-manifest-v16.2.0.json",
+      "bytes": 2904,
+      "sha256": "670BF55565CCD4FD2345A3937D36E3CCA5C506DEAF1AB1383BDAD17ACA8A2EB9"
+    },
+    {
+      "relative_path": "capability-ownership-map-v16.2.0.json",
+      "bytes": 9196,
+      "sha256": "FE6779AD50FF497882706F3FAD03890E11B7C2DE3AC3CED343F509D8B20347BF"
+    },
+    {
+      "relative_path": "core-package-manifest-v16.2.0.json",
+      "bytes": 5268,
+      "sha256": "A383D019BE00DA1E7C002073DDABC05B62B1EC4406DBBB4169B4945B17AD42F9"
+    },
+    {
+      "relative_path": "cosyn-constitution-v16.2.0.md",
+      "bytes": 39313,
+      "sha256": "EF5F5B0EB4674CFF467D2174BF21D69FB7A4CF2CC0CE6C2F5B1496C3C896DC0C"
+    },
+    {
+      "relative_path": "cosyn-v16-bind-template-v16.2.0.json",
+      "bytes": 6425,
+      "sha256": "EDB4225DC4AB8A186A794CA70B896E5D5E611999931F1419B08F8D33DAAAF5AE"
+    },
+    {
+      "relative_path": "cosyn-v16-extension-contract-v16.2.0.md",
+      "bytes": 16280,
+      "sha256": "AC96FB836CF4F4433519488E0B8EBD27BCC537EE914A41A94D247165D4E1FE1F"
+    },
+    {
+      "relative_path": "editing-discipline-v16.2.0.md",
+      "bytes": 7276,
+      "sha256": "21C742F636DB7D10F3D373EF6C15C6EE86B93AC4C21258F85BB22A2EE4949007"
+    },
+    {
+      "relative_path": "mode-registry-v16.2.0.md",
+      "bytes": 7498,
+      "sha256": "9916326C83BFBF30FDB085A51CA5CC3345489F641C84F2A81BF2DA47500D3332"
+    },
+    {
+      "relative_path": "persona-governor-v16.2.0.md",
+      "bytes": 28597,
+      "sha256": "BB348650127A90964A2C23F96AE156FD7631F6BB9A8BACC00B7DD24CE0C1891B"
+    },
+    {
+      "relative_path": "ptr-specification-v16.2.0.md",
+      "bytes": 41199,
+      "sha256": "46D69F76548F4530AEF34B7BDC71C78F938E5B686FA81F05A83F4352B8DAEDDA"
+    },
+    {
+      "relative_path": "stack-architect-v16.2.0.md",
+      "bytes": 18925,
+      "sha256": "D142E274247CE0DE53E0CCD152DF907365889CBF7B5B3808C27574BF6E13B6E1"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "manifest_id": "canonical-manifest-v16.2.0",
+  "manifest_version": "16.2.0",
+  "label": "CANONICAL",
+  "label_note": "'CANONICAL' is a structural descriptor meaning this is the sole authoritative semantic index of Core package files, roles, and authority metadata. It does not mean Creator-ratified. Ratification status is declared separately in the 'status' field. 'CANONICAL' does not imply governing or active status.",
+  "scope": "CoSyn v16.2.0 Core package — complete file set, roles, and authority metadata",
+  "authority_ceiling": "cosyn-constitution-v16.2.0.md",
+  "status": "PROPOSED / UNDER REFINEMENT",
+  "predecessor": "canonical-manifest-v16.1.0.json (SHA-256 2FF1A5205AE6B32B93C14CC7E73D6A4566F7287EF4C2420008112132884ECA82)",
+  "generated_utc": "2026-08-14T00:00:00Z",
+  "notes": "Hashes recorded in integrity-manifest-v16.2.0.json; this manifest is the semantic index of Core package files. Corrective refinement of v16.1.0 per Creator-authorized CCT pass (D08, D09, D10).",
+  "files": [
+    {
+      "name": "cosyn-constitution-v16.2.0.md",
+      "role": "constitutional_root",
+      "authority_level": "constitutional_root"
+    },
+    {
+      "name": "persona-governor-v16.2.0.md",
+      "role": "subordinate_enforcement",
+      "authority_level": "subordinate_enforcement"
+    },
+    {
+      "name": "stack-architect-v16.2.0.md",
+      "role": "subordinate_routing",
+      "authority_level": "subordinate_routing"
+    },
+    {
+      "name": "ptr-specification-v16.2.0.md",
+      "role": "subordinate_specification",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "name": "mode-registry-v16.2.0.md",
+      "role": "subordinate_registry",
+      "authority_level": "subordinate_registry"
+    },
+    {
+      "name": "editing-discipline-v16.2.0.md",
+      "role": "subordinate_discipline",
+      "authority_level": "subordinate_discipline"
+    },
+    {
+      "name": "anti-ai-signature-gate-v16.2.0.md",
+      "role": "subordinate_discipline",
+      "authority_level": "subordinate_discipline"
+    },
+    {
+      "name": "cosyn-v16-extension-contract-v16.2.0.md",
+      "role": "subordinate_specification",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "name": "cosyn-v16-bind-template-v16.2.0.json",
+      "role": "core_bind_template_instance",
+      "authority_level": "subordinate_specification"
+    },
+    {
+      "name": "capability-ownership-map-v16.2.0.json",
+      "role": "package_metadata_capability_ownership_index",
+      "authority_level": "derived_package_metadata"
+    },
+    {
+      "name": "canonical-manifest-v16.2.0.json",
+      "role": "package_metadata_canonical_index"
+    },
+    {
+      "name": "integrity-manifest-v16.2.0.json",
+      "role": "package_metadata_integrity_hashes"
+    },
+    {
+      "name": "core-package-manifest-v16.2.0.json",
+      "role": "package_metadata_composition_manifest"
+    }
+  ]
+}

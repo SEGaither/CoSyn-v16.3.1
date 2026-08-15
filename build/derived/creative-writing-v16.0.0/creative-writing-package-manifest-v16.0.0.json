@@ -1,0 +1,130 @@
+{
+  "package_identity": "creative-writing-v16.0.0",
+  "package_version": "16.0.0",
+  "package_tier": "bolt_on",
+  "package_role": "Task-specific bolt-on supplying writing-team-persona governance and writing-domain extensions for the CoSyn v16 governance stack",
+  "authority_level": "task_specific_bolt_on",
+  "authority_ceiling": "cosyn-constitution-v16.0.0.md",
+  "required_core_generation": "16.0.0",
+  "required_core_subordinate_versions": {
+    "constitution": "16.0.0",
+    "governor": "16.0.0",
+    "architect": "16.0.0",
+    "ptr_specification": "16.0.0",
+    "mode_registry": "16.0.0",
+    "editing_discipline": "16.0.0",
+    "anti_ai_signature_gate": "16.0.0",
+    "extension_contract": "16.0.0"
+  },
+  "dependencies": [
+    "CoSyn-v16.0.0 (Core)"
+  ],
+  "capabilities_supplied": [
+    "writing-personas.seven-persona-governance",
+    "writing-personas.bookfox-batch-03-purview-reference",
+    "fiction-control.controller-categories-agency-scopes-handoff-rules-character-voice",
+    "fiction-state.classification-source-separation-materiality-continuity",
+    "fiction-project-profile.schema",
+    "fiction-workflow-profile.schema",
+    "writing-editing-critique-preservation-conversion",
+    "fiction-session-initialization",
+    "creative-writing-bind-template",
+    "creative-writing.subordinate-reference"
+  ],
+  "capabilities_extended": [
+    {
+      "capability_id": "anti-ai-signature-gate.base-detection-and-rewrite",
+      "core_owner_reference": "anti-ai-signature-gate-v16.0.0.md@16.0.0",
+      "extension_type": "scope_extension",
+      "extension_scope": "fiction prose + 11-item fiction naturalness standard",
+      "does_not_modify": ["Core detection rules, rewrite priorities, deterministic rule"],
+      "supplied_by": "anti-ai-fiction-naturalness-v16.0.0.md"
+    },
+    {
+      "capability_id": "ptr.pcr-promotion-framework",
+      "core_owner_reference": "ptr-specification-v16.0.0.md@16.0.0#20",
+      "extension_type": "schema_specialization",
+      "extension_scope": "twenty-section fiction PCR content schema",
+      "does_not_modify": ["Core ratification requirement, pcr_ratification_link semantics"],
+      "supplied_by": "fiction-pcr-protocol-v16.0.0.md"
+    },
+    {
+      "capability_id": "ptr.failure-semantics-and-recovery",
+      "core_owner_reference": "ptr-specification-v16.0.0.md@16.0.0#21",
+      "extension_type": "trigger_addition",
+      "extension_scope": "fiction-specific recovery triggers and continuity-repair rules",
+      "does_not_modify": ["Core Non-interference invariant, reconstruction inputs, acceptance standard, failure behavior table"],
+      "supplied_by": "fiction-recovery-protocol-v16.0.0.md"
+    },
+    {
+      "capability_id": "mode-registry.schema-and-base-mode-set",
+      "core_owner_reference": "mode-registry-v16.0.0.md@16.0.0",
+      "extension_type": "mode_addition",
+      "extension_scope": "twelve fiction phases",
+      "does_not_modify": ["Core registration schema, prohibited fields, base mode set, bolt-on registry rules"],
+      "supplied_by": "writing-mode-registry-v16.0.0.md"
+    },
+    {
+      "capability_id": "editing-discipline.universal",
+      "core_owner_reference": "editing-discipline-v16.0.0.md@16.0.0",
+      "extension_type": "protocol_specialization",
+      "extension_scope": "writing editing/critique/preservation/conversion protocols",
+      "does_not_modify": ["Core CREATE/EDIT/REVIEW, canonical source rule, delta, preservation, regression, repair"],
+      "supplied_by": "writing-editing-critique-preservation-conversion-v16.0.0.md"
+    }
+  ],
+  "applicability_declaration": "Loaded only when the project's declared expertise scope includes creative writing. Non-writing projects MUST NOT receive this bolt-on. Wrong-context load fails closed at composition time.",
+  "compatibility": {
+    "cosyn_core_generation": "16.0.0",
+    "legacy_cfw_v1_x": "none — migration/reference source only",
+    "legacy_cgs_v15_x": "none"
+  },
+  "manifest_files": [
+    "writing-team-personas-v16.0.0.md",
+    "fiction-control-boundary-model-v16.0.0.md",
+    "fiction-state-model-v16.0.0.md",
+    "writing-editing-critique-preservation-conversion-v16.0.0.md",
+    "anti-ai-fiction-naturalness-v16.0.0.md",
+    "fiction-recovery-protocol-v16.0.0.md",
+    "fiction-pcr-protocol-v16.0.0.md",
+    "fiction-session-initialization-v16.0.0.md",
+    "writing-mode-registry-v16.0.0.md",
+    "README-creative-writing-v16.0.0.md",
+    "creative-writing-package-manifest-v16.0.0.json",
+    "creative-writing-integrity-manifest-v16.0.0.json",
+    "bind/creative-writing-bind-template-v16.0.0.json",
+    "schemas/fiction-project-profile-schema-v16.0.0.md",
+    "schemas/fiction-workflow-profile-schema-v16.0.0.md",
+    "templates/default-generic-fiction-profile-v16.0.0.md",
+    "templates/default-generic-workflow-profile-v16.0.0.md",
+    "templates/fiction-pcr-template-v16.0.0.md",
+    "reference/bookfox-batch-03-purview-reference-v16.0.0.md",
+    "reference/excluded-runtime-concepts-v16.0.0.md",
+    "reference/implementation-report-legacy-cfw-v1.0.1.md",
+    "reference/source-lineage-legacy-cfw-v1.0.1.md",
+    "reference/Generic_First_Manuscript_Draft_Protocol_v1.0.0.docx"
+  ],
+  "integrity_hashes_reference": "creative-writing-integrity-manifest-v16.0.0.json",
+  "provenance_pointer": "../../provenance/migration-provenance-map.json",
+  "mandatory_statements": [
+    "This bolt-on is interpreted in-chat governance. It does not claim transactional persistence, atomic storage, exactly-once delivery, rollback guarantees, background processes, external API integration, or executable runtime enforcement outside the response-construction protocol.",
+    "This package is PROPOSED / READY FOR CREATOR REVIEW. It has not been ratified by the CoSyn creator. CCT development authority did not include ratification.",
+    "This bolt-on is loaded only when the project's declared expertise scope includes creative writing."
+  ],
+  "cfw_side_stale_artifacts_excluded_from_v16": {
+    "note": "The following v15/CfW artifacts are Core-owned capabilities under v16 and are therefore excluded from this bolt-on. Source files remain preserved unchanged in the immutable CoSyn-for-Writing source directory.",
+    "excluded": [
+      { "artifact": "CGS_CfW_v1.0.1.md", "reason": "Constitution ownership is Core; CW bolt-on binds Core Constitution v16.0.0." },
+      { "artifact": "PersonaGovernor_CfW_v1.0.1.md", "reason": "Enforcement ownership is Core; CW bolt-on binds Core Persona Governor v16.0.0." },
+      { "artifact": "StackArchitect_CfW_v1.0.1.md", "reason": "Routing ownership is Core; CW bolt-on binds Core Stack Architect v16.0.0." },
+      { "artifact": "PTR_Specification_CfW_v1.0.1.md", "reason": "PTR schema ownership is Core; CW bolt-on binds Core PTR Specification v16.0.0. Any fiction-specific PTR overlay is expressed in fiction-state-model-v16.0.0.md as a specialization that declares Core dependency." },
+      { "artifact": "AntiAISignatureReview_CfW_v1.0.1.md (as fork)", "reason": "Migrated as extension anti-ai-fiction-naturalness-v16.0.0.md declaring Core dependency; no fork." },
+      { "artifact": "BindTemplate_CfW_v1.0.1.json (as v15-shaped instance)", "reason": "Superseded by v16-shaped bind/creative-writing-bind-template-v16.0.0.json conforming to Core extension contract." },
+      { "artifact": "Editing_Preferences_v1.2.md (as CW-scoped)", "reason": "Universal editing discipline; owned by Core editing-discipline-v16.0.0.md. CfW-shipped copy is subsumed into Core." },
+      { "artifact": "User_Voice_and_Style_Reference_v1.0.0.md (CfW copy)", "reason": "User-specific; deferred to Tier-2 User Profile (not built this task)." },
+      { "artifact": "user-response-behavior-profile.md (CfW copy)", "reason": "User-specific; deferred to Tier-2 User Profile (not built this task)." },
+      { "artifact": "Manifest_CoSyn_for_Writing_v1.0.1.json (as v1.0.1 manifest)", "reason": "Superseded by v16-shaped creative-writing-package-manifest-v16.0.0.json." },
+      { "artifact": "README_CoSyn_for_Writing_v1.0.1.md (as CfW README)", "reason": "Superseded by README-creative-writing-v16.0.0.md." }
+    ]
+  }
+}

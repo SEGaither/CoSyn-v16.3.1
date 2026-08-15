@@ -1,0 +1,633 @@
+{
+  "artifact_id": "source-classification-map",
+  "artifact_version": "1.0.0",
+  "generated_utc": "2026-08-13T00:00:00Z",
+  "authority": "CoSyn-v16.0.0 hierarchical planning continuation state v1.0.0",
+  "source_freeze_reference": "build/manifests/source-freeze-manifest.json",
+  "classification_scheme": {
+    "content_types": [
+      "universal_constitutional",
+      "universal_enforcement",
+      "universal_routing",
+      "universal_subordinate_spec",
+      "universal_extension_contract",
+      "universal_editing_discipline",
+      "universal_anti_ai_gate",
+      "universal_mode_registry",
+      "universal_binding_manifest",
+      "user_specific_response",
+      "user_specific_voice_style",
+      "user_specific_operating_profile",
+      "user_specific_editing_preference",
+      "project_specific_canon",
+      "writing_active_persona_governance",
+      "writing_extension_of_core_capability",
+      "writing_specific_canon_framework",
+      "writing_specific_workflow",
+      "writing_specific_state_model",
+      "writing_specific_pcr",
+      "writing_specific_template_or_schema",
+      "writing_specific_bind_template",
+      "subordinate_reference_material",
+      "package_metadata",
+      "stale_or_redundant",
+      "binary_docx_reference"
+    ],
+    "migration_dispositions": [
+      "retain_in_core",
+      "move_to_tier2_interface_only",
+      "move_to_creative_writing_bolt_on",
+      "retain_as_subordinate_reference",
+      "exclude_as_redundant_dup_of_core",
+      "exclude_as_obsolete_legacy",
+      "replace_through_v16_redesign",
+      "defer_to_tier2_package_not_built_this_task",
+      "defer_to_tier3_package_not_built_this_task"
+    ]
+  },
+  "cgs_source": {
+    "root": "D:\\cosyn-gov\\Chat-gov-files\\cosyn-latest-update-cgs-v15\\CoSyn-v15-2",
+    "files": [
+      {
+        "filename": "anti_ai_signature_gate_skill.md",
+        "declared_version": "N/A (embedded skill)",
+        "sha256": "7b8430d2f0e7220b974ad35b01878f7a8950da65e0ef2d3be2a8db37ab8c331d (per SHA256SUMS)",
+        "content_type": "universal_anti_ai_gate",
+        "capabilities": [
+          "anti-ai-signature-gate.detection",
+          "anti-ai-signature-gate.rewrite-rules",
+          "anti-ai-signature-gate.pre-emission-checks",
+          "anti-ai-signature-gate.blocking-conditions"
+        ],
+        "authority_type": "universal skill governing human-facing writing outputs",
+        "dependencies": [],
+        "duplicates_or_overlaps": [
+          "CfW/AntiAISignatureReview_CfW_v1.0.1.md (extension of, not duplicate: adds fiction naturalness standard)"
+        ],
+        "disposition": "retain_in_core",
+        "v16_target": "CoSyn-v16.0.0/anti-ai-signature-gate-v16.0.0.md",
+        "material_changes": "Preserve gate mechanics verbatim. Update authority-chain references to v16. Frame as Core capability that CW bolt-on extends via fiction-naturalness standard."
+      },
+      {
+        "filename": "bindngo_v1.4.2_CGS_15.0.2.json",
+        "declared_version": "1.4.2",
+        "content_type": "universal_binding_manifest",
+        "capabilities": [
+          "package-binding.authority-relationship",
+          "package-binding.schema-compatibility",
+          "package-binding.canonical-turn-lifecycle-binding"
+        ],
+        "authority_type": "package composition/binding for CGS v15",
+        "dependencies": ["CGS_v15.0.2.md", "PersonaGovernor_v2.5.2.md", "StackArchitect_v2.4.2_verified.md", "PTR_Specification_v1.1.0.md (STALE — actual is v1.2.2)", "mode_registry_v1.0.1.md (STALE — actual is v1.2.2)"],
+        "stale_semantic_declarations": true,
+        "duplicates_or_overlaps": ["BindTemplate_v1.5.2_CGS_15.0.2.json"],
+        "disposition": "replace_through_v16_redesign",
+        "v16_target": "CoSyn-v16.0.0/bind/cosyn-v16-bind-template-v16.0.0.json",
+        "material_changes": "Redesign as v16 extension contract. Old bindng+bindtemplate collapsed into single composition specification. Explicit dependency versions, capability declarations, authority ceiling, fail-closed behavior for conflict detection."
+      },
+      {
+        "filename": "BindTemplate_v1.5.2_CGS_15.0.2.json",
+        "declared_version": "1.5.2",
+        "content_type": "universal_binding_manifest",
+        "capabilities": ["package-binding.template", "package-binding.subordinate-spec-declaration"],
+        "authority_type": "flat governance package template",
+        "dependencies": ["identical stale set to bindngo"],
+        "stale_semantic_declarations": true,
+        "duplicates_or_overlaps": ["bindngo_v1.4.2_CGS_15.0.2.json (near-total structural overlap)"],
+        "disposition": "replace_through_v16_redesign",
+        "v16_target": "CoSyn-v16.0.0/bind/cosyn-v16-bind-template-v16.0.0.json",
+        "material_changes": "Collapsed with bindngo into single v16 composition contract per architectural simplification."
+      },
+      {
+        "filename": "CANONICAL_MANIFEST_v1.2.2.json",
+        "declared_version": "1.2.2",
+        "content_type": "package_metadata",
+        "capabilities": ["package-metadata.subordinate-spec-hash-binding"],
+        "authority_type": "canonical subordinate-spec binding manifest",
+        "dependencies": ["PTR_Specification_v1.2.2.md", "mode_registry_v1.2.2.md"],
+        "stale_semantic_declarations": false,
+        "duplicates_or_overlaps": ["PACKAGE_MANIFEST.json (overlapping scope; PACKAGE_MANIFEST is stale)"],
+        "disposition": "replace_through_v16_redesign",
+        "v16_target": "CoSyn-v16.0.0/manifests/canonical-manifest-v16.0.0.json",
+        "material_changes": "Regenerated for v16 file set with true hashes; unified with package manifest into single v16 manifest system."
+      },
+      {
+        "filename": "CGS_v15.0.2.md",
+        "declared_version": "15.0.2",
+        "sha256": "57bd57fad9bedff83619e3c9a071dbaa8c1df9025fd32c766c8d449b86c85339",
+        "content_type": "universal_constitutional",
+        "capabilities": [
+          "constitutional.core-design-principles",
+          "constitutional.ptr-principles-cp1-cp7",
+          "constitutional.canonical-turn-lifecycle",
+          "constitutional.execution-model",
+          "constitutional.governance-gates (ICC ASTG BSG EDH ECFD EAC RAPS CCD AGE TPP PG SIG UISIG)",
+          "constitutional.failure-classification-class0",
+          "constitutional.probabilistic-robustness-layer (OSCL EGR CIT UFRS SSCS GFCLC)",
+          "constitutional.evaluation-harness-layer",
+          "constitutional.telemetry-authority",
+          "constitutional.governance-comparison-mode",
+          "constitutional.governance-regression-detector",
+          "constitutional.intended-outcomes"
+        ],
+        "authority_type": "constitutional root — governs all subordinate specifications",
+        "dependencies": ["PTR_Specification_v1.1.0 (STALE — actual is v1.2.2)"],
+        "stale_semantic_declarations": true,
+        "internal_inconsistencies": ["Document ID footer says v15.0.1 but header says v15.0.2 with v15.0.2 patch note appended after footer"],
+        "disposition": "retain_in_core",
+        "v16_target": "CoSyn-v16.0.0/cosyn-constitution-v16.0.0.md",
+        "material_changes": "Migrate CGS -> CoSyn Governance Stack renaming to CoSyn Core Constitution. Update all subordinate spec references to correct v16 versions. Correct document-ID drift. Rename PTR principles CP1-CP7 as constitutional. Anchor telemetry authority to Core. Frame Tier-2/Tier-3/bolt-on binding position as extension contract. Remove any user-specific residue. Preserve substantive governance semantics verbatim except where v16 architecture explicitly requires redesign."
+      },
+      {
+        "filename": "Editing_Preferences.md",
+        "declared_version": "1.1 (implied)",
+        "sha256": "2f24a2caa7720f873f5f5ce8069d87746a93558d0079fb7b3d4c6cfb70106e3d",
+        "content_type": "universal_editing_discipline",
+        "capabilities": [
+          "editing.create-edit-review-modes",
+          "editing.canonical-source-rule",
+          "editing.delta-discipline",
+          "editing.preservation-rule",
+          "editing.regression-check",
+          "editing.repair-rule",
+          "editing.source-code-mental-model"
+        ],
+        "authority_type": "universal editing discipline (structural, not user-preference)",
+        "dependencies": [],
+        "duplicates_or_overlaps": ["CfW/Editing_Preferences_v1.2.md (later version of same universal discipline)"],
+        "disposition": "retain_in_core",
+        "v16_target": "CoSyn-v16.0.0/editing-discipline-v16.0.0.md",
+        "material_changes": "Take v1.2 (CfW) semantics as the more evolved variant. Consolidate into single Core editing discipline. Remove filename framing as 'preferences' since content is structural discipline, not user preference. User-specific editing preferences (verbosity, format opinions) belong in Tier 2 (deferred, not built this task)."
+      },
+      {
+        "filename": "mode_registry_v1.2.2.md",
+        "declared_version": "1.2.2",
+        "content_type": "universal_mode_registry",
+        "capabilities": ["mode-registry.schema", "mode-registry.registered-modes", "mode-registry.prohibited-fields", "mode-registry.gate-inheritance", "mode-registry.amendment"],
+        "authority_type": "universal registry of reasoning modes bound alongside Governor",
+        "dependencies": ["PersonaGovernor_v2.5.2 (which references mode_registry_v1.0.1 — stale)"],
+        "stale_semantic_declarations": false,
+        "disposition": "retain_in_core",
+        "v16_target": "CoSyn-v16.0.0/mode-registry-v16.0.0.md",
+        "material_changes": "Preserve 4 registered modes verbatim. Update authority references to v16 Core Constitution / Governor / Architect. Registered-mode set (domain_insider, risk_auditor, compliance_platform_normative, dual_track_labeled) is retained unchanged. Writing-specific modes belong in CW bolt-on's own mode-extension registry."
+      },
+      {
+        "filename": "PACKAGE_MANIFEST.json",
+        "content_type": "stale_or_redundant",
+        "authority_type": "flat package listing",
+        "stale_semantic_declarations": true,
+        "notes": "PACKAGE_MANIFEST is materially stale — references PTR_Specification_v1.1.0.md and mode_registry_v1.0.1.md while actual files are v1.2.2. Also omits CANONICAL_MANIFEST_v1.2.2.json, User_Voice_and_Style_Reference_v1.0.0.md, user-response-behavior-profile.md, and SHA256SUMS.txt.",
+        "disposition": "replace_through_v16_redesign"
+      },
+      {
+        "filename": "PersonaGovernor_v2.5.2.md",
+        "declared_version": "2.5.2",
+        "sha256": "c07d683ebfd7a61788127b179eda2b8eb6a1ff350e870b26e12774e69075da80",
+        "content_type": "universal_enforcement",
+        "capabilities": [
+          "enforcement.prap-gate",
+          "enforcement.ptr-enforcement-gate",
+          "enforcement.presentation-gate-option-labeling",
+          "enforcement.presentation-gate-persona-headers",
+          "enforcement.presentation-gate-unlabeled-alternatives",
+          "enforcement.presentation-gate-usable-path",
+          "enforcement.presentation-gate-ui-instruction-integrity",
+          "enforcement.source-fidelity",
+          "enforcement.bias-transparency",
+          "enforcement.drift-detection",
+          "enforcement.psd1",
+          "enforcement.pcr-scope-enforcement",
+          "enforcement.scp-output-minimality",
+          "enforcement.default-safe-binding",
+          "enforcement.finalization-gate",
+          "enforcement.advisory-tip-gate",
+          "enforcement.closure-handler-nfar-eos",
+          "enforcement.trace-this",
+          "enforcement.halting-conditions",
+          "enforcement.mode-lock-integrity",
+          "enforcement.pcr-strict-mode",
+          "enforcement.telemetry-gate",
+          "enforcement.compatibility-aliases"
+        ],
+        "authority_type": "enforcement profile subordinate to Core Constitution",
+        "dependencies": ["CGS v15.0.2 (parent constitution)", "PTR_Specification_v1.1.0 (STALE — actual v1.2.2)", "Mode Registry v1.0.1 (STALE — actual v1.2.2)"],
+        "stale_semantic_declarations": true,
+        "disposition": "retain_in_core",
+        "v16_target": "CoSyn-v16.0.0/persona-governor-v16.0.0.md",
+        "material_changes": "Preserve enforcement semantics verbatim. Update all version pins to v16 authorities. Update compatibility aliases (CRS -> PCR aliases retained for historical/legacy references only). Frame subordinate to CoSyn Core Constitution v16.0.0."
+      },
+      {
+        "filename": "PTR_Specification_v1.2.2.md",
+        "declared_version": "1.2.2",
+        "content_type": "universal_subordinate_spec",
+        "capabilities": [
+          "ptr.authority-and-subordination",
+          "ptr.terminology (PTR/TPR/PCR/CRS/CurrentPTRState/PTRledger/finalized-snapshot/user-visible-emission)",
+          "ptr.canonical-turn-lifecycle-reference",
+          "ptr.record-types (state_change/no_material_change/closure/halt/correction/recovery)",
+          "ptr.turn-1-bootstrap",
+          "ptr.record-schema-and-conditional-fields",
+          "ptr.current-ptr-state-schema",
+          "ptr.classification-dimensions (authority/lifecycle/disposition/reuse/protection/retention/classification-status)",
+          "ptr.state-delta-schema",
+          "ptr.permitted-state-transitions",
+          "ptr.state-transition-precedence",
+          "ptr.archive-reasons",
+          "ptr.rejection-guards-and-protected-item-handling",
+          "ptr.telemetry-fields",
+          "ptr.render-controls",
+          "ptr.no-chain-of-thought-exposure",
+          "ptr.selective-retrieval",
+          "ptr.correction-and-supersession",
+          "ptr.pcr-candidate-and-promotion",
+          "ptr.failure-semantics-and-recovery",
+          "ptr.halt-conditions",
+          "ptr.schema-compatibility",
+          "ptr.terminology-migration"
+        ],
+        "authority_type": "subordinate specification bound by Core Constitution; owns PTR record and state schemas",
+        "dependencies": ["Core Constitution", "Persona Governor (enforcer)", "Stack Architect (router)", "BindNGo / Bind Template (version pin)"],
+        "stale_semantic_declarations": false,
+        "disposition": "retain_in_core",
+        "v16_target": "CoSyn-v16.0.0/ptr-specification-v16.0.0.md",
+        "material_changes": "Update authority-chain references to v16 Core / Governor / Architect / Bind. Version alignment through v16 compatibility statement. Preserve schema semantics verbatim. PCR promotion framework (which is Core-owned per PTR spec §20) stays; writing-specific PCR schemas belong in CW bolt-on."
+      },
+      {
+        "filename": "Response_Instructions_v1.1.md",
+        "declared_version": "1.1",
+        "sha256": "828f3c710ccd6e7768bb3a67d81d67f666caf33f3e9d4d65270263af44649339",
+        "content_type": "user_specific_response",
+        "capabilities": ["user-response.mm-mode", "user-response.output-mode-triggers", "user-response.cognitive-flow-rules", "user-response.usable-path-protocol", "user-response.correction-signals", "user-response.priority"],
+        "authority_type": "user response/style preference profile",
+        "duplicates_or_overlaps": ["user-preferences.md", "user-response-behavior-profile.md"],
+        "disposition": "defer_to_tier2_package_not_built_this_task",
+        "v16_target": "Tier-2 User Profile (not built this task) — Core defines Tier-2 binding position only",
+        "material_changes": "Excluded from Core per approved plan. Excluded from Creative Writing bolt-on. Preserved untouched at source. Reserved for future Tier-2 build."
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "content_type": "stale_or_redundant",
+        "stale_semantic_declarations": true,
+        "notes": "Hash file references old filenames PTR_Specification_v1.1.0.md and mode_registry_v1.0.1.md — actual files are v1.2.2. Superseded in v16 by build/manifests/integrity-manifest-v16.0.0.json.",
+        "disposition": "replace_through_v16_redesign"
+      },
+      {
+        "filename": "StackArchitect_v2.4.2_verified.md",
+        "declared_version": "2.4.2",
+        "sha256": "35a2d716df53123838b65c98c059a946cffb151dc07570fb1f0491845e46c0c1",
+        "content_type": "universal_routing",
+        "capabilities": [
+          "architecture.scope-and-authority-precedence",
+          "architecture.stack-composition-rules",
+          "architecture.routing-discipline (one persona per turn, telemetry, ui-schema, canonical-lifecycle, PTR routing)",
+          "architecture.artifact-classification",
+          "architecture.non-bypassable-gate-routing",
+          "architecture.deployment-hardening-routing",
+          "architecture.state-and-version-hygiene",
+          "architecture.cgs-pipeline-routing",
+          "architecture.mode-lock-integrity"
+        ],
+        "authority_type": "routing/precedence profile subordinate to Constitution and Governor",
+        "dependencies": ["Constitution", "Governor", "PTR Spec", "Mode Registry", "Bind"],
+        "stale_semantic_declarations": true,
+        "disposition": "retain_in_core",
+        "v16_target": "CoSyn-v16.0.0/stack-architect-v16.0.0.md",
+        "material_changes": "Preserve routing semantics verbatim. Update version pins. Confirm CGS > Governor > Architect authority relationship. Reference v16 subordinate specifications and mode registry."
+      },
+      {
+        "filename": "User_Voice_and_Style_Reference_v1.0.0.md",
+        "declared_version": "1.0.0",
+        "sha256": "f956aa00f33e6594dfb3bd83dae9c6a7caa08ffef07e170bbf29da264a90c161",
+        "content_type": "user_specific_voice_style",
+        "capabilities": ["user-voice.core-voice", "user-voice.sentence-and-paragraph-style", "user-voice.narrative-prose-standard", "user-voice.dialogue", "user-voice.character-agency-interiority", "user-voice.pacing-and-causality", "user-voice.humor-tone", "user-voice.anti-ai-signature-exclusions", "user-voice.revision-rules", "user-voice.working-governance-voice", "user-voice.preferred-output-test"],
+        "authority_type": "user voice/style reference (main body) + project-specific addendum (Saint Beneath Blackwater)",
+        "duplicates_or_overlaps": ["Identical file also present in CfW/User_Voice_and_Style_Reference_v1.0.0.md (hash-identical)"],
+        "disposition": "defer_to_tier2_package_not_built_this_task",
+        "v16_target": "Tier-2 User Profile (main body) + Tier-3 project canon (Addendum A)",
+        "material_changes": "Excluded from Core. Excluded from Creative Writing bolt-on. Preserved at source. Reserved for future Tier-2/Tier-3."
+      },
+      {
+        "filename": "user-preferences.md",
+        "sha256": "64d77d4843bc3ed0e1172cb60543730435f9026ced53c66cdc18f0c17c3a521f",
+        "content_type": "user_specific_operating_profile",
+        "capabilities": ["user-preferences.core-operating-principle", "user-preferences.absolute-requirements", "user-preferences.corrections", "user-preferences.preferred-output-types", "user-preferences.communication-style", "user-preferences.system-framing", "user-preferences.execution-expectations", "user-preferences.failure-modes-to-avoid", "user-preferences.success-pattern"],
+        "authority_type": "user operating profile",
+        "disposition": "defer_to_tier2_package_not_built_this_task",
+        "v16_target": "Tier-2 User Profile",
+        "material_changes": "Excluded from Core. Excluded from Creative Writing bolt-on. Reserved."
+      },
+      {
+        "filename": "user-response-behavior-profile.md",
+        "sha256": "693908d2dff28a3919c5163fd73e1fb20d553b866b3e0274f386568e42beaca9",
+        "content_type": "user_specific_operating_profile",
+        "duplicates_or_overlaps": ["Hash-identical duplicate of file in CfW source root"],
+        "disposition": "defer_to_tier2_package_not_built_this_task",
+        "v16_target": "Tier-2 User Profile"
+      }
+    ]
+  },
+  "cfw_source": {
+    "root": "D:\\cosyn-gov\\Chat-gov-files\\Cosyn-for-writing-cfw\\CoSyn_for_Writing_v1.0.0_InSession\\package\\package-v2",
+    "files": [
+      {
+        "filename": "AntiAISignatureReview_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_extension_of_core_capability",
+        "capabilities": [
+          "anti-ai-fiction.retargeting-to-fiction-prose",
+          "anti-ai-fiction.naturalness-standard-11-items",
+          "anti-ai-fiction.application-discipline",
+          "anti-ai-fiction.failure-handling",
+          "anti-ai-fiction.scope-adjacent-emissions",
+          "anti-ai-fiction.author-control-interaction"
+        ],
+        "authority_type": "writing-specific extension of Core Anti-AI Signature Gate; explicitly does NOT fork base gate",
+        "core_capability_extended": "anti-ai-signature-gate (Core-owned)",
+        "duplicates_or_overlaps": [],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/anti-ai-fiction-naturalness-v16.0.0.md",
+        "material_changes": "Preserve retargeting semantics and 11-item naturalness standard verbatim. Declare dependency on Core anti-ai-signature-gate capability. Do not duplicate base gate mechanics. Update authority chain to v16."
+      },
+      {
+        "filename": "BindTemplate_CfW_v1.0.1.json",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_bind_template",
+        "capabilities": ["bind.writing-specific-composition-template"],
+        "authority_type": "writing-specific bind template (Tier 4 CfW)",
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/bind/creative-writing-bind-template-v16.0.0.json",
+        "material_changes": "Regenerate as v16-compliant bind template that binds Core + creative-writing bolt-on; declares dependency on CoSyn-v16.0.0 Core; declares bolt-on capabilities supplied; states authority ceiling (subordinate to Core)."
+      },
+      {
+        "filename": "CGS_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "stale_or_redundant",
+        "authority_type": "writing-specific specialization of Core CGS — under v16, Core owns constitutional governance; CfW does not own a parallel constitution",
+        "core_capability_duplicated": "constitutional.* (all)",
+        "disposition": "exclude_as_redundant_dup_of_core",
+        "notes": "Preserved at source. Superseded in v16 by Core CoSyn Constitution v16.0.0. CfW bolt-on binds Core Constitution, does not fork it. Any writing-specific constitutional-adjacent semantics migrate to the CW bolt-on's specialization overlay files (already covered by FictionControlBoundaryModel, FictionStateModel)."
+      },
+      {
+        "filename": "DefaultGenericFictionProfile_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_template_or_schema",
+        "capabilities": ["fiction-profile.default-template"],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/templates/default-generic-fiction-profile-v16.0.0.md"
+      },
+      {
+        "filename": "DefaultGenericWorkflowProfile_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_template_or_schema",
+        "capabilities": ["fiction-workflow-profile.default-template", "fiction-workflow-profile.conditional-artifact-activation"],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/templates/default-generic-workflow-profile-v16.0.0.md"
+      },
+      {
+        "filename": "Editing_Critique_Preservation_Conversion_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_workflow",
+        "capabilities": ["writing-editing.editing-protocol", "writing-editing.critique-protocol", "writing-editing.preservation-checkpoint-protocol", "writing-editing.conversion-protocol"],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/writing-editing-critique-preservation-conversion-v16.0.0.md",
+        "material_changes": "Preserve writing-editorial protocols. Declare dependency on Core editing-discipline capability; do not duplicate Core CREATE/EDIT/REVIEW modes."
+      },
+      {
+        "filename": "Editing_Preferences_v1.2.md",
+        "declared_version": "1.2",
+        "content_type": "universal_editing_discipline",
+        "capabilities": ["editing.* (superset of CGS-side Editing_Preferences)"],
+        "duplicates_or_overlaps": ["CGS/Editing_Preferences.md (older v1.1)"],
+        "disposition": "retain_in_core",
+        "v16_target": "CoSyn-v16.0.0/editing-discipline-v16.0.0.md",
+        "material_changes": "Take v1.2 as the more evolved variant. Consolidate into Core editing-discipline. Not writing-specific despite location in CfW directory."
+      },
+      {
+        "filename": "EXCLUDED_RUNTIME_CONCEPTS_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "subordinate_reference_material",
+        "capabilities": ["cfw.runtime-exclusion-boundary"],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/reference/excluded-runtime-concepts-v16.0.0.md",
+        "notes": "Reference material documenting CfW's non-runtime scope; kept as bolt-on subordinate reference."
+      },
+      {
+        "filename": "FictionControlBoundaryModel_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_canon_framework",
+        "capabilities": ["fiction-control.controller-categories", "fiction-control.agency-scopes", "fiction-control.sole-authority-discipline", "fiction-control.handoff-rules", "fiction-control.character-voice-discipline"],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/fiction-control-boundary-model-v16.0.0.md"
+      },
+      {
+        "filename": "FictionProjectProfileSchema_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_template_or_schema",
+        "capabilities": ["fiction-project-profile.schema"],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/schemas/fiction-project-profile-schema-v16.0.0.md"
+      },
+      {
+        "filename": "FictionStateModel_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_state_model",
+        "capabilities": ["fiction-state.classification", "fiction-state.source-separation", "fiction-state.materiality", "fiction-state.counters", "fiction-state.continuity-precedence"],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/fiction-state-model-v16.0.0.md"
+      },
+      {
+        "filename": "FictionWorkflowProfileSchema_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_template_or_schema",
+        "capabilities": ["fiction-workflow-profile.schema"],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/schemas/fiction-workflow-profile-schema-v16.0.0.md"
+      },
+      {
+        "filename": "Generic_First_Manuscript_Draft_Protocol_v1.0.0.docx",
+        "declared_version": "1.0.0",
+        "content_type": "binary_docx_reference",
+        "disposition": "retain_as_subordinate_reference",
+        "v16_target": "creative-writing-v16.0.0/reference/Generic_First_Manuscript_Draft_Protocol_v1.0.0.docx",
+        "notes": "Binary artifact preserved byte-for-byte as subordinate writing reference material; not derived, not modified."
+      },
+      {
+        "filename": "IMPLEMENTATION_REPORT_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "subordinate_reference_material",
+        "disposition": "retain_as_subordinate_reference",
+        "v16_target": "creative-writing-v16.0.0/reference/implementation-report-legacy-cfw-v1.0.1.md",
+        "notes": "Historical CfW v1.0.1 implementation report; preserved as bolt-on subordinate reference."
+      },
+      {
+        "filename": "Manifest_CoSyn_for_Writing_v1.0.1.json",
+        "declared_version": "1.0.1",
+        "content_type": "package_metadata",
+        "disposition": "replace_through_v16_redesign",
+        "v16_target": "creative-writing-v16.0.0/manifests/creative-writing-manifest-v16.0.0.json"
+      },
+      {
+        "filename": "ModeRegistry_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_workflow",
+        "capabilities": ["cfw-mode-registry.twelve-phases", "cfw-mode-registry.transition-matrix", "cfw-mode-registry.phase-to-artifact-activation-map"],
+        "authority_type": "writing-specific twelve-phase workflow mode registry",
+        "core_capability_extended": "mode-registry (Core-owned)",
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/writing-mode-registry-v16.0.0.md",
+        "material_changes": "Retain twelve fiction phases and transition matrix as writing-specific mode extension. Declare dependency on Core Mode Registry (base mode set: domain_insider, risk_auditor, compliance_platform_normative, dual_track_labeled). Writing modes extend Core registry per Core's mode-registry amendment mechanism (with user ratification). Does not restate Core mode-registry schema; inherits it."
+      },
+      {
+        "filename": "PCR_Protocol_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_pcr",
+        "capabilities": ["pcr-writing.twenty-section-schema", "pcr-writing.explicit-command-only-trigger", "pcr-writing.crc-subordination"],
+        "authority_type": "writing-specific PCR protocol extending Core PCR promotion framework",
+        "core_capability_extended": "ptr.pcr-candidate-and-promotion (Core-owned)",
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/fiction-pcr-protocol-v16.0.0.md",
+        "material_changes": "Retain twenty-section fiction PCR schema. Declare dependency on Core PCR promotion framework (owned by PTR Specification v16.0.0 §20). Do not restate Core PCR ratification rules."
+      },
+      {
+        "filename": "PCR_Template_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_template_or_schema",
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/templates/fiction-pcr-template-v16.0.0.md"
+      },
+      {
+        "filename": "PersonaGovernor_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "stale_or_redundant",
+        "core_capability_duplicated": "enforcement.* (all)",
+        "disposition": "exclude_as_redundant_dup_of_core",
+        "notes": "CfW's own Persona Governor is superseded by Core Persona Governor v16.0.0. CW bolt-on binds Core Governor. Writing-specific enforcement (fiction naturalness gate, silent-governance defaults, Q-2 surface conditions) that is genuinely non-overlapping migrates into the CW bolt-on's fiction-editing artifact set. Base enforcement semantics do not fork."
+      },
+      {
+        "filename": "PTR_Specification_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "stale_or_redundant",
+        "core_capability_duplicated": "ptr.* (all)",
+        "disposition": "exclude_as_redundant_dup_of_core",
+        "notes": "CfW's PTR specialization (fiction disposition mapping, counter orthogonality, critique materiality) — under v16, the fiction disposition mapping migrates into the CW bolt-on as a specialization overlay declaring dependency on Core PTR Specification v16.0.0. The base PTR schema does not fork."
+      },
+      {
+        "filename": "README_CoSyn_for_Writing_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "subordinate_reference_material",
+        "disposition": "retain_as_subordinate_reference",
+        "v16_target": "creative-writing-v16.0.0/README-creative-writing-v16.0.0.md",
+        "material_changes": "Rewrite as v16 CW bolt-on README (overview, adoption, activation model, index)."
+      },
+      {
+        "filename": "RecoveryProtocol_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_workflow",
+        "capabilities": ["fiction-recovery.correction-rollback", "fiction-recovery.continuity-repair", "fiction-recovery.recovery-family-trigger"],
+        "authority_type": "writing-specific recovery workflow extending Core PTR §21 recovery semantics",
+        "core_capability_extended": "ptr.failure-semantics-and-recovery",
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/fiction-recovery-protocol-v16.0.0.md",
+        "material_changes": "Retain fiction-specific recovery triggers and continuity-repair rules. Declare dependency on Core PTR §21."
+      },
+      {
+        "filename": "SessionInitialization_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "writing_specific_workflow",
+        "capabilities": ["fiction-session-init.initialization-instructions", "fiction-session-init.binding-validation", "fiction-session-init.activation-bootstrap"],
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/fiction-session-initialization-v16.0.0.md"
+      },
+      {
+        "filename": "SOURCE_LINEAGE_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "subordinate_reference_material",
+        "disposition": "retain_as_subordinate_reference",
+        "v16_target": "creative-writing-v16.0.0/reference/source-lineage-legacy-cfw-v1.0.1.md"
+      },
+      {
+        "filename": "StackArchitect_CfW_v1.0.1.md",
+        "declared_version": "1.0.1",
+        "content_type": "stale_or_redundant",
+        "core_capability_duplicated": "architecture.* (all)",
+        "disposition": "exclude_as_redundant_dup_of_core",
+        "notes": "CfW's Architect specialization (phase/mode discipline, non-collapsibility, minimum-necessary artifact activation) — under v16, phase-registry semantics migrate into the CW bolt-on's writing-mode-registry-v16.0.0.md. Base routing does not fork."
+      },
+      {
+        "filename": "User_Voice_and_Style_Reference_v1.0.0.md",
+        "declared_version": "1.0.0",
+        "sha256": "f956aa00f33e6594dfb3bd83dae9c6a7caa08ffef07e170bbf29da264a90c161",
+        "content_type": "user_specific_voice_style",
+        "duplicates_or_overlaps": ["CGS-side User_Voice_and_Style_Reference (hash-identical)"],
+        "disposition": "defer_to_tier2_package_not_built_this_task"
+      },
+      {
+        "filename": "user-response-behavior-profile.md",
+        "sha256": "693908d2dff28a3919c5163fd73e1fb20d553b866b3e0274f386568e42beaca9",
+        "content_type": "user_specific_operating_profile",
+        "duplicates_or_overlaps": ["CGS-side user-response-behavior-profile.md (hash-identical)"],
+        "disposition": "defer_to_tier2_package_not_built_this_task"
+      },
+      {
+        "filename": "writing-team-personas-v2.2.0.md",
+        "declared_version": "2.2.0",
+        "content_type": "writing_active_persona_governance",
+        "capabilities": [
+          "writing-personas.integrated-operating-model",
+          "writing-personas.seven-professional-personas (Author-Authority/Writer/Novelist/Editor/Publisher/Reader/Screenwriter)",
+          "writing-personas.authority-and-role-separation",
+          "writing-personas.persona-selection-and-active-persona-state",
+          "writing-personas.analysis-vs-modification-authority",
+          "writing-personas.persona-handoffs",
+          "writing-personas.conflict-resolution",
+          "writing-personas.role-bleed-prohibitions",
+          "writing-personas.existing-artifact-rule",
+          "writing-personas.source-and-authorship-rule",
+          "writing-personas.project-invocation-pattern",
+          "writing-personas.completion-standard"
+        ],
+        "authority_type": "full writing-team persona governance (seven personas) — task-specific to creative writing",
+        "disposition": "move_to_creative_writing_bolt_on",
+        "v16_target": "creative-writing-v16.0.0/writing-team-personas-v16.0.0.md (active governance) + creative-writing-v16.0.0/reference/bookfox-batch-03-purview-reference-v16.0.0.md (subordinate reference)",
+        "material_changes": "SPLIT the file. Retain sections 0-13 and Appendix B (synchronization notes) as active persona governance. Separate Appendix A (Bookfox Batch 03 reference) into subordinate reference material, per approved plan. Preserve full persona governance semantics verbatim — the plan explicitly rejected a lean/abridged persona version."
+      }
+    ]
+  },
+  "consolidated_capability_summary": {
+    "core_capabilities": [
+      "constitutional (all CoSyn constitutional principles, CP1-CP7, execution model, canonical turn lifecycle, failure classification, probabilistic robustness, evaluation harness, telemetry authority)",
+      "enforcement (PRAP, PTR Enforcement, Presentation, Finalization, Advisory, Closure, Mode Lock, PCR Strict, Telemetry Gate)",
+      "architecture (authority precedence, routing discipline, non-bypassable gate routing, deployment hardening routing, state/version hygiene, CGS pipeline routing)",
+      "ptr (record types, schemas, classifications, transitions, telemetry, recovery, PCR promotion framework)",
+      "mode-registry (schema, registered universal modes, gate inheritance, amendment)",
+      "editing-discipline (CREATE/EDIT/REVIEW, canonical source, delta, preservation, regression, repair)",
+      "anti-ai-signature-gate (base detection and rewrite rules for human-facing writing outputs)",
+      "extension-contract (bolt-on binding, capability declaration, authority ceiling, fail-closed conflict handling)",
+      "package-manifest-and-integrity (canonical manifest, integrity hashes, provenance)"
+    ],
+    "creative_writing_bolt_on_capabilities": [
+      "writing-personas (full seven-persona governance, active-persona state, handoffs, conflict precedence, role-bleed prohibitions, existing-artifact rule, completion standard)",
+      "fiction-control (controller categories, agency scopes, sole authority, handoff rules, character voice)",
+      "fiction-state (classification, source separation, materiality, counters, continuity precedence)",
+      "fiction-project-profile-schema",
+      "fiction-workflow-profile-schema (twelve fiction phases)",
+      "writing-editing-critique-preservation-conversion (editing protocol families for fiction)",
+      "anti-ai-fiction-naturalness (11-item standard extending Core anti-ai-signature-gate to fiction prose)",
+      "fiction-recovery (fiction-specific triggers extending Core PTR §21 recovery)",
+      "fiction-pcr (twenty-section fiction PCR schema extending Core PCR framework)",
+      "fiction-session-initialization",
+      "writing-mode-registry (twelve fiction phases extending Core Mode Registry)",
+      "creative-writing-bind-template (binds Core + CW bolt-on)",
+      "fiction-templates (default project/workflow profile, PCR template, bind template)",
+      "subordinate-reference-material (bookfox-batch-03, excluded-runtime-concepts, legacy implementation report, source lineage, generic first manuscript draft protocol .docx)"
+    ],
+    "tier_2_deferred_capabilities_not_built": [
+      "user-response-preferences (Response_Instructions, user-preferences, user-response-behavior-profile)",
+      "user-voice-and-style (User_Voice_and_Style_Reference main body)",
+      "user-editing-preferences (any editing preferences that are user-specific rather than universal structural discipline)"
+    ],
+    "tier_3_deferred_capabilities_not_built": [
+      "project-canon (User_Voice_and_Style_Reference Addendum A — Saint Beneath Blackwater)"
+    ]
+  }
+}

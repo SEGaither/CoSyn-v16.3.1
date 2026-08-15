@@ -1,0 +1,144 @@
+{
+  "report_id": "optimization-report",
+  "report_version": "1.0.0",
+  "generated_utc": "2026-08-13T00:00:00Z",
+  "purpose": "Serial optimization pass log for the CoSyn-v16.0.0 build. Records candidate optimizations, evaluation against material-net-positive criteria, and convergence.",
+  "material_net_positive_criteria": [
+    "improves accuracy",
+    "improves authority clarity",
+    "improves semantic synchronization",
+    "improves deterministic composition",
+    "improves validation strength",
+    "improves context efficiency",
+    "does not introduce new ambiguity",
+    "does not introduce new coupling",
+    "does not introduce new authority overlap",
+    "preserves or improves governance semantics"
+  ],
+  "passes": [
+    {
+      "pass": 1,
+      "candidates": [
+        {
+          "candidate_id": "P1C1_merge_canonical_manifest_with_package_manifest",
+          "candidate": "Merge canonical-manifest-v16.0.0.json into core-package-manifest-v16.0.0.json to reduce manifest count.",
+          "evaluation": "Canonical manifest is a lightweight semantic index (filename+role). Package manifest is the extension-contract-conformant full manifest with capabilities and dependencies. Separation-of-concerns supports distinct consumers (subordinate-spec index vs composition-time validator). Merging would blur roles and reduce clarity.",
+          "material_net_positive": false,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C2_merge_integrity_manifest_with_canonical_manifest",
+          "candidate": "Merge integrity-manifest with canonical-manifest.",
+          "evaluation": "Same separation-of-concerns argument. Integrity manifest is machine-checkable hash-verification; canonical manifest is semantic index. Merging would couple two orthogonal validation concerns.",
+          "material_net_positive": false,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C3_scrub_interior_legacy_references_in_copied_cfw_files",
+          "candidate": "Edit interior content of copied CfW files to replace legacy CfW/CGS references with v16 references.",
+          "evaluation": "Would violate the deterministic 'preserve interior content verbatim' pattern documented in migration-provenance-map. The v16 authority header prepend explicitly supersedes interior legacy references for composition purposes; interior legacy references are historical (source-basis fidelity). Content edits would introduce a large defect surface and compound derivation errors.",
+          "material_net_positive": false,
+          "material_net_negative": true,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C4_split_writing_editing_conversion_by_phase",
+          "candidate": "Split writing-editing-critique-preservation-conversion-v16.0.0.md into four artifacts (one per phase).",
+          "evaluation": "Source ships as a single artifact and internal cross-references are integrated. Splitting would introduce new coupling (four new inter-file references) without governance benefit. The single artifact's activation model is phase-conditional per activation rules, which handles selective activation without file split.",
+          "material_net_positive": false,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C5_add_machine_readable_applicability_predicate",
+          "candidate": "Add structured applicability_predicate field to CW bolt-on manifest for machine-checkable applicability instead of human-readable sentence.",
+          "evaluation": "CoSyn v16 in-chat governance is interpreted (not executable). Machine predicates would imply an executable enforcement layer that the Constitution §19 Non-Runtime Statement explicitly disclaims. Scope creep beyond approved architecture.",
+          "material_net_positive": false,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C6_expand_migration_provenance_group_entry_into_per_file_entries",
+          "candidate": "Expand the grouped provenance entry for copied CfW files into individual per-file entries.",
+          "evaluation": "Group entry names every affected file explicitly plus notes shared treatment. Source-classification-map already provides per-file source_basis. Splitting into individual entries would duplicate identical semantic-change text 15+ times without adding traceability. No material gain.",
+          "material_net_positive": false,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C7_add_pcr_promotion_boundary_note_to_ptr_spec_section_20",
+          "candidate": "PTR Specification §20 needs an explicit note that bolt-on PCR extensions must declare Core dependency and cannot restate promotion ratification rules.",
+          "evaluation": "Already present in ptr-specification-v16.0.0.md §20 last paragraph and §21.9. Confirmed in Phase 8 semantic sync.",
+          "material_net_positive": false,
+          "already_present": true,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C8_add_composition_gate_to_governor",
+          "candidate": "Persona Governor needs an explicit Package-Composition Gate section referencing extension contract §5.",
+          "evaluation": "Already present as persona-governor-v16.0.0.md §12. Confirmed in Phase 5 derivation.",
+          "material_net_positive": false,
+          "already_present": true,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C9_add_composition_routing_to_architect",
+          "candidate": "Stack Architect needs Package-Composition Routing sub-route.",
+          "evaluation": "Already present as stack-architect-v16.0.0.md §6 (Package-composition routing) and §9 (Deployment Hardening Routing / Package-Composition Routing).",
+          "material_net_positive": false,
+          "already_present": true,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C10_add_composition_failure_to_class0",
+          "candidate": "Constitution §7 Class 0 list needs 'silent composition of governance packages when duplicate ownership / unauthorized extension / cross-bolt-on conflict is present.'",
+          "evaluation": "Already present as the final entry in cosyn-constitution-v16.0.0.md §7 Class 0 Failures.",
+          "material_net_positive": false,
+          "already_present": true,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C11_defer_tier2_binding_position_check_to_bolt_on_load_time",
+          "candidate": "Defer Tier-2 binding position enforcement to bolt-on load time rather than composition-time.",
+          "evaluation": "Extension contract §4 step 2 explicitly enforces Tier-2 binding at composition time. Deferring would weaken fail-closed behavior. Rejected as governance-weakening.",
+          "material_net_positive": false,
+          "material_net_negative": true,
+          "applied": false
+        },
+        {
+          "candidate_id": "P1C12_add_composition_test_coverage_map",
+          "candidate": "Add an explicit cross-reference table between extension-contract §5 categories and adversarial-test-report tests.",
+          "evaluation": "adversarial-test-report already lists each test's 'category' field aligned to §5 categories, plus a test_summary.categories_covered enumeration and test_summary.all_extension_contract_5_categories_covered = true assertion. Adequate coverage transparency. No material gain.",
+          "material_net_positive": false,
+          "applied": false
+        }
+      ],
+      "applied_changes_count": 0,
+      "pass_conclusion": "No material net-positive changes identified after serial review of the complete generated architecture across governance redundancy, authority clarity, capability boundaries, provenance completeness, validation coverage, semantic synchronization, deterministic composition, and context efficiency."
+    },
+    {
+      "pass": 2,
+      "candidates": [],
+      "pass_conclusion": "Pass 1 applied no changes; Pass 2 operates against identical state. No new opportunities. Convergence."
+    }
+  ],
+  "convergence_conclusion": "no_material_gain",
+  "convergence_criteria_met": [
+    "no governance redundancy without single-owner justification",
+    "no duplicate or ambiguous authority",
+    "no unnecessary context weight beyond substantive governance semantics",
+    "no stale semantic references (all v15 references confined to §0 Provenance blocks that legitimately cite source basis)",
+    "no unnecessary cross-package coupling (each bolt-on extension declares single Core dependency)",
+    "no weak applicability boundaries (CW bolt-on applicability_declaration + fail-closed wrong-context load)",
+    "no weak fail-closed behavior (all 12 extension-contract §5 categories enumerated and structurally enforced)",
+    "no avoidable dependency complexity",
+    "no naming/version inconsistencies (Phase 8 semantic sync confirmed)",
+    "no provenance gaps (migration-provenance-map covers every derived artifact)",
+    "no unneeded legacy residue (all legacy dup-of-Core artifacts excluded; interior legacy references in copied files documented as historical + superseded by v16 authority header)",
+    "no duplicated explanatory text carrying governing semantics",
+    "no missing validation coverage (20 adversarial tests + 6 structural validations)"
+  ],
+  "notes": [
+    "Optimization loop reaches no-gain convergence after Pass 1. Pass 2 confirms.",
+    "Serial-only execution constraint honored throughout: no subagents, no parallel processing, no concurrent workers.",
+    "Compute conservation was applied after accuracy protection: source reads were serialized in lex order; derivation used preservation-plus-modification (CGS Editing Discipline §Core Rule) so writing-team-personas and bookfox reference retain source content byte-substantively.",
+    "No composition-time defect, semantic-desynchronization defect, hash-mismatch defect, missing-provenance defect, or unauthorized-extension defect detected across Core and CW bolt-on."
+  ]
+}

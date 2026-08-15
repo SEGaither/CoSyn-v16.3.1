@@ -1,0 +1,546 @@
+{
+  "audit_metadata": {
+    "auditor": "Independent global invariant auditor — Claude Sonnet 4.6",
+    "role": "Read-only defect identification. No repairs performed.",
+    "date_utc": "2026-08-15T00:00:00Z",
+    "workspace": "D:\\cosyn-gov\\Chat-gov-files\\CGS-v16\\CoSyn-v16.3.0",
+    "baseline_reference": "_baseline-v16.1.0",
+    "governed_set_audited": [
+      "anti-ai-signature-gate-v16.3.0.md",
+      "canonical-manifest-v16.3.0.json",
+      "capability-ownership-map-v16.3.0.json",
+      "core-package-manifest-v16.3.0.json",
+      "cosyn-constitution-v16.3.0.md",
+      "cosyn-v16-bind-template-v16.3.0.json",
+      "cosyn-v16-extension-contract-v16.3.0.md",
+      "editing-discipline-v16.3.0.md",
+      "integrity-manifest-v16.3.0.json",
+      "mode-registry-v16.3.0.md",
+      "persona-governor-v16.3.0.md",
+      "ptr-specification-v16.3.0.md",
+      "stack-architect-v16.3.0.md"
+    ],
+    "preflight_context_consumed": [
+      "_preflight/semantic-falsification-report-v16.3.0.json",
+      "_preflight/deterministic-validation-report-v16.3.0.json",
+      "_preflight/defect-ledger-v16.3.0.json",
+      "_preflight/change-map-v16.3.0.json"
+    ],
+    "method": "Preflight context read first. All 13 governed files read in full. Deterministic Grep/Bash searches for all version references, filename references, and JSON field values. Capability ownership map verified computationally against core-package-manifest. Manifest file lists cross-validated computationally. Semantic classification applied only for categorization of findings."
+  },
+
+  "jdocmunch_index_used": true,
+  "deterministic_occurrence_inventory_complete": true,
+  "bounded_document_retrievals_performed": 0,
+  "direct_full_file_reads_performed": 13,
+  "direct_full_file_read_justifications": [
+    {
+      "file": "ptr-specification-v16.3.0.md",
+      "reason": "Primary defect site. jCodemunch does not index Markdown. Direct read required to verify all version references and normative content."
+    },
+    {
+      "file": "cosyn-constitution-v16.3.0.md",
+      "reason": "Primary defect site. Direct read required to verify §16 and §18 stale version references."
+    },
+    {
+      "file": "core-package-manifest-v16.3.0.json",
+      "reason": "Primary defect site. Direct read required to verify compatibility.cosyn_core_generation field."
+    },
+    {
+      "file": "canonical-manifest-v16.3.0.json",
+      "reason": "Required for I05 manifest synchronization. Direct read for cross-validation."
+    },
+    {
+      "file": "integrity-manifest-v16.3.0.json",
+      "reason": "Required for I05 manifest synchronization. Direct read for cross-validation."
+    },
+    {
+      "file": "capability-ownership-map-v16.3.0.json",
+      "reason": "Required for I06 capability ownership. Direct read and computational verification."
+    },
+    {
+      "file": "cosyn-v16-bind-template-v16.3.0.json",
+      "reason": "Required for I01, I05 version identity and manifest synchronization checks."
+    },
+    {
+      "file": "cosyn-v16-extension-contract-v16.3.0.md",
+      "reason": "Required for I04 filename reference inventory and NEW-011 verification."
+    },
+    {
+      "file": "persona-governor-v16.3.0.md",
+      "reason": "Required for I01, I07 authority hierarchy checks."
+    },
+    {
+      "file": "stack-architect-v16.3.0.md",
+      "reason": "Required for I01, I07 authority hierarchy checks."
+    },
+    {
+      "file": "mode-registry-v16.3.0.md",
+      "reason": "Required for I01, I02, I03 version and task-specific reference checks."
+    },
+    {
+      "file": "editing-discipline-v16.3.0.md",
+      "reason": "Required for I01, I02 version reference checks."
+    },
+    {
+      "file": "anti-ai-signature-gate-v16.3.0.md",
+      "reason": "Required for I01, I02 version reference checks."
+    }
+  ],
+
+  "invariant_results": {
+    "I01": {
+      "status": "FAIL",
+      "description": "Every normative active package, artifact, schema, compatibility, dependency, and self-identification reference must consistently identify the active v16.3.0 generation where applicable.",
+      "findings": [
+        "ptr-specification-v16.3.0.md §23 line 617: '(16.1.0)' in schema version body claim contradicts header Schema Version: 16.3.0. Normative schema identity contradiction.",
+        "ptr-specification-v16.3.0.md §23 line 620: compatibility statement lists all peer artifacts as v16.1.0. Active normative identity claim.",
+        "core-package-manifest-v16.3.0.json line 61: compatibility.cosyn_core_generation = '16.1.0' while required_core_generation = '16.3.0'. Internal version identity contradiction.",
+        "ptr-specification-v16.3.0.md §2 line 42: 'CoSyn Constitution v16.1.0' — stale active version reference in normative terminology definition.",
+        "ptr-specification-v16.3.0.md §3 line 47: 'CoSyn Constitution v16.1.0' — stale active version reference in normative section.",
+        "ptr-specification-v16.3.0.md §14.2 line 431: 'CoSyn Constitution v16.1.0' — stale active version reference in normative enforcement statement.",
+        "ptr-specification-v16.3.0.md §22 line 611: 'CoSyn Constitution v16.1.0' — stale active version reference in normative halt condition.",
+        "cosyn-constitution-v16.3.0.md §16 line 660: 'none are shipped in v16.1.0' — stale active version reference in normative compatibility statement.",
+        "cosyn-constitution-v16.3.0.md §18 line 686: 'No adapter packages are shipped in v16.1.0' — stale active version reference in normative legacy boundary.",
+        "PASS: All other 13 governed files declare Schema Version: 16.3.0 in headers and footers.",
+        "PASS: bind-template schema_compatibility fields all reference 16.3.0.",
+        "PASS: capability-ownership-map, canonical-manifest, integrity-manifest all declare v16.3.0 identity.",
+        "PASS: All governed-file header authority_ceiling references correctly identify v16.3.0 artifacts.",
+        "PASS: ptr-specification §0 provenance section references v16.0.0 and v16.1.0 correctly as historical derivation chain — not stale active references."
+      ],
+      "defect_ids": ["NEW-001", "NEW-002", "NEW-003", "NEW-004", "NEW-005", "NEW-006", "NEW-007", "NEW-008", "NEW-009"]
+    },
+
+    "I02": {
+      "status": "FAIL",
+      "description": "Every v16.0.x, v16.1.0, and v16.2.0 reference must be classified as legitimate historical/provenance/reference, legitimate compatibility/migration reference, or stale active reference.",
+      "findings": [
+        "STALE ACTIVE — ptr-specification §23 line 617: '(16.1.0)' is an active normative schema version claim, not historical provenance.",
+        "STALE ACTIVE — ptr-specification §23 line 620: compatibility statement names v16.1.0 peer artifacts in normative section, not §0 provenance.",
+        "STALE ACTIVE — core-package-manifest compatibility.cosyn_core_generation = '16.1.0': active field in package manifest.",
+        "STALE ACTIVE — ptr-specification §2 line 42: 'CoSyn Constitution v16.1.0' in normative terminology definition.",
+        "STALE ACTIVE — ptr-specification §3 line 47: 'CoSyn Constitution v16.1.0' in normative turn lifecycle section.",
+        "STALE ACTIVE — ptr-specification §14.2 line 431: 'CoSyn Constitution v16.1.0' in normative protected-item retirement rule.",
+        "STALE ACTIVE — ptr-specification §22 line 611: 'CoSyn Constitution v16.1.0' in normative halt condition.",
+        "STALE ACTIVE — constitution §16 line 660: 'v16.1.0' in normative compatibility statement.",
+        "STALE ACTIVE — constitution §18 line 686: 'v16.1.0' in normative legacy boundary statement.",
+        "LEGITIMATE HISTORICAL — All v16.0.0 and v16.1.0 references in §0 Provenance sections across all 13 files: correctly preserved as artifact derivation history.",
+        "LEGITIMATE HISTORICAL — persona-governor §0 line 28: 'cosyn-v16-extension-contract-v16.1.0.md' describes v16.1.0 derivation step — §0 provenance preserved.",
+        "LEGITIMATE HISTORICAL — ptr-specification §0 line 17: 'retargeted to v16.0.0' provenance note.",
+        "LEGITIMATE HISTORICAL — constitution §0 lines 25, 29, 30: v16.0.0 and v16.1.0 references describe derivation chain.",
+        "LEGITIMATE ILLUSTRATIVE — extension-contract §7 line 133: 'cosyn-constitution-v16.0.0.md' is a naming-convention example, not an active reference.",
+        "LEGITIMATE ILLUSTRATIVE — extension-contract §7 line 134: 'creative-writing-v16.0.0' is a naming-convention example.",
+        "NO v16.2.0 references found in any governed file. Forbidden source correctly excluded.",
+        "integrity-manifest repair_state field: 'v16.1.0 baseline placeholders' is accurate informative metadata noting placeholder null values — not a stale active reference."
+      ],
+      "defect_ids": ["NEW-001", "NEW-002", "NEW-003", "NEW-004", "NEW-005", "NEW-006", "NEW-007", "NEW-008", "NEW-009"]
+    },
+
+    "I03": {
+      "status": "FAIL",
+      "description": "Core must contain no hard-coded task-specific bolt-on filename, version, or governance dependency unless explicitly required by the generic extension architecture.",
+      "findings": [
+        "VIOLATION — ptr-specification-v16.3.0.md §20 line 511: 'fiction-pcr-protocol-v16.0.0.md' is a versioned task-specific bolt-on filename hard-coded in Core normative PCR extension guidance. D07 authorized removal of such references; this was missed.",
+        "PASS — mode-registry-v16.3.0.md §5: removed the D06-defective 'writing-mode-registry-v16.0.0.md' hard-coded reference. §5 now states generic bolt-on extension requirement only.",
+        "PASS — cosyn-v16-bind-template-v16.3.0.json: example_shipped_this_generation is null; example_note is a generic description. No task-specific bolt-on filename.",
+        "PASS — cosyn-v16-extension-contract-v16.3.0.md §7: naming convention examples are illustrative generic patterns, not operative normative bolt-on dependencies.",
+        "PASS — anti-ai-signature-gate §14: generic bolt-on extension rules only; no specific bolt-on filename versioned reference.",
+        "PASS — editing-discipline §11: generic bolt-on extension rules only.",
+        "PASS — All other governed files: no task-specific versioned bolt-on filenames in normative operative text.",
+        "NOTE — constitution §0 provenance line 24: 'owned by the applicable creative-writing task-specific bolt-on' is generic descriptive reference to a bolt-on category, not a versioned filename. This replaced the D07-defective 'creative-writing-v16.0.0' reference from v16.1.0 baseline."
+      ],
+      "defect_ids": ["NEW-010"]
+    },
+
+    "I04": {
+      "status": "FAIL",
+      "description": "Every normative governed-file reference must resolve to the actual active filename or to an explicitly valid generic interface reference.",
+      "findings": [
+        "VIOLATION — cosyn-v16-extension-contract-v16.3.0.md §1 line 33: references 'capability-ownership-map.json' (versionless). Actual shipped artifact is 'capability-ownership-map-v16.3.0.json'. Reference does not resolve to actual filename.",
+        "VIOLATION — cosyn-v16-extension-contract-v16.3.0.md §2 line 55: references 'capability-ownership-map' (unversioned, no extension). Same issue as above.",
+        "PASS — All 13 governed files verified: explicit artifact-to-artifact cross-references (cosyn-constitution-v16.3.0.md, persona-governor-v16.3.0.md, etc.) resolve correctly to active filenames.",
+        "PASS — bind-template core_bindings and sync fields: all reference versioned v16.3.0 filenames that exist.",
+        "PASS — integrity-manifest entries: all 12 filenames resolve to existing governed files.",
+        "PASS — canonical-manifest files array: all 13 names resolve to existing governed files.",
+        "PASS — core-package-manifest manifest_files: all 13 names resolve to existing governed files.",
+        "PASS — integrity_hashes_reference field: 'integrity-manifest-v16.3.0.json' resolves correctly.",
+        "CONTEXTUAL NOTE — extension-contract §2 line 60 'manifest_files entries except itself': this is a normative policy statement, not a file reference. Valid.",
+        "CONTEXTUAL NOTE — The versionless 'capability-ownership-map.json' references in extension-contract §1 and §2 predate D09 which introduced the versioned artifact. The references were not updated when the new versioned artifact was created."
+      ],
+      "defect_ids": ["NEW-011"]
+    },
+
+    "I05": {
+      "status": "FAIL",
+      "description": "Canonical manifest, core package manifest, integrity manifest, ownership map, and extension/binding artifacts must agree on package identity, version, governed file set, dependencies, compatibility, authority, status.",
+      "findings": [
+        "VIOLATION — core-package-manifest compatibility.cosyn_core_generation = '16.1.0' contradicts required_core_generation = '16.3.0'. Internal contradiction in same manifest.",
+        "PASS — Canonical manifest 13 files exactly match core-package-manifest 13 manifest_files (computationally verified — Compare-Object shows MATCH).",
+        "PASS — Integrity manifest 12 entries correctly match canonical 13 minus integrity-manifest itself (computationally verified — exactly 1 file in canonical not in integrity: integrity-manifest-v16.3.0.json).",
+        "PASS — capability-ownership-map 35 capabilities exactly match core-package-manifest capabilities_supplied 35 identifiers (computationally verified — 0 missing in either direction, 0 duplicates).",
+        "PASS — All manifests declare package_identity CoSyn-v16.3.0 or equivalent v16.3.0 identity.",
+        "PASS — All manifests declare status PROPOSED / UNDER REFINEMENT.",
+        "PASS — All manifests declare authority_ceiling cosyn-constitution-v16.3.0.md.",
+        "PASS — bind-template schema_compatibility fields reference 16.3.0 minimums for all peer artifacts.",
+        "PASS — bind-template sync fields all reference v16.3.0 artifact identities.",
+        "PASS — capability-ownership-map authority_ceiling = cosyn-constitution-v16.3.0.md. Consistent.",
+        "PASS — integrity-manifest package_identity = CoSyn-v16.3.0. Consistent."
+      ],
+      "defect_ids": ["NEW-003"]
+    },
+
+    "I06": {
+      "status": "PASS",
+      "description": "Each governing capability must have one authoritative owner. Report duplicates, gaps, or conflicting ownership claims.",
+      "findings": [
+        "PASS — capability-ownership-map declares exactly 35 capability identifiers.",
+        "PASS — core-package-manifest capabilities_supplied declares exactly 35 capability identifiers.",
+        "PASS — Computationally verified: 0 capabilities in manifest not in map. 0 capabilities in map not in manifest. 0 duplicate capability_ids in ownership map.",
+        "PASS — Each capability_id appears exactly once in the ownership map.",
+        "PASS — Each owning artifact is a v16.3.0 governed Core artifact.",
+        "PASS — Authority levels assigned in ownership map are consistent with canonical-manifest authority_level declarations.",
+        "PASS — capability-ownership-map role declaration: 'informative metadata only; it is not a governance authority.' Non-governance role maintained.",
+        "PASS — No other governed artifact claims authoritative ownership of any capability identifier that conflicts with the ownership map.",
+        "PASS — Governor §2 explicitly states it may not restate PTR field schema (owned by ptr-specification) or Mode Registry schema (owned by mode-registry). No authority duplication."
+      ],
+      "defect_ids": []
+    },
+
+    "I07": {
+      "status": "PASS",
+      "description": "No lower artifact may restate, weaken, fork, or compete with higher authority. Core must remain universal governance only.",
+      "findings": [
+        "PASS — Authority chain Constitution > Governor > Architect stated consistently across all 13 governed files.",
+        "PASS — persona-governor §2: 'May not: Reinterpret the Constitution; Weaken the Constitution; Expand scope beyond the Constitution.' Correct subordination.",
+        "PASS — stack-architect §3 Non-Goals: 'does not: Override, reinterpret, or weaken Persona Governor enforcement.' Correct.",
+        "PASS — stack-architect §4: Authority Precedence correctly ordered. Constitution > Governor > Architect.",
+        "PASS — stack-architect cannot override Governor per §4 authority relationship note.",
+        "PASS — All subordinate artifacts (ptr-specification, mode-registry, editing-discipline, anti-ai-signature-gate, extension-contract) declare authority_ceiling as cosyn-constitution-v16.3.0.md.",
+        "PASS — No governed artifact introduces a new authority level.",
+        "PASS — No governed artifact forks or competes with constitutional gate definitions.",
+        "PASS — Bolt-on layer correctly gated by applicability declaration per extension-contract §4 step 3.",
+        "PASS — Tier-2 binding position reserved but no Tier-2 artifact ships; no lower-layer attempt to override Core.",
+        "PASS — Governor §25 Telemetry Gate: correctly defers PTR field schema to ptr-specification by versioned reference; does not restate.",
+        "PASS — ptr-specification §1: 'cannot override the Constitution, the current explicit user instruction, or any higher-authority ratified artifact.' Correct.",
+        "PASS — mode-registry §2: inherits all gates unconditionally; no bypass/exemption/override fields permitted."
+      ],
+      "defect_ids": []
+    },
+
+    "I08": {
+      "status": "PASS",
+      "description": "Bolt-on compatibility, dependency, ownership-conflict, and composition rules must fail closed where deterministic resolution is unavailable.",
+      "findings": [
+        "PASS — extension-contract §4 composition algorithm is deterministic and fail-closed at every step.",
+        "PASS — extension-contract §5 conflict categories are enumerated and all result in fail-closed behavior.",
+        "PASS — constitution §7 Class 0 failures include 'Silent composition of governance packages when duplicate ownership, unauthorized extension, or cross-bolt-on conflict is present.' Fail-closed.",
+        "PASS — Governor §12 Package-Composition Gate: halt composition; emit composition-failure record; do not present partial composition as usable.",
+        "PASS — Governor §21 halting conditions include 'Any package-composition failure category.' Fail-closed.",
+        "PASS — stack-architect §5: 'Mixed-version stacks are prohibited by default; allowed only when an explicit user authorization and an explicitly documented precedence exception are both present.' Fail-closed default.",
+        "PASS — integrity-manifest failure_behavior: missing/malformed/stale integrity data all fail closed. 'halt package load' for trust_anchor_mismatch.",
+        "PASS — extension-contract §4 step 1: if integrity check fails, 'composition fails closed.'",
+        "PASS — core-package-manifest minimum_compatible_bolt_on_generation: '16.x (mixed-version stacks require explicit authorization)'. Consistent with stack-architect §5.",
+        "PASS — No fail-open paths found in composition semantics across governed set."
+      ],
+      "defect_ids": []
+    },
+
+    "I09": {
+      "status": "FAIL",
+      "description": "Identify contradictory normative requirements within or across governed artifacts.",
+      "findings": [
+        "CONTRADICTION — ptr-specification-v16.3.0.md §23 line 617 states 'PTR Specification schema version is declared at the top of this file (16.1.0)' while the header declares Schema Version: 16.3.0. These are directly contradictory normative claims about the same artifact's identity in the same file.",
+        "CONTRADICTION — ptr-specification-v16.3.0.md §23 line 620 compatibility statement asserts compatibility with v16.1.0 peer artifacts while the artifact identity is v16.3.0 and all peer artifacts are v16.3.0. The compatibility claim asserts the wrong generation.",
+        "CONTRADICTION — core-package-manifest-v16.3.0.json: required_core_generation = '16.3.0' (meaning only Core 16.3.0 is acceptable) while compatibility.cosyn_core_generation = '16.1.0' (naming a prior generation as the Core generation). Internal self-contradiction.",
+        "PASS — All other normative requirement pairs across governed files are consistent.",
+        "PASS — Authority chain statements are mutually consistent across constitution, governor, architect.",
+        "PASS — PTR failure semantics are consistent across constitution §4, governor §11, stack-architect §6, ptr-specification §21.",
+        "PASS — Non-interference rule (CP7) is stated consistently without contradiction in constitution, governor, ptr-specification, stack-architect.",
+        "PASS — Mode registration requirements are consistent between governor §22 and mode-registry §3.",
+        "PASS — Canonical turn lifecycle step ordering is consistent across constitution §4, governor §11, stack-architect §6."
+      ],
+      "defect_ids": ["NEW-001", "NEW-002", "NEW-003"]
+    },
+
+    "I10": {
+      "status": "PASS",
+      "description": "Compare changed active files against _baseline-v16.1.0. Report semantic changes not justified by D01-D10, authorized v16.3.0 mechanical synchronization, or required derived capability-ownership map.",
+      "findings": [
+        "PASS — semantic-falsification-report scope_drift_found: [] (empty). No unauthorized scope drift detected by prior audit.",
+        "PASS — Baseline directory verified: 12 files present, matching the 12 promoted governed files.",
+        "PASS — capability-ownership-map-v16.3.0.json is a new artifact authorized by D09 (required_new_files). Not a scope-drift item.",
+        "PASS — All D07 changes verified as being within D07 authorized scope (remove operational hard-coded task-specific bolt-on filenames). The one D07 miss (fiction-pcr-protocol) is a failure to complete the authorized repair, not an unauthorized change.",
+        "PASS — D06 fix in mode-registry §5: removed writing-mode-registry-v16.0.0.md hard-coded reference, replaced with generic bolt-on extension requirement. Within D06 authorized scope.",
+        "PASS — D04 fix in extension-contract §2: non-self-hashing integrity model clarification. Within D04 authorized scope.",
+        "PASS — D05 fix in core-package-manifest, stack-architect, constitution, bind-template: mixed-version compatibility policy synchronized. Within D05 authorized scope.",
+        "PASS — D08 fixes: status declarations synchronized to 'PROPOSED / UNDER REFINEMENT' across all 11 files in D08 scope.",
+        "PASS — D09 fix: capability-ownership-map-v16.3.0.json created as informative metadata; references added in appropriate manifests. Within D09 authorized scope.",
+        "PASS — D10 fix: canonical-manifest scope updated, notes field updated. Within D10 authorized scope.",
+        "PASS — No v16.2.0 content detected in any governed file.",
+        "PASS — §0 Provenance sections preserved verbatim per protected-remainder policy.",
+        "PASS — No unauthorized semantic governance changes introduced. All identified defects are failures to complete authorized repairs (missed mechanical sync), not unauthorized insertions."
+      ],
+      "defect_ids": []
+    }
+  },
+
+  "complete_defect_ledger": [
+    {
+      "id": "NEW-001",
+      "invariant": "I01, I02, I09",
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§23 Schema Compatibility, line 617",
+      "severity": "blocking",
+      "description": "§23 states: 'PTR Specification schema version is declared at the top of this file (16.1.0)'. The schema version declared at the top of the file is 16.3.0. Internal factual contradiction in the normative schema compatibility section.",
+      "evidence": "Direct read of ptr-specification-v16.3.0.md line 617: '- PTR Specification schema version is declared at the top of this file (`16.1.0`).'; header line 3: '**Schema Version:** 16.3.0'. These are contradictory normative claims. Confirmed by Grep pattern v16\\.\\d+\\.\\d+ on the file.",
+      "classification": "missed_mechanical_sync"
+    },
+    {
+      "id": "NEW-002",
+      "invariant": "I01, I02, I09",
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§23 Schema Compatibility, line 620",
+      "severity": "blocking",
+      "description": "Compatibility statement reads: 'PTR Specification v16.1.0 is compatible with CoSyn Constitution v16.1.0, Persona Governor v16.1.0, Stack Architect v16.1.0, Core Bind Template v16.1.0, Mode Registry v16.1.0, Extension Contract v16.1.0.' All named artifact versions should be v16.3.0.",
+      "evidence": "Direct read of ptr-specification-v16.3.0.md line 620. §23 is the normative schema compatibility section. Every peer artifact named is v16.3.0 in the active governed set. The compatibility statement asserts compatibility with the prior v16.1.0 generation, not the current v16.3.0 generation.",
+      "classification": "missed_mechanical_sync"
+    },
+    {
+      "id": "NEW-003",
+      "invariant": "I01, I02, I05, I09",
+      "file": "core-package-manifest-v16.3.0.json",
+      "location": "compatibility object, line 61",
+      "severity": "blocking",
+      "description": "compatibility.cosyn_core_generation = '16.1.0' while required_core_generation = '16.3.0' (line 9). Two fields within the same manifest assert contradictory Core generation values.",
+      "evidence": "Direct read of core-package-manifest-v16.3.0.json: line 9 'required_core_generation': '16.3.0'; line 61 'cosyn_core_generation': '16.1.0'. Confirmed by Grep pattern 16\\.1\\.0 on the file showing line 61.",
+      "classification": "missed_mechanical_sync"
+    },
+    {
+      "id": "NEW-004",
+      "invariant": "I01, I02",
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§2 Terminology, line 42",
+      "severity": "nonblocking",
+      "description": "Finalized response snapshot definition references 'CoSyn Constitution v16.1.0 Canonical Turn Lifecycle step 4-5'. Should be v16.3.0.",
+      "evidence": "Direct read of ptr-specification-v16.3.0.md line 42: '**Finalized response snapshot** — the immutable response snapshot produced by the Presentation Gate (CoSyn Constitution v16.1.0 Canonical Turn Lifecycle step 4–5).'",
+      "classification": "missed_mechanical_sync"
+    },
+    {
+      "id": "NEW-005",
+      "invariant": "I01, I02",
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§3 Canonical Turn Lifecycle (Reference), line 47",
+      "severity": "nonblocking",
+      "description": "'This specification inherits the canonical turn lifecycle from CoSyn Constitution v16.1.0.' Should be v16.3.0.",
+      "evidence": "Direct read of ptr-specification-v16.3.0.md line 47.",
+      "classification": "missed_mechanical_sync"
+    },
+    {
+      "id": "NEW-006",
+      "invariant": "I01, I02",
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§14.2 Protected-item retirement, line 431",
+      "severity": "nonblocking",
+      "description": "'Silent retirement is prohibited (Class 0 failure per CoSyn Constitution v16.1.0).' Should be v16.3.0.",
+      "evidence": "Direct read of ptr-specification-v16.3.0.md line 431.",
+      "classification": "missed_mechanical_sync"
+    },
+    {
+      "id": "NEW-007",
+      "invariant": "I01, I02",
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§22 Halt Conditions, line 611",
+      "severity": "nonblocking",
+      "description": "'attempted silent modification of the finalized response snapshot by PTR or telemetry processing (Class 0 per CoSyn Constitution v16.1.0).' Should be v16.3.0.",
+      "evidence": "Direct read of ptr-specification-v16.3.0.md line 611.",
+      "classification": "missed_mechanical_sync"
+    },
+    {
+      "id": "NEW-008",
+      "invariant": "I01, I02",
+      "file": "cosyn-constitution-v16.3.0.md",
+      "location": "§16 Package Identity and Compatibility Statement, line 660",
+      "severity": "nonblocking",
+      "description": "'Adapter packages MAY be authorized explicitly by later versions; none are shipped in v16.1.0.' Should be v16.3.0.",
+      "evidence": "Direct read of cosyn-constitution-v16.3.0.md line 660. Confirmed by Grep pattern v16\\.1\\.0 on the file.",
+      "classification": "missed_mechanical_sync"
+    },
+    {
+      "id": "NEW-009",
+      "invariant": "I01, I02",
+      "file": "cosyn-constitution-v16.3.0.md",
+      "location": "§18 Legacy Boundary, line 686",
+      "severity": "nonblocking",
+      "description": "'No adapter packages are shipped in v16.1.0.' Should be v16.3.0.",
+      "evidence": "Direct read of cosyn-constitution-v16.3.0.md line 686. Confirmed by Grep pattern v16\\.1\\.0 on the file.",
+      "classification": "missed_mechanical_sync"
+    },
+    {
+      "id": "NEW-010",
+      "invariant": "I03",
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§20 PCR-Candidate Behavior and Ratified PCR Promotion, line 511",
+      "severity": "nonblocking",
+      "description": "Versioned bolt-on filename 'fiction-pcr-protocol-v16.0.0.md' remains hard-coded in Core normative text. D07 authorized removal of operational hard-coded task-specific bolt-on filenames; ptr-specification was in D07 allowed_files. This reference was not generalized.",
+      "evidence": "Direct read of ptr-specification-v16.3.0.md line 511: 'e.g., the Creative Writing bolt-on defines a twenty-section fiction PCR schema in `fiction-pcr-protocol-v16.0.0.md`'. §20 is normative PCR extension guidance, not §0 historical provenance. D07 authorized change: 'Remove operational hard-coded task-specific bolt-on filenames/versions.'",
+      "classification": "d07_partial_miss",
+      "note": "Non-blocking in isolation — the extension constraint text correctly limits bolt-on behavior — but constitutes D07 FAIL as a blocking defect combination with the D07 finding."
+    },
+    {
+      "id": "NEW-011",
+      "invariant": "I04",
+      "file": "cosyn-v16-extension-contract-v16.3.0.md",
+      "location": "§1 Governing Rules rule 2 (line 33) and §2 Package Manifest Requirements table (line 55)",
+      "severity": "nonblocking",
+      "description": "Both references name 'capability-ownership-map.json' (versionless) as the authoritative reference for capability ownership. The shipped artifact is named 'capability-ownership-map-v16.3.0.json'. The versionless reference does not resolve to the actual shipped filename.",
+      "evidence": "Direct read of cosyn-v16-extension-contract-v16.3.0.md line 33: 'see `capability-ownership-map.json`'; line 55: 'see capability-ownership-map'. Actual filename confirmed by directory listing and capability-ownership-map-v16.3.0.json read. The change-map confirms the original baseline reference was also versionless — this predates D09.",
+      "classification": "filename_inconsistency"
+    }
+  ],
+
+  "blocking_defects": {
+    "count": 4,
+    "defect_ids": ["NEW-001", "NEW-002", "NEW-003", "NEW-010"],
+    "rationale": {
+      "NEW-001": "Normative schema identity contradiction in the primary schema compatibility section. §23 self-identifies 16.1.0 while the header declares 16.3.0. Governor and Architect schema-version routing reads ptr_schema_version against the bound version; §23 directly instructs an incorrect version. Blocks promotion.",
+      "NEW-002": "Normative compatibility claim in §23 asserts compatibility with v16.1.0 peer artifacts. All peer artifacts are v16.3.0. This asserts the package is compatible with a prior generation, not the current one. Blocks promotion.",
+      "NEW-003": "core-package-manifest internal contradiction: required_core_generation = '16.3.0' and compatibility.cosyn_core_generation = '16.1.0'. A bolt-on reading cosyn_core_generation to validate the Core generation would receive a false value, potentially enabling wrong-version stack assembly. Blocks promotion.",
+      "NEW-010": "D07 authorized repair incomplete. The D07 finding was blocking (D07 FAIL). The repair summary stated 'All operational hard-coded versioned bolt-on filenames removed or generalized' but fiction-pcr-protocol-v16.0.0.md was missed. This defect contributes to the D07 blocking status."
+    }
+  },
+
+  "nonblocking_defects": {
+    "count": 7,
+    "defect_ids": ["NEW-004", "NEW-005", "NEW-006", "NEW-007", "NEW-008", "NEW-009", "NEW-011"]
+  },
+
+  "stale_reference_inventory": [
+    {
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§23, line 617",
+      "text": "PTR Specification schema version is declared at the top of this file (16.1.0)",
+      "classification": "stale_active_reference — normative schema identity claim"
+    },
+    {
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§23, line 620",
+      "text": "Compatibility statement: PTR Specification v16.1.0 is compatible with CoSyn Constitution v16.1.0, Persona Governor v16.1.0, Stack Architect v16.1.0, Core Bind Template v16.1.0, Mode Registry v16.1.0, Extension Contract v16.1.0.",
+      "classification": "stale_active_reference — normative compatibility declaration"
+    },
+    {
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§2 Terminology, line 42",
+      "text": "CoSyn Constitution v16.1.0 Canonical Turn Lifecycle step 4–5",
+      "classification": "stale_active_reference — normative terminology definition"
+    },
+    {
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§3, line 47",
+      "text": "This specification inherits the canonical turn lifecycle from CoSyn Constitution v16.1.0.",
+      "classification": "stale_active_reference — normative section"
+    },
+    {
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§14.2, line 431",
+      "text": "Silent retirement is prohibited (Class 0 failure per CoSyn Constitution v16.1.0).",
+      "classification": "stale_active_reference — normative enforcement statement"
+    },
+    {
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§22, line 611",
+      "text": "attempted silent modification of the finalized response snapshot by PTR or telemetry processing (Class 0 per CoSyn Constitution v16.1.0)",
+      "classification": "stale_active_reference — normative halt condition"
+    },
+    {
+      "file": "core-package-manifest-v16.3.0.json",
+      "location": "compatibility.cosyn_core_generation, line 61",
+      "text": "\"cosyn_core_generation\": \"16.1.0\"",
+      "classification": "stale_active_reference — package identity field"
+    },
+    {
+      "file": "cosyn-constitution-v16.3.0.md",
+      "location": "§16, line 660",
+      "text": "none are shipped in v16.1.0",
+      "classification": "stale_active_reference — normative compatibility statement"
+    },
+    {
+      "file": "cosyn-constitution-v16.3.0.md",
+      "location": "§18, line 686",
+      "text": "No adapter packages are shipped in v16.1.0.",
+      "classification": "stale_active_reference — normative legacy boundary statement"
+    }
+  ],
+
+  "task_specific_reference_inventory": [
+    {
+      "file": "ptr-specification-v16.3.0.md",
+      "location": "§20, line 511",
+      "text": "fiction-pcr-protocol-v16.0.0.md",
+      "classification": "versioned_task_specific_bolt_on_filename_in_core_normative_text — D07 partial miss"
+    }
+  ],
+
+  "governed_filename_reference_inventory": [
+    {
+      "file": "cosyn-v16-extension-contract-v16.3.0.md",
+      "location": "§1 rule 2, line 33",
+      "text": "capability-ownership-map.json",
+      "resolves_to": "capability-ownership-map-v16.3.0.json",
+      "valid": false,
+      "note": "Versionless reference does not resolve to actual shipped versioned filename."
+    },
+    {
+      "file": "cosyn-v16-extension-contract-v16.3.0.md",
+      "location": "§2 table row, line 55",
+      "text": "capability-ownership-map",
+      "resolves_to": "capability-ownership-map-v16.3.0.json",
+      "valid": false,
+      "note": "Unversioned bare name does not resolve to actual shipped filename."
+    },
+    {
+      "file": "ALL 13 governed files — cross-artifact explicit filename references",
+      "location": "headers, authority_ceiling fields, compatibility statements, manifest_files lists",
+      "text": "cosyn-constitution-v16.3.0.md, persona-governor-v16.3.0.md, stack-architect-v16.3.0.md, ptr-specification-v16.3.0.md, mode-registry-v16.3.0.md, editing-discipline-v16.3.0.md, anti-ai-signature-gate-v16.3.0.md, cosyn-v16-extension-contract-v16.3.0.md, cosyn-v16-bind-template-v16.3.0.json, capability-ownership-map-v16.3.0.json, canonical-manifest-v16.3.0.json, integrity-manifest-v16.3.0.json, core-package-manifest-v16.3.0.json",
+      "resolves_to": "Each named file exists in workspace root",
+      "valid": true,
+      "note": "All explicit versioned cross-file references resolve correctly to existing v16.3.0 files."
+    }
+  ],
+
+  "capability_ownership_conflicts": {
+    "duplicates": "NONE — computationally verified (0 duplicate capability_ids in ownership map)",
+    "gaps": "NONE — computationally verified (0 capabilities in core-package-manifest not in ownership map; 0 in ownership map not in manifest)",
+    "conflicts": "NONE — each capability_id has exactly one owning artifact"
+  },
+
+  "manifest_sync_conflicts": [
+    {
+      "conflict_id": "MSC-001",
+      "description": "core-package-manifest-v16.3.0.json: required_core_generation = '16.3.0' contradicts compatibility.cosyn_core_generation = '16.1.0'. Internal manifest self-contradiction.",
+      "severity": "blocking",
+      "defect_id": "NEW-003"
+    },
+    {
+      "conflict_id": "MSC-002",
+      "description": "ptr-specification-v16.3.0.md §23 compatibility statement asserts compatibility with v16.1.0 peer artifacts while all peer artifacts in the governed set are v16.3.0. Cross-artifact compatibility claim mismatch.",
+      "severity": "blocking",
+      "defect_ids": ["NEW-001", "NEW-002"]
+    }
+  ],
+
+  "authority_conflicts": [],
+
+  "scope_drift_findings": [],
+
+  "total_material_defects": 11,
+
+  "audit_complete": true,
+
+  "audit_notes": {
+    "passes_confirmed": "I06 (capability ownership — perfect sync, computationally verified), I07 (authority hierarchy — no violations found), I08 (fail-closed composition — all paths verified), I10 (scope drift — none detected). D01, D02, D03, D04, D05, D06, D08, D09, D10 repairs all independently verified as complete. Manifest file-list synchronization computationally confirmed (canonical=core=MATCH; integrity excludes only self; ownership map = capabilities_supplied).",
+    "primary_failure_cause": "Incomplete mechanical version synchronization during v16.3.0 repair pass. Four blocking defects: (1) ptr-specification §23 schema version body claim still reads 16.1.0; (2) ptr-specification §23 compatibility statement names v16.1.0 peer artifacts; (3) core-package-manifest compatibility.cosyn_core_generation still reads 16.1.0; (4) D07 repair incomplete — fiction-pcr-protocol-v16.0.0.md remains in ptr-specification §20. Seven non-blocking defects: four stale v16.1.0 Constitution version references in ptr-specification body sections, two stale v16.1.0 references in constitution body sections, one versionless capability-ownership-map.json filename reference in extension-contract.",
+    "no_new_defects_beyond_semantic_falsification_report": true,
+    "semantic_falsification_report_fully_confirmed": true,
+    "additional_findings_vs_semantic_falsification_report": "None. Independent audit confirms identical defect set (NEW-001 through NEW-011 and D07 FAIL). No additional defects discovered. All defects in semantic-falsification-report independently verified by direct file read and Grep."
+  }
+}

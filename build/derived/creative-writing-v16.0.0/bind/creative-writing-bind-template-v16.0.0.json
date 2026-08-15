@@ -1,0 +1,133 @@
+{
+  "template_name": "Creative Writing v16 Bolt-On Bind Template",
+  "template_version": "16.0.0",
+  "template_type": "bind_template_bolt_on_instance_of_extension_contract",
+  "status": "PROPOSED / READY FOR CREATOR REVIEW",
+  "package_tier": "bolt_on",
+  "authority_level": "task_specific_bolt_on_composition_instance",
+  "authority_ceiling": "cosyn-constitution-v16.0.0.md",
+  "extension_contract_reference": "cosyn-v16-extension-contract-v16.0.0.md",
+  "core_binding": {
+    "required_core_generation": "16.0.0",
+    "constitution": "cosyn-constitution-v16.0.0.md",
+    "governor": "persona-governor-v16.0.0.md",
+    "architect": "stack-architect-v16.0.0.md",
+    "ptr_specification": "ptr-specification-v16.0.0.md",
+    "mode_registry": "mode-registry-v16.0.0.md",
+    "editing_discipline": "editing-discipline-v16.0.0.md",
+    "anti_ai_signature_gate": "anti-ai-signature-gate-v16.0.0.md",
+    "extension_contract": "cosyn-v16-extension-contract-v16.0.0.md",
+    "core_bind_template": "cosyn-v16-bind-template-v16.0.0.json"
+  },
+  "bolt_on_binding": {
+    "bolt_on_identity": "creative-writing-v16.0.0",
+    "package_manifest": "creative-writing-package-manifest-v16.0.0.json",
+    "always_active_bolt_on_core": [
+      "writing-team-personas-v16.0.0.md",
+      "fiction-control-boundary-model-v16.0.0.md",
+      "fiction-state-model-v16.0.0.md",
+      "writing-mode-registry-v16.0.0.md"
+    ],
+    "phase_conditional_artifacts": [
+      "anti-ai-fiction-naturalness-v16.0.0.md",
+      "writing-editing-critique-preservation-conversion-v16.0.0.md",
+      "fiction-recovery-protocol-v16.0.0.md",
+      "fiction-pcr-protocol-v16.0.0.md"
+    ],
+    "initialization_only_artifacts": [
+      "fiction-session-initialization-v16.0.0.md",
+      "creative-writing-package-manifest-v16.0.0.json"
+    ],
+    "schemas": [
+      "schemas/fiction-project-profile-schema-v16.0.0.md",
+      "schemas/fiction-workflow-profile-schema-v16.0.0.md"
+    ],
+    "templates_on_demand": [
+      "templates/default-generic-fiction-profile-v16.0.0.md",
+      "templates/default-generic-workflow-profile-v16.0.0.md",
+      "templates/fiction-pcr-template-v16.0.0.md"
+    ],
+    "reference_material_informative_only": [
+      "reference/bookfox-batch-03-purview-reference-v16.0.0.md",
+      "reference/excluded-runtime-concepts-v16.0.0.md",
+      "reference/implementation-report-legacy-cfw-v1.0.1.md",
+      "reference/source-lineage-legacy-cfw-v1.0.1.md",
+      "reference/Generic_First_Manuscript_Draft_Protocol_v1.0.0.docx"
+    ]
+  },
+  "capabilities_supplied_by_bolt_on": [
+    "writing-personas.seven-persona-governance",
+    "writing-personas.bookfox-batch-03-purview-reference",
+    "fiction-control.controller-categories-agency-scopes-handoff-rules-character-voice",
+    "fiction-state.classification-source-separation-materiality-continuity",
+    "fiction-project-profile.schema",
+    "fiction-workflow-profile.schema",
+    "writing-editing-critique-preservation-conversion",
+    "fiction-session-initialization",
+    "creative-writing-bind-template",
+    "creative-writing.subordinate-reference"
+  ],
+  "capabilities_extended_by_bolt_on": [
+    {
+      "capability_id": "anti-ai-signature-gate.base-detection-and-rewrite",
+      "core_owner_reference": "anti-ai-signature-gate-v16.0.0.md@16.0.0",
+      "extension_type": "scope_extension",
+      "extension_scope": "Retargets base gate to fiction prose (Active Simulation output, Early Canon Development narrative, Revision output, Editing output). Adds 11-item fiction naturalness standard.",
+      "does_not_modify": ["§4 Primary Failure Pattern", "§5 High-Risk AI Signatures", "§6 Positive Human Signals", "§7 Gate Logic", "§8 Blocking Conditions", "§9 Rewrite Priorities", "§12 Deterministic Rule", "§13.5 Extended Deterministic Rule"],
+      "supplied_by": "anti-ai-fiction-naturalness-v16.0.0.md"
+    },
+    {
+      "capability_id": "ptr.pcr-promotion-framework",
+      "core_owner_reference": "ptr-specification-v16.0.0.md@16.0.0#20",
+      "extension_type": "schema_specialization",
+      "extension_scope": "Twenty-section fiction PCR content schema. Explicit-command-only trigger. CRC subordination. Does not restate promotion ratification rules; does not permit pcr-promoted without pcr_ratification_link.",
+      "does_not_modify": ["Core §20 ratification requirement", "Core §20 pcr_ratification_link semantics"],
+      "supplied_by": "fiction-pcr-protocol-v16.0.0.md"
+    },
+    {
+      "capability_id": "ptr.failure-semantics-and-recovery",
+      "core_owner_reference": "ptr-specification-v16.0.0.md@16.0.0#21",
+      "extension_type": "trigger_addition",
+      "extension_scope": "Fiction-specific recovery-family trigger classifications and continuity-repair rules that consume Core recovery outcomes.",
+      "does_not_modify": ["Core §21.1 Non-interference invariant", "Core §21.4 reconstruction inputs", "Core §21.5 reconstruction acceptance standard", "Core §21.6 failure behavior table"],
+      "supplied_by": "fiction-recovery-protocol-v16.0.0.md"
+    },
+    {
+      "capability_id": "mode-registry.schema-and-base-mode-set",
+      "core_owner_reference": "mode-registry-v16.0.0.md@16.0.0",
+      "extension_type": "mode_addition",
+      "extension_scope": "Twelve fiction phases registered under Core Mode Registry schema. Each inherits all Core gates unconditionally. No prohibited-field usage.",
+      "does_not_modify": ["Core §3 registration schema", "Core §3 prohibited fields", "Core §4 base mode set", "Core §5 bolt-on registry rules"],
+      "supplied_by": "writing-mode-registry-v16.0.0.md"
+    },
+    {
+      "capability_id": "editing-discipline.universal",
+      "core_owner_reference": "editing-discipline-v16.0.0.md@16.0.0",
+      "extension_type": "protocol_specialization",
+      "extension_scope": "Writing-specific editing, critique, preservation-checkpoint, and conversion protocols that use Core editing mechanics.",
+      "does_not_modify": ["Core §2 core rule", "Core §3 operating modes", "Core §4 canonical source rule", "Core §5 delta discipline", "Core §6 preservation rule", "Core §7 regression check", "Core §8 repair rule"],
+      "supplied_by": "writing-editing-critique-preservation-conversion-v16.0.0.md"
+    }
+  ],
+  "applicability_declaration": "This bolt-on is loaded only when the project's declared expertise scope includes creative writing. Non-writing projects MUST NOT receive this bolt-on. Wrong-context load fails closed per cosyn-v16-extension-contract-v16.0.0.md §5.",
+  "conflict_handling": {
+    "fail_closed_categories": [
+      "duplicate_capability_ownership",
+      "unauthorized_extension",
+      "missing_dependency",
+      "version_incompatibility",
+      "manifest_actual_file_mismatch",
+      "hash_mismatch",
+      "legacy_governance_injection",
+      "stale_version_declaration",
+      "conflicting_bolt_ons",
+      "tier3_authority_escalation",
+      "wrong_context_bolt_on_load",
+      "missing_provenance"
+    ]
+  },
+  "legacy_compatibility": {
+    "cfw_v1_x": "none",
+    "cgs_v15_x": "none"
+  }
+}

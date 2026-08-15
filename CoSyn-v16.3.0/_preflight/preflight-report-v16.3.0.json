@@ -1,0 +1,66 @@
+{
+  "record_type": "repair_preflight_report",
+  "script_version": "1.0.2",
+  "generated_utc": "2026-08-14T20:44:29.5179502Z",
+  "status": "PREFLIGHT_READY_FOR_CCT",
+  "root": "D:\\cosyn-gov\\Chat-gov-files\\CGS-v16",
+  "baseline": {
+    "version": "16.1.0",
+    "directory": "D:\\cosyn-gov\\Chat-gov-files\\CGS-v16\\CoSyn-v16.1.0",
+    "mandatory_identity_basis": "Externally recorded 12-file SHA-256/size set",
+    "external_identity_result": "PASS",
+    "file_count": 12,
+    "manifest_file_set": "PASS",
+    "canonical_file_set": "PASS",
+    "implemented_integrity_hashes": "PASS",
+    "zip_role": "optional corroboration only",
+    "zip_present": false,
+    "zip": null,
+    "zip_sha256": null,
+    "zip_status": "NOT_PRESENT_OPTIONAL",
+    "zip_content_status": "NOT_CHECKED",
+    "zip_observation": null
+  },
+  "historical": {
+    "version": "16.2.0",
+    "directory_present": true,
+    "directory": "D:\\cosyn-gov\\Chat-gov-files\\CGS-v16\\CoSyn-v16.2.0",
+    "directory_file_count": 12,
+    "directory_usable": true,
+    "directory_evidence_status": "VALID_NONEMPTY_EVIDENCE",
+    "directory_observation": null,
+    "zip_present": false,
+    "zip": null,
+    "zip_sha256": null,
+    "zip_fingerprint_available": false,
+    "zip_evidence_status": "NOT_PRESENT",
+    "zip_observation": null,
+    "zip_inventory_file_count_when_required": null,
+    "role": "Preserved flawed historical evidence; never repair source."
+  },
+  "live_state_observations": {
+    "stale_preflight_stages_count": 0,
+    "stale_preflight_stages": [],
+    "stale_preflight_stages_blocking": false
+  },
+  "target": {
+    "version": "16.3.0",
+    "directory": "D:\\cosyn-gov\\Chat-gov-files\\CGS-v16\\CoSyn-v16.3.0",
+    "source": "byte-identical copy of CoSyn-v16.1.0 at preflight exit",
+    "semantic_edits_performed": false,
+    "version_content_promotion_performed": false,
+    "defect_ledger": "_preflight/defect-ledger-v16.3.0.json",
+    "change_map": "_preflight/change-map-v16.3.0.json"
+  },
+  "gates": {
+    "baseline_external_identity": "PASS",
+    "baseline_internal_structure": "PASS",
+    "baseline_zip_required": false,
+    "historical_evidence_present_and_fingerprinted": "PASS",
+    "target_collision": "PASS",
+    "copy_verification": "PASS",
+    "defect_ledger_D01_D10": "PASS",
+    "exact_anchor_change_map": "PASS",
+    "cct_editing_started": false
+  }
+}

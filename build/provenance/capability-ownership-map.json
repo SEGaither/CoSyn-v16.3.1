@@ -1,0 +1,361 @@
+{
+  "artifact_id": "capability-ownership-map",
+  "artifact_version": "1.0.0",
+  "generated_utc": "2026-08-13T00:00:00Z",
+  "controlling_architecture": "CGS-v16 Hierarchical Planning Continuation State v1.0.0 (approved)",
+  "governing_rule": "Each governing capability has exactly one authoritative owner. Duplicate authoritative ownership is prohibited. Where sub-capabilities are split, the boundary is documented precisely.",
+  "single_ownership_registry": [
+    {
+      "capability_id": "constitutional.governance-authority",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (cosyn-constitution-v16.0.0.md)",
+      "authority_level": "constitutional-root",
+      "source_basis": ["CGS_v15.0.2.md"],
+      "duplicate_claimants_resolved": ["CGS_CfW_v1.0.1.md (excluded — CfW does not fork constitution)"],
+      "provenance_pointer": "provenance/migration-provenance-map.json#/entries/cosyn-constitution-v16.0.0.md"
+    },
+    {
+      "capability_id": "constitutional.ptr-principles-cp1-cp7",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (cosyn-constitution-v16.0.0.md)",
+      "authority_level": "constitutional",
+      "source_basis": ["CGS_v15.0.2.md §Constitutional PTR Principles"],
+      "duplicate_claimants_resolved": []
+    },
+    {
+      "capability_id": "constitutional.canonical-turn-lifecycle",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (cosyn-constitution-v16.0.0.md)",
+      "authority_level": "constitutional",
+      "source_basis": ["CGS_v15.0.2.md §Canonical Turn Lifecycle"],
+      "downstream_references": ["persona-governor-v16.0.0.md", "stack-architect-v16.0.0.md", "ptr-specification-v16.0.0.md"]
+    },
+    {
+      "capability_id": "constitutional.execution-model",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (cosyn-constitution-v16.0.0.md)",
+      "authority_level": "constitutional",
+      "source_basis": ["CGS_v15.0.2.md §Execution Model"]
+    },
+    {
+      "capability_id": "constitutional.governance-gates (ICC/ASTG/BSG/EDH/ECFD/EAC/RAPS/CCD/AGE/TPP/PG/SIG/UISIG)",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (cosyn-constitution-v16.0.0.md)",
+      "authority_level": "constitutional",
+      "source_basis": ["CGS_v15.0.2.md §Governance Gates"]
+    },
+    {
+      "capability_id": "constitutional.failure-classification-class0",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (cosyn-constitution-v16.0.0.md)",
+      "authority_level": "constitutional",
+      "source_basis": ["CGS_v15.0.2.md §Failure Classification"]
+    },
+    {
+      "capability_id": "constitutional.probabilistic-robustness-layer (OSCL/EGR/CIT/UFRS/SSCS/GFCLC)",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (cosyn-constitution-v16.0.0.md)",
+      "authority_level": "constitutional",
+      "source_basis": ["CGS_v15.0.2.md §Probabilistic Robustness Layer"]
+    },
+    {
+      "capability_id": "constitutional.evaluation-harness-and-telemetry-authority",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (cosyn-constitution-v16.0.0.md)",
+      "authority_level": "constitutional",
+      "source_basis": ["CGS_v15.0.2.md §Evaluation Harness Layer + §Telemetry Authority and Categories"]
+    },
+    {
+      "capability_id": "enforcement.persona-governor",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (persona-governor-v16.0.0.md)",
+      "authority_level": "subordinate-enforcement (non-constitutional)",
+      "source_basis": ["PersonaGovernor_v2.5.2.md"],
+      "duplicate_claimants_resolved": ["PersonaGovernor_CfW_v1.0.1.md (excluded — CfW does not fork governor)"]
+    },
+    {
+      "capability_id": "enforcement.prap-gate",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (persona-governor-v16.0.0.md)",
+      "authority_level": "subordinate-enforcement"
+    },
+    {
+      "capability_id": "enforcement.ptr-enforcement-gate",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (persona-governor-v16.0.0.md)",
+      "authority_level": "subordinate-enforcement"
+    },
+    {
+      "capability_id": "enforcement.presentation-gate (all sub-gates)",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (persona-governor-v16.0.0.md)",
+      "authority_level": "subordinate-enforcement"
+    },
+    {
+      "capability_id": "enforcement.finalization-gate",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (persona-governor-v16.0.0.md)",
+      "authority_level": "subordinate-enforcement"
+    },
+    {
+      "capability_id": "enforcement.mode-lock-integrity",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (persona-governor-v16.0.0.md)",
+      "authority_level": "subordinate-enforcement"
+    },
+    {
+      "capability_id": "enforcement.pcr-strict-mode-and-scope-enforcement",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (persona-governor-v16.0.0.md)",
+      "authority_level": "subordinate-enforcement"
+    },
+    {
+      "capability_id": "enforcement.telemetry-gate (collection/render/audit)",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (persona-governor-v16.0.0.md)",
+      "authority_level": "subordinate-enforcement"
+    },
+    {
+      "capability_id": "architecture.stack-architect (routing and precedence)",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (stack-architect-v16.0.0.md)",
+      "authority_level": "subordinate-routing (non-constitutional; not superior to Governor)",
+      "source_basis": ["StackArchitect_v2.4.2_verified.md"],
+      "duplicate_claimants_resolved": ["StackArchitect_CfW_v1.0.1.md (excluded — CfW does not fork architect)"]
+    },
+    {
+      "capability_id": "architecture.authority-precedence",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (stack-architect-v16.0.0.md)",
+      "authority_level": "subordinate-routing"
+    },
+    {
+      "capability_id": "architecture.canonical-turn-lifecycle-routing",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (stack-architect-v16.0.0.md)",
+      "authority_level": "subordinate-routing"
+    },
+    {
+      "capability_id": "architecture.ptr-routing (creation/retrieval/correction/recovery/pcr-source)",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (stack-architect-v16.0.0.md)",
+      "authority_level": "subordinate-routing"
+    },
+    {
+      "capability_id": "ptr.record-schema-and-lifecycle",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (ptr-specification-v16.0.0.md)",
+      "authority_level": "subordinate-specification",
+      "source_basis": ["PTR_Specification_v1.2.2.md"],
+      "duplicate_claimants_resolved": ["PTR_Specification_CfW_v1.0.1.md (excluded — CfW does not fork PTR record schema; fiction disposition mapping migrates to CW bolt-on as specialization overlay)"]
+    },
+    {
+      "capability_id": "ptr.current-state-schema",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (ptr-specification-v16.0.0.md)",
+      "authority_level": "subordinate-specification"
+    },
+    {
+      "capability_id": "ptr.classification-dimensions",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (ptr-specification-v16.0.0.md)",
+      "authority_level": "subordinate-specification"
+    },
+    {
+      "capability_id": "ptr.state-transitions-and-precedence",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (ptr-specification-v16.0.0.md)",
+      "authority_level": "subordinate-specification"
+    },
+    {
+      "capability_id": "ptr.protection-and-rejection-guards",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (ptr-specification-v16.0.0.md)",
+      "authority_level": "subordinate-specification"
+    },
+    {
+      "capability_id": "ptr.telemetry-field-schema",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (ptr-specification-v16.0.0.md)",
+      "authority_level": "subordinate-specification"
+    },
+    {
+      "capability_id": "ptr.failure-semantics-and-recovery",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (ptr-specification-v16.0.0.md)",
+      "authority_level": "subordinate-specification",
+      "extended_by": ["creative-writing-v16.0.0/fiction-recovery-protocol-v16.0.0.md (writing-specific triggers only; extension declares dependency on Core, does not restate base recovery semantics)"]
+    },
+    {
+      "capability_id": "ptr.pcr-promotion-framework",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (ptr-specification-v16.0.0.md §20)",
+      "authority_level": "subordinate-specification",
+      "extended_by": ["creative-writing-v16.0.0/fiction-pcr-protocol-v16.0.0.md (twenty-section fiction PCR schema; extends Core PCR promotion framework, does not restate promotion rules)"]
+    },
+    {
+      "capability_id": "mode-registry.schema-and-base-mode-set",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (mode-registry-v16.0.0.md)",
+      "authority_level": "subordinate-registry",
+      "source_basis": ["mode_registry_v1.2.2.md"],
+      "extended_by": ["creative-writing-v16.0.0/writing-mode-registry-v16.0.0.md (twelve fiction phases; declares Core Mode Registry dependency; does not restate schema or prohibited-field rules; inherits gate-inheritance rule)"]
+    },
+    {
+      "capability_id": "editing-discipline.universal (CREATE/EDIT/REVIEW modes, canonical-source, delta, preservation, regression, repair)",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (editing-discipline-v16.0.0.md)",
+      "authority_level": "subordinate-discipline",
+      "source_basis": ["Editing_Preferences.md (CGS)", "Editing_Preferences_v1.2.md (CfW; more evolved variant taken as basis)"],
+      "duplicate_claimants_resolved": ["Older CGS v1.1 subsumed by v1.2 semantics"],
+      "extended_by": ["creative-writing-v16.0.0/writing-editing-critique-preservation-conversion-v16.0.0.md (writing-specific editing/critique/preservation/conversion protocols; declares Core dependency)"]
+    },
+    {
+      "capability_id": "anti-ai-signature-gate.base-detection-and-rewrite",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (anti-ai-signature-gate-v16.0.0.md)",
+      "authority_level": "subordinate-skill (Core-tier)",
+      "source_basis": ["anti_ai_signature_gate_skill.md (CGS)"],
+      "extended_by": ["creative-writing-v16.0.0/anti-ai-fiction-naturalness-v16.0.0.md (retargets gate to fiction prose; 11-item naturalness standard; does NOT fork base gate)"]
+    },
+    {
+      "capability_id": "extension-contract.bolt-on-binding (identity/version/dependencies/capabilities-supplied/authority-ceiling/compatibility/fail-closed)",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (cosyn-v16-extension-contract-v16.0.0.md and cosyn-v16-bind-template-v16.0.0.json)",
+      "authority_level": "subordinate-composition-spec",
+      "source_basis": ["bindngo_v1.4.2_CGS_15.0.2.json (composition intent)", "BindTemplate_v1.5.2_CGS_15.0.2.json (template intent)"],
+      "duplicate_claimants_resolved": ["Both v15 binding artifacts collapsed into single v16 extension contract; CfW BindTemplate becomes a bolt-on-specific instance that conforms to Core contract"]
+    },
+    {
+      "capability_id": "package-manifest.canonical-manifest-and-integrity",
+      "authoritative_owner": "CoSyn-v16.0.0 Core (canonical-manifest-v16.0.0.json + integrity-manifest-v16.0.0.json)",
+      "authority_level": "subordinate-metadata",
+      "source_basis": ["CANONICAL_MANIFEST_v1.2.2.json (schema intent)", "SHA256SUMS.txt (integrity intent)", "PACKAGE_MANIFEST.json (superseded)"]
+    },
+    {
+      "capability_id": "writing-personas.seven-persona-governance (Author-Authority/Writer/Novelist/Editor/Publisher/Reader/Screenwriter)",
+      "authoritative_owner": "creative-writing-v16.0.0 (writing-team-personas-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on-primary",
+      "source_basis": ["writing-team-personas-v2.2.0.md §§0-13, Appendix B"],
+      "notes": "Full persona governance retained per approved decision. No abridged variant created."
+    },
+    {
+      "capability_id": "writing-personas.bookfox-batch-03-purview-reference",
+      "authoritative_owner": "creative-writing-v16.0.0 subordinate-reference (reference/bookfox-batch-03-purview-reference-v16.0.0.md)",
+      "authority_level": "subordinate-reference (informative)",
+      "source_basis": ["writing-team-personas-v2.2.0.md Appendix A"],
+      "notes": "Separated from active persona governance per approved decision; retained as bolt-on subordinate reference material only."
+    },
+    {
+      "capability_id": "fiction-control.controller-categories-agency-scopes-handoff-rules-character-voice",
+      "authoritative_owner": "creative-writing-v16.0.0 (fiction-control-boundary-model-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on"
+    },
+    {
+      "capability_id": "fiction-state.classification-source-separation-materiality-continuity",
+      "authoritative_owner": "creative-writing-v16.0.0 (fiction-state-model-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on"
+    },
+    {
+      "capability_id": "fiction-project-profile.schema",
+      "authoritative_owner": "creative-writing-v16.0.0 (schemas/fiction-project-profile-schema-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on"
+    },
+    {
+      "capability_id": "fiction-workflow-profile.schema (twelve fiction phases)",
+      "authoritative_owner": "creative-writing-v16.0.0 (schemas/fiction-workflow-profile-schema-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on"
+    },
+    {
+      "capability_id": "writing-editing-critique-preservation-conversion",
+      "authoritative_owner": "creative-writing-v16.0.0 (writing-editing-critique-preservation-conversion-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on",
+      "core_dependency": "editing-discipline.universal"
+    },
+    {
+      "capability_id": "anti-ai-fiction-naturalness (11-item standard)",
+      "authoritative_owner": "creative-writing-v16.0.0 (anti-ai-fiction-naturalness-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on",
+      "core_dependency": "anti-ai-signature-gate.base-detection-and-rewrite"
+    },
+    {
+      "capability_id": "fiction-recovery (fiction-specific triggers)",
+      "authoritative_owner": "creative-writing-v16.0.0 (fiction-recovery-protocol-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on",
+      "core_dependency": "ptr.failure-semantics-and-recovery"
+    },
+    {
+      "capability_id": "fiction-pcr (twenty-section fiction PCR schema)",
+      "authoritative_owner": "creative-writing-v16.0.0 (fiction-pcr-protocol-v16.0.0.md + templates/fiction-pcr-template-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on",
+      "core_dependency": "ptr.pcr-promotion-framework"
+    },
+    {
+      "capability_id": "fiction-session-initialization",
+      "authoritative_owner": "creative-writing-v16.0.0 (fiction-session-initialization-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on"
+    },
+    {
+      "capability_id": "writing-mode-registry (twelve fiction phases; extends Core registry)",
+      "authoritative_owner": "creative-writing-v16.0.0 (writing-mode-registry-v16.0.0.md)",
+      "authority_level": "task-specific-bolt-on-extension",
+      "core_dependency": "mode-registry.schema-and-base-mode-set",
+      "boundary_note": "Extension only. Does not restate Core Mode Registry schema, prohibited-field rules, gate-inheritance rule, or amendment discipline. Adds phase-mode entries in the writing domain that inherit all Core gate discipline unconditionally."
+    },
+    {
+      "capability_id": "creative-writing-bind-template",
+      "authoritative_owner": "creative-writing-v16.0.0 (bind/creative-writing-bind-template-v16.0.0.json)",
+      "authority_level": "task-specific-bolt-on-composition-instance",
+      "core_dependency": "extension-contract.bolt-on-binding",
+      "boundary_note": "A concrete v16-compliant instance of the Core extension contract for the creative-writing bolt-on. Declares which Core Constitution/Governor/Architect/PTR/Mode-Registry versions it targets, which bolt-on capabilities it supplies, and its authority ceiling (subordinate to Core)."
+    },
+    {
+      "capability_id": "creative-writing.subordinate-reference (excluded-runtime-concepts, legacy implementation report, source lineage, generic first manuscript draft protocol .docx, bookfox purview reference)",
+      "authoritative_owner": "creative-writing-v16.0.0 (reference/ subdirectory)",
+      "authority_level": "subordinate-reference (informative)"
+    }
+  ],
+  "capability_boundaries": [
+    {
+      "capability_pair": ["anti-ai-signature-gate.base-detection-and-rewrite (Core)", "anti-ai-fiction-naturalness (CW bolt-on)"],
+      "boundary": "Core owns the base gate mechanics (transferability, real anchors, real stakes, non-template openers, character-specific voice detection, blocking conditions, rewrite priorities). CW bolt-on extends application scope to fiction prose and adds an 11-item fiction naturalness standard. CW does not fork or reimplement any base check.",
+      "fail_closed_behavior": "If both Core and CW attempt to define contradictory rewrite priorities for the same detection, composition fails closed."
+    },
+    {
+      "capability_pair": ["ptr.pcr-promotion-framework (Core)", "fiction-pcr (CW bolt-on)"],
+      "boundary": "Core owns PCR candidate marking, PCR promotion ratification requirement, and pcr_ratification_link semantics. CW bolt-on owns the twenty-section fiction PCR content schema and the writing-specific explicit-command-only trigger. Any CW-declared PCR promotion still requires Core-owned user ratification.",
+      "fail_closed_behavior": "If CW attempts to mark pcr-promoted without pcr_ratification_link, Core Governor blocks silently-promoted PCR (Class 0)."
+    },
+    {
+      "capability_pair": ["mode-registry.schema-and-base-mode-set (Core)", "writing-mode-registry (CW bolt-on)"],
+      "boundary": "Core owns registration schema and prohibited fields (bypass/exemption/override/gate_suppression). CW bolt-on adds writing-phase-mode entries under the same schema; each inherits every gate unconditionally per Core's gate-inheritance rule. CW cannot amend Core registry entries or grant bypass to any registered mode.",
+      "fail_closed_behavior": "If a CW mode-registry entry contains a prohibited field (bypass/exemption/override), composition fails closed at bolt-on load."
+    },
+    {
+      "capability_pair": ["ptr.failure-semantics-and-recovery (Core)", "fiction-recovery (CW bolt-on)"],
+      "boundary": "Core owns Non-Interference Invariant (§21.1), reconstruction inputs (§21.4), reconstruction acceptance standard (§21.5), and failure behavior table (§21.6). CW bolt-on owns fiction-specific trigger classifications and continuity-repair rules that consume Core recovery outcomes.",
+      "fail_closed_behavior": "If CW recovery declares acceptance under criteria weaker than Core §21.5, composition fails closed."
+    },
+    {
+      "capability_pair": ["editing-discipline.universal (Core)", "writing-editing-critique-preservation-conversion (CW bolt-on)"],
+      "boundary": "Core owns CREATE/EDIT/REVIEW modes, canonical-source rule, delta discipline, preservation rule, regression check, repair rule, source-code mental model. CW bolt-on owns fiction-specific editing/critique/preservation-checkpoint/conversion protocols that use Core editing mechanics.",
+      "fail_closed_behavior": "If CW attempts to permit editing from memory when a canonical artifact exists (Core §Canonical Source Rule), composition fails closed."
+    },
+    {
+      "capability_pair": ["Core", "future Tier 2"],
+      "boundary": "Core defines a Tier-2 binding position (`extension-contract.tier2-user-profile-attachment`) and reserves user-response, user-voice-style, and user-editing-preference categories for Tier 2. Core does not silently absorb user-specific content. Tier-2 package is not built in this task; the reserved binding position ensures future attachment does not require Core redesign."
+    },
+    {
+      "capability_pair": ["Core", "future Tier 3 project layers"],
+      "boundary": "Core defines a Tier-3 binding position (`extension-contract.tier3-project-attachment`). Tier 3 owns project canon, project instructions, project decisions, PCR/continuation state, project-specific artifacts. Tier 3 may not escalate authority above Core, Tier 2, or applicable bolt-on."
+    }
+  ],
+  "duplicate_or_conflict_resolutions_recorded": [
+    {
+      "conflict": "CGS v15 Editing_Preferences.md (v1.1) vs CfW Editing_Preferences_v1.2.md — near-duplicate universal editing discipline",
+      "resolution": "Adopt v1.2 semantics into Core editing-discipline-v16.0.0.md as the more evolved variant. CGS v1.1 semantics fully subsumed by v1.2. Both source files preserved unchanged at their source locations."
+    },
+    {
+      "conflict": "CGS and CfW both ship User_Voice_and_Style_Reference_v1.0.0.md (hash-identical) and user-response-behavior-profile.md (hash-identical)",
+      "resolution": "Both files defer to Tier 2 User Profile (not built this task). Core does not absorb; CW bolt-on does not absorb. Both source copies preserved unchanged."
+    },
+    {
+      "conflict": "CGS-side CGS_v15.0.2.md and CfW-side CGS_CfW_v1.0.1.md both claim constitutional-adjacent authority",
+      "resolution": "Under v16, constitutional authority is Core-only. CfW CGS is excluded from bolt-on; CW bolt-on binds Core Constitution v16.0.0."
+    },
+    {
+      "conflict": "CGS PersonaGovernor_v2.5.2.md and CfW PersonaGovernor_CfW_v1.0.1.md both claim enforcement authority",
+      "resolution": "Core owns enforcement authority. CfW enforcement specialization (Q-2 surface conditions, silent-governance defaults) that is genuinely non-overlapping migrates into the CW fiction-editing/anti-ai-fiction artifacts. Base enforcement is not forked."
+    },
+    {
+      "conflict": "CGS StackArchitect_v2.4.2.md and CfW StackArchitect_CfW_v1.0.1.md both claim routing authority",
+      "resolution": "Core owns routing authority. CfW routing specialization (phase-registry, non-collapsibility, minimum-necessary artifact activation) migrates into the CW writing-mode-registry as bolt-on extension. Base routing is not forked."
+    },
+    {
+      "conflict": "CGS PTR_Specification_v1.2.2.md and CfW PTR_Specification_CfW_v1.0.1.md both claim PTR schema authority",
+      "resolution": "Core owns PTR schema authority. CfW PTR specialization (fiction disposition mapping, counter orthogonality, critique materiality) migrates into the CW fiction-state-model as writing-specific overlay declaring dependency on Core PTR spec. Base schema is not forked."
+    },
+    {
+      "conflict": "CGS Anti-AI gate and CfW AntiAISignatureReview — extension vs duplication",
+      "resolution": "CfW AntiAI is explicitly documented as retargeting (not forking) the base gate. Under v16 this becomes the CW bolt-on's anti-ai-fiction-naturalness-v16.0.0.md, declaring dependency on Core anti-ai-signature-gate-v16.0.0.md and adding only the fiction 11-item naturalness standard."
+    },
+    {
+      "conflict": "CGS bindngo_v1.4.2 vs BindTemplate_v1.5.2 — overlapping binding artifacts with stale semantic references",
+      "resolution": "Both collapsed into a single v16 extension contract (cosyn-v16-extension-contract-v16.0.0.md) plus a Core bind template (cosyn-v16-bind-template-v16.0.0.json). CfW BindTemplate becomes a bolt-on instance of the Core extension contract."
+    },
+    {
+      "conflict": "CGS PACKAGE_MANIFEST.json vs CANONICAL_MANIFEST_v1.2.2.json — package listing vs subordinate-spec hash binding, with PACKAGE_MANIFEST containing stale version references",
+      "resolution": "Both replaced in v16 by unified canonical-manifest-v16.0.0.json + integrity-manifest-v16.0.0.json with correct hashes and no stale references."
+    }
+  ],
+  "unresolved_duplicate_ownership": [],
+  "capability_ownership_validation_status": "all duplicate claims resolved; no capability has two authoritative owners; extension boundaries documented for every split capability; fail-closed behavior defined for each boundary"
+}
