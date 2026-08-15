@@ -4,6 +4,29 @@
 
 CoSyn is a governance framework for structured human-AI collaboration. It defines a protocol the human and AI model follow during a session — covering turn lifecycle, persona enforcement, mode routing, editing discipline, and extension composition — so that the collaboration stays coherent, auditable, and aligned with user intent.
 
+## Quick Start — Testing CoSyn with an LLM
+
+Simply knowing this repository exists is not enough. To use CoSyn, the Core files must be read into your LLM's context and applied as governing instructions. Here is how:
+
+**Step 1 — Load the Core**
+
+Point your LLM at this repository and instruct it to read the files in `CoSyn-v16.3.1/`. You can do this by pasting the files directly, using a tool that reads from URLs, or supplying them via a system prompt. Then give the model an instruction like:
+
+> "Read the CoSyn v16.3.1 Core files in this repository and operate under them as the governing instructions for this session. Preserve their hierarchy and conflict rules. Then proceed with my request."
+
+**Step 2 — Compare behavior**
+
+Try the same task or question with and without the Core loaded. Observable effects may include:
+
+- Tighter scope control — the model stays within what was actually requested
+- Less guessing — uncertain or missing information is surfaced rather than filled in
+- Stronger uncertainty handling — the model flags what it doesn't know rather than inferring
+- Preservation of user decisions — the model does not override choices already made
+- More controlled editing — edits stay within authorized scope
+- Fail-closed conflict handling — ambiguous or conflicting instructions produce a stop rather than a guess
+
+**Important:** Results depend on the instruction-following capabilities of the specific LLM. CoSyn does not technically enforce behavior outside the model's own ability to follow instructions. It is a structured protocol that a capable model applies — not an external enforcement layer.
+
 ## How CoSyn Works
 
 CoSyn v16 operates as **interpreted governance** in conversational use. Its artifacts are context that a capable model applies during response construction. CoSyn does not execute independently, does not run as a background process, and does not claim transactional persistence, atomic storage, rollback guarantees, or external API integration. It is a protocol, not an executable runtime.
