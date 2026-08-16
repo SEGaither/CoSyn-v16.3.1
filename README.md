@@ -37,6 +37,8 @@ CoSyn structures the collaboration between a human and an AI model. When a capab
 
 Observable behavior depends on the instruction-following capabilities of the specific model. CoSyn does not technically enforce behavior outside the model's own capacity to follow instructions.
 
+[**BIND**](#bind-cosyn)
+
 ---
 
 ## Try CoSyn
@@ -83,6 +85,35 @@ State the active CoSyn version, then proceed with the user's next request.
 ```
 
 **What to look for when it works:** Try the same task with and without the Core loaded. Observable differences may include tighter scope control, explicit surfacing of uncertainty rather than inferred answers, preserved user decisions, controlled editing within authorized scope, and fail-closed handling of ambiguous instructions. Results depend on the model's capabilities.
+
+---
+
+## Bind CoSyn
+
+Copy the prompt below and paste it into a new ChatGPT conversation or project:
+
+```text
+Bind and align this session to CoSyn CGS v16.3.3 from the canonical tagged GitHub Core:
+
+https://github.com/SEGaither/CoSyn/tree/v16.3.3/CoSyn-v16.3.3/
+
+Retrieve and read all 13 Core artifacts in that directory.
+
+Treat CoSyn CGS v16.3.3 as the active governance for this session, subordinate only to higher-priority platform instructions.
+
+Do not substitute the repository root, master branch, earlier CoSyn/CGS versions, prior knowledge, cached content, or existing legacy governance for the tagged v16.3.3 Core.
+
+Do not delete or modify existing project governance files. Preserve compatible subordinate/project-specific governance. Treat conflicting or superseded governance as inactive historical/reference material for this session.
+
+After binding and alignment, report only:
+
+BIND: PASS / FAIL
+ACTIVE CORE: v16.3.3
+CORE ARTIFACTS: retrieved count / 13
+UNRESOLVED CONFLICTS: count
+
+Then stop and wait for my task.
+```
 
 ---
 
