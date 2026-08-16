@@ -5,7 +5,7 @@
 **Role:** Constitutional root of the CoSyn v16 governance stack
 **Authority Level:** constitutional_root
 **Authority Ceiling:** Platform system and safety policy
-**Status:** PROPOSED / READY FOR CREATOR REVIEW
+**Status:** RATIFIED / CANONICAL — ratified 2026-08-16
 **Supersedes source basis:** CGS v15.0.2 (migration/reference source only; no runtime compatibility)
 **Refined from:** cosyn-constitution-v16.0.0.md (SHA-256 20A5206887492C3D2E76260BF8EE9956A3A1E024B4AB742186D518CFE1E72522) — corrective refinement per Creator-authorized CCT pass
 **Generated:** 2026-08-13

@@ -5,7 +5,7 @@
 **Role:** Enforcement Profile (non-constitutional)
 **Authority Level:** subordinate_enforcement
 **Authority Ceiling:** `cosyn-constitution-v16.3.3.md`
-**Status:** PROPOSED / READY FOR CREATOR REVIEW
+**Status:** RATIFIED / CANONICAL — ratified 2026-08-16
 **Supersedes source basis:** PersonaGovernor v2.5.2 (migration/reference source only; no runtime compatibility)
 **Refined from:** persona-governor-v16.3.0.md (SHA-256 to be calculated)
 **Generated:** 2026-08-15

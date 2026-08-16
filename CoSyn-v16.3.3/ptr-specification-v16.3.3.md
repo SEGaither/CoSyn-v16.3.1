@@ -5,7 +5,7 @@
 **Role:** Subordinate specification bound by CoSyn Constitution v16.3.3
 **Authority Level:** subordinate_specification
 **Authority Ceiling:** `cosyn-constitution-v16.3.3.md`
-**Status:** PROPOSED / READY FOR CREATOR REVIEW
+**Status:** RATIFIED / CANONICAL — ratified 2026-08-16
 **Supersedes source basis:** PTR Specification v1.2.2 (migration/reference source only)
 **Refined from:** ptr-specification-v16.0.0.md (SHA-256 C93205F07BDD45E8E8C5407AC31D7242BF09B87964ACE675D43FCAA0C5917D8C)
 **Generated:** 2026-08-13

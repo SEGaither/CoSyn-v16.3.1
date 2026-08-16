@@ -2,7 +2,7 @@
   "template_name": "CoSyn v16 Core Bind Template",
   "template_version": "16.3.3",
   "template_type": "bind_template_core_instance_of_extension_contract",
-  "status": "PROPOSED / READY FOR CREATOR REVIEW",
+  "status": "RATIFIED / CANONICAL — ratified 2026-08-16",
   "package_tier": "1_core",
   "authority_level": "subordinate_specification",
   "authority_ceiling": "cosyn-constitution-v16.3.3.md",

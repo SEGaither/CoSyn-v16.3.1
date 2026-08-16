@@ -6,7 +6,7 @@ authority_level: subordinate_discipline
 authority_ceiling: cosyn-constitution-v16.3.3.md
 description: Detects and rewrites human-facing messages that carry synthetic, overly transferable, or visibly AI-generated writing patterns.
 use_when: Use when drafting, reviewing, or gating outreach, operational messaging, or other human-directed communication that must read grounded, specific, and non-transferable.
-status: PROPOSED / READY FOR CREATOR REVIEW
+status: RATIFIED / CANONICAL — ratified 2026-08-16
 supersedes_source_basis: anti_ai_signature_gate_skill.md (CGS v15.0.2)
 refined_from: anti-ai-signature-gate-v16.0.0.md (SHA-256 CAB6F2E4FCEA675A25151E8842899667CCED0C4F254F8A10D9126827600A15A7)
 generated: 2026-08-15

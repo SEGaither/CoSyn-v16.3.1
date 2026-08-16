@@ -5,7 +5,7 @@
 **Role:** Registered mode set bound alongside Persona Governor
 **Authority Level:** subordinate_registry
 **Authority Ceiling:** `cosyn-constitution-v16.3.3.md` and `persona-governor-v16.3.3.md`
-**Status:** PROPOSED / READY FOR CREATOR REVIEW
+**Status:** RATIFIED / CANONICAL — ratified 2026-08-16
 **Supersedes source basis:** mode_registry v1.2.2 (migration/reference source only)
 **Refined from:** mode-registry-v16.0.0.md (SHA-256 4E54C589A911A11F6F21A5D0BF7D89F54C02E6913321DCA795EAB13FBF39D2B0)
 **Generated:** 2026-08-13

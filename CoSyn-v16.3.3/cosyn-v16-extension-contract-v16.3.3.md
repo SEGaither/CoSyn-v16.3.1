@@ -5,7 +5,7 @@
 **Tier:** Core (Tier 1)
 **Role:** Universal composition and extension contract for CoSyn v16 packages
 **Authority ceiling:** Core-owned (bolt-ons subordinate)
-**Status:** PROPOSED / READY FOR CREATOR REVIEW
+**Status:** RATIFIED / CANONICAL — ratified 2026-08-16
 **Generated:** 2026-08-13
 
 ---

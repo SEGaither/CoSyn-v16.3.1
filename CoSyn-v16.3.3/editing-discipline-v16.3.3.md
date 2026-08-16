@@ -5,7 +5,7 @@
 **Role:** Universal editing discipline for CoSyn-governed artifacts
 **Authority Level:** subordinate_discipline
 **Authority Ceiling:** `cosyn-constitution-v16.3.3.md`
-**Status:** PROPOSED / READY FOR CREATOR REVIEW
+**Status:** RATIFIED / CANONICAL — ratified 2026-08-16
 **Supersedes source basis:** Editing_Preferences.md (v1.1 CGS) and Editing_Preferences_v1.2.md (CfW)
 **Refined from:** editing-discipline-v16.0.0.md (SHA-256 B2DEB08185B36C31B9EB4F003BED7088583D860E9CD0715F26AFA3AEA92B5EC3)
 **Generated:** 2026-08-15

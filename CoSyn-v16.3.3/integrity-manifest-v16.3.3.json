@@ -3,17 +3,17 @@
     {
       "size": 11591,
       "filename": "anti-ai-signature-gate-v16.3.3.md",
-      "sha256": "95948d5ba5b5c436ad630caa240285a80250ed074a33893916a42a20dd0e32e0"
+      "sha256": "f22ff1afe75f508365c55bf8ed6e8014f8171ce403be1a236a807c93cacab1e9"
     },
     {
       "size": 2613,
       "filename": "canonical-manifest-v16.3.3.json",
-      "sha256": "8095a526d3a75b5e835bba9277a1a50ba29fb786396f6e93af26d2e6f020086f"
+      "sha256": "39d5e8542d33a966567bb3dd362d82178cd1531d6db1162dd7089d741d64953b"
     },
     {
       "size": 7086,
       "filename": "capability-ownership-map-v16.3.3.json",
-      "sha256": "bee1f96180bdf4e8aba9e24dc4b3ac74811697bf2fc54b077fdaf613997ec8cf"
+      "sha256": "223a3ce7c4eb11b332f72e8545cb41cdd8bfd8919adfe471184818898377953b"
     },
     {
       "size": 4512,
@@ -23,42 +23,42 @@
     {
       "size": 38270,
       "filename": "cosyn-constitution-v16.3.3.md",
-      "sha256": "c979fa6b35bae083ca8e1aeaf57cef3c99c8e9755e2e467c8b208b27d012f539"
+      "sha256": "1238c3a3554803ed64122e1153b8c81279d7ad778a3cf98f2e21ff1900a087a8"
     },
     {
       "size": 5961,
       "filename": "cosyn-v16-bind-template-v16.3.3.json",
-      "sha256": "5ec6efb90e42ece8c9df45e6ea8c95154b799538232d45166690e24569847a37"
+      "sha256": "90e29389843913b3f46a205f91dcf6c70ed554d407df112a0fd5cb1e32b72ccb"
     },
     {
       "size": 12661,
       "filename": "cosyn-v16-extension-contract-v16.3.3.md",
-      "sha256": "f8e44bd1712e949ebd504c40559dd94907d8f169f7a38a6ac86b7dcbd6073d92"
+      "sha256": "43048dbecd646ffa554f706a544a5eb2f74466888a3f4ea37de4c72254ed6b5f"
     },
     {
       "size": 7005,
       "filename": "editing-discipline-v16.3.3.md",
-      "sha256": "45b3effc1fd809d05e5a66f2c9b999f5f1ccc791a3edfa4f4e149184e407fb12"
+      "sha256": "37653d515dce300f5d1d472cdca1ea8028b7606a9f039412d7228d5ef976e0e2"
     },
     {
       "size": 6799,
       "filename": "mode-registry-v16.3.3.md",
-      "sha256": "9eb2fea8a78ba9a2d71f7f838452315c1e425f6d19df53d417865c03d4390e57"
+      "sha256": "1ba561f0c479e75442796feb382445c0175dd42f5438de34f24e395aa1c74394"
     },
     {
       "size": 28551,
       "filename": "persona-governor-v16.3.3.md",
-      "sha256": "392cf1046ea4b3f3d93f9fc0d55d0d5cd3b6ea9246969e530dcad316c39d5e48"
+      "sha256": "d6096c476cc0ae2e36a9b5438ebb77fae17bdbbbc2276e488c496917d77ec534"
     },
     {
       "size": 36614,
       "filename": "ptr-specification-v16.3.3.md",
-      "sha256": "c446420fafc65a586a70ba1da2370393615fdac233b334866470333bf65450e0"
+      "sha256": "b18a9260ab60424baa9889ed39525fdca8691d464532efd21e5ea637b9fd4ece"
     },
     {
       "size": 17869,
       "filename": "stack-architect-v16.3.3.md",
-      "sha256": "285186141057efe52ac97d9df91d351a97720d1ccc75d65a53a92d0d93f8df2f"
+      "sha256": "7e0001ebbdf54b9440ce485cd2b4a221b3a71fa6043906e0e7043e77c2fc2c92"
     }
   ],
   "algorithm": "SHA-256",

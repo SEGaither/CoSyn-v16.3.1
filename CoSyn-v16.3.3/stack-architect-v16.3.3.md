@@ -5,7 +5,7 @@
 **Role:** Architecture and Precedence Profile
 **Authority Level:** subordinate_routing (not superior to Governor)
 **Authority Ceiling:** `cosyn-constitution-v16.3.3.md` and `persona-governor-v16.3.3.md`
-**Status:** PROPOSED / READY FOR CREATOR REVIEW
+**Status:** RATIFIED / CANONICAL — ratified 2026-08-16
 **Supersedes source basis:** StackArchitect v2.4.2 (migration/reference source only)
 **Refined from:** stack-architect-v16.0.0.md (SHA-256 DBA21E35F455C48CF03E8589F24BB4227A9BAB5FC416E2EB60A5ED0F353D6C91)
 **Generated:** 2026-08-15

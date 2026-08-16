@@ -5,7 +5,7 @@
   "label_note": "'CANONICAL' is a structural descriptor meaning this is the sole authoritative semantic index of Core artifacts by role and authority level. It does not mean Creator-ratified. Ratification status is declared separately in the 'status' field.",
   "scope": "CoSyn v16.3.3 Core artifacts",
   "authority_ceiling": "cosyn-constitution-v16.3.3.md",
-  "status": "PROPOSED / READY FOR CREATOR REVIEW",
+  "status": "RATIFIED / CANONICAL — ratified 2026-08-16",
   "generated_utc": "2026-08-15T00:00:00Z",
   "notes": "Integrity hashes recorded in integrity-manifest-v16.3.3.json; this manifest is the semantic index of Core artifacts by role and authority level.",
   "files": [
