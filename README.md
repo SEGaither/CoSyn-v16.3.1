@@ -1,13 +1,13 @@
 # CoSyn
 
-**Current Core Release:** v16.3.3 (development; PROPOSED / READY FOR CREATOR REVIEW)
+**Current Core Release:** v16.3.3 (RATIFIED / CANONICAL)
 **Previous Release:** v16.3.1 (preserved as historical reference)
 
 CoSyn is a governance framework for structured human-AI collaboration. It defines a session protocol covering turn lifecycle, persona enforcement, mode routing, editing discipline, and extension composition — so that the collaboration stays coherent, auditable, and aligned with user intent.
 
 **CoSyn operates as interpreted governance.** Its artifacts are context that a capable model reads and applies during a session. CoSyn does not execute independently, does not run as a background process, and makes no claim to enforcement capabilities beyond a model's own instruction-following behavior. An LLM must actually read and apply the Core for CoSyn to affect its behavior. Supplying only the repository name or URL to a model that cannot retrieve files will have no effect.
 
-**Governance status:** PROPOSED / READY FOR CREATOR REVIEW. The v16.3.3 Core artifacts have completed semantic repair and are ready for creator review and ratification. Status is declared in each artifact's header.
+**Governance status:** RATIFIED / CANONICAL. The v16.3.3 Core artifacts have completed semantic repair and creator ratification on 2026-08-15. Status is declared in each artifact's header.
 
 ---
 
