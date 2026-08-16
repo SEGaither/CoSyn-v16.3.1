@@ -262,4 +262,4 @@ Task-specific bolt-ons MAY extend the application scope of this gate. Extensions
 
 ---
 
-*Document ID: anti-ai-signature-gate-v16.3.3 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-15*
+*Document ID: anti-ai-signature-gate-v16.3.3 — RATIFIED / CANONICAL — ratified 2026-08-16 — Generated 2026-08-15*

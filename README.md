@@ -7,7 +7,7 @@ CoSyn is a governance framework for structured human-AI collaboration. It define
 
 **CoSyn operates as interpreted governance.** Its artifacts are context that a capable model reads and applies during a session. CoSyn does not execute independently, does not run as a background process, and makes no claim to enforcement capabilities beyond a model's own instruction-following behavior. An LLM must actually read and apply the Core for CoSyn to affect its behavior. Supplying only the repository name or URL to a model that cannot retrieve files will have no effect.
 
-**Governance status:** RATIFIED / CANONICAL. The v16.3.3 Core artifacts have completed semantic repair and creator ratification on 2026-08-15. Status is declared in each artifact's header.
+**Governance status:** RATIFIED / CANONICAL. The v16.3.3 Core artifacts have completed semantic repair and creator ratification on 2026-08-16. Status is declared in each artifact's header.
 
 ---
 
@@ -47,7 +47,7 @@ Copy this prompt into your LLM, project instruction field, or system prompt. If 
 Load CoSyn v16.3.3 as governing protocol for this session.
 
 CoSyn v16.3.3 Core files are at:
-https://github.com/SEGaither/CoSyn-v16.3.1/tree/master/CoSyn-v16.3.3/
+https://github.com/SEGaither/CoSyn-v16.3.1/tree/v16.3.3/CoSyn-v16.3.3/
 
 Retrieve and read all 13 files in that directory:
 - cosyn-constitution-v16.3.3.md
@@ -115,7 +115,7 @@ Core artifacts:
 
 ### Using CoSyn
 
-- **Pin a specific release.** For stable/ratified versions, use the `v16.3.1` tag. For development/pre-ratification versions, use the current master branch to access `CoSyn-v16.3.3/` (PROPOSED / READY FOR CREATOR REVIEW). Do not depend on HEAD for deterministic results in production.
+- **Pin a specific release.** For the current ratified version, use the `v16.3.3` tag and `CoSyn-v16.3.3/` directory. For the previous stable release, use the `v16.3.1` tag (historical). Do not depend on HEAD for deterministic results in production.
 - **Tier-2 and Tier-3 material is project-local.** Projects supply their own Tier-2 (project profile) and Tier-3 (task-specific) layers. These are not distributed from this repository.
 - **Authority precedence within CoSyn:** `Constitution > Governor > Architect > Runtime > Profile > Model`.
 
@@ -146,8 +146,8 @@ Earlier Core versions are preserved for provenance and historical reference:
 - `CoSyn-v16.1.0/` — Corrective pass (historical)
 - `CoSyn-v16.2.0/` — Historical baseline (historical)
 - `CoSyn-v16.3.0/` — Repair work baseline (historical)
-- `CoSyn-v16.3.1/` — Published release (stable/ratified; see PUBLICATION-PROVENANCE.md for details)
-- `CoSyn-v16.3.3/` — Development/pre-ratification (current; PROPOSED / READY FOR CREATOR REVIEW)
+- `CoSyn-v16.3.1/` — Published release (historical; see PUBLICATION-PROVENANCE.md for details)
+- `CoSyn-v16.3.3/` — Current ratified release (RATIFIED / CANONICAL — ratified 2026-08-16)
 
 Do not use historical versions as active governance unless explicitly specified by authority.
 

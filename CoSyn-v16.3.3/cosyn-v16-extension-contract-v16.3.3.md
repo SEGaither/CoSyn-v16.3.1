@@ -167,4 +167,4 @@ CoSyn v16 is interpreted in-chat governance context. This contract defines gover
 
 ---
 
-*End of `cosyn-v16-extension-contract-v16.3.3.md` — PROPOSED / READY FOR CREATOR REVIEW*
+*End of `cosyn-v16-extension-contract-v16.3.3.md` — RATIFIED / CANONICAL — ratified 2026-08-16*

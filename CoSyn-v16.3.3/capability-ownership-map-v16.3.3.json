@@ -1,4 +1,4 @@
-﻿{
+{
   "artifact_id": "capability-ownership-map-v16.3.3",
   "artifact_version": "16.3.3",
   "role": "Derived ownership index — maps each governed capability identifier to the single Core artifact that authoritatively owns it. This artifact is informative metadata only; it is not a governance authority.",

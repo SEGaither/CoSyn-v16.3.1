@@ -699,4 +699,4 @@ This artifact is derived from CGS v15.0.2. Full derivation provenance is recorde
 
 ---
 
-*Document ID: cosyn-constitution-v16.3.3 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-15*
+*Document ID: cosyn-constitution-v16.3.3 — RATIFIED / CANONICAL — ratified 2026-08-16 — Generated 2026-08-15*

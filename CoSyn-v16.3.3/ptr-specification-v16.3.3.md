@@ -699,4 +699,4 @@ State-delta item with `retention = pcr-promoted`, `transition = record_pcr_promo
 
 ---
 
-*Document ID: ptr-specification-v16.3.3 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-15*
+*Document ID: ptr-specification-v16.3.3 — RATIFIED / CANONICAL — ratified 2026-08-16 — Generated 2026-08-15*

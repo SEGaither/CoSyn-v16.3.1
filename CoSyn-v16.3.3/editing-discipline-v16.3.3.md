@@ -193,4 +193,4 @@ CREATE generates. EDIT preserves. REVIEW comments only.
 
 ---
 
-*Document ID: editing-discipline-v16.3.3 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-15*
+*Document ID: editing-discipline-v16.3.3 — RATIFIED / CANONICAL — ratified 2026-08-16 — Generated 2026-08-15*

@@ -1,4 +1,4 @@
-﻿{
+{
   "package_identity": "CoSyn-v16.3.3",
   "package_version": "16.3.3",
   "package_tier": "1_core",
@@ -84,6 +84,6 @@
   "provenance_pointer": "../../provenance/migration-provenance-map.json",
   "mandatory_statements": [
     "CoSyn v16 in a conversational context is interpreted governance — a protocol the model applies during response construction. It does not claim transactional persistence, atomic storage, exactly-once delivery, rollback guarantees, background processes, external API integration, or executable runtime enforcement outside that protocol.",
-    "This package is CoSyn-v16.3.3, a semantic corrective refinement of CoSyn-v16.1.0. Status: PROPOSED / READY FOR CREATOR REVIEW. It has not been ratified by the CoSyn creator. CCT development authority did not include ratification."
+    "This package is CoSyn-v16.3.3, a semantic corrective refinement of CoSyn-v16.1.0. Status: RATIFIED / CANONICAL — ratified 2026-08-16 by the CoSyn creator."
   ]
 }

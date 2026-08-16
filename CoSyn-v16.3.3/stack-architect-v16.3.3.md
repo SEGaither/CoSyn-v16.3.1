@@ -285,4 +285,4 @@ The Session State class contains Current PTR State only. It is routed into later
 
 ---
 
-*Document ID: stack-architect-v16.3.3 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-15*
+*Document ID: stack-architect-v16.3.3 — RATIFIED / CANONICAL — ratified 2026-08-16 — Generated 2026-08-15*

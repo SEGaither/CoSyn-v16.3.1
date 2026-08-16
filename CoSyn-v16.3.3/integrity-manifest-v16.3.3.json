@@ -1,64 +1,64 @@
-﻿{
+{
   "entries": [
     {
-      "size": 11591,
+      "size": 11609,
       "filename": "anti-ai-signature-gate-v16.3.3.md",
-      "sha256": "f22ff1afe75f508365c55bf8ed6e8014f8171ce403be1a236a807c93cacab1e9"
+      "sha256": "7eecb4c602f29e8c30ebf0ecd28494293401239b49def900d3cb834fbf2edfef"
     },
     {
-      "size": 2613,
+      "size": 2619,
       "filename": "canonical-manifest-v16.3.3.json",
-      "sha256": "39d5e8542d33a966567bb3dd362d82178cd1531d6db1162dd7089d741d64953b"
+      "sha256": "b35f5bbbecd970ba6be5bd5edf58e1f78d3db965c2c9741037b115ba71e7d840"
     },
     {
-      "size": 7086,
+      "size": 7092,
       "filename": "capability-ownership-map-v16.3.3.json",
-      "sha256": "223a3ce7c4eb11b332f72e8545cb41cdd8bfd8919adfe471184818898377953b"
+      "sha256": "18a78da614bf0340bece519eb49eb2ef000fe06da8e9130577b0e614d2a3cc64"
     },
     {
-      "size": 4512,
+      "size": 4436,
       "filename": "core-package-manifest-v16.3.3.json",
-      "sha256": "aa6d512316f7cff12bda320ebd71f722a73be80560f524fafe8600ac5a91aedf"
+      "sha256": "a68603fb55327740e04232c5484d70ca7c2ae4a768609010552d8c433b264b39"
     },
     {
-      "size": 38270,
+      "size": 38288,
       "filename": "cosyn-constitution-v16.3.3.md",
-      "sha256": "1238c3a3554803ed64122e1153b8c81279d7ad778a3cf98f2e21ff1900a087a8"
+      "sha256": "a845df174269eca0d5ad90554c391abcacb7a270f8fee44a3d4caa65bc4e8a78"
     },
     {
-      "size": 5961,
+      "size": 5967,
       "filename": "cosyn-v16-bind-template-v16.3.3.json",
-      "sha256": "90e29389843913b3f46a205f91dcf6c70ed554d407df112a0fd5cb1e32b72ccb"
+      "sha256": "5152fe4a8de86639fe1a75d93e143278966b006705713970bad111ee2e0d363a"
     },
     {
-      "size": 12661,
+      "size": 12679,
       "filename": "cosyn-v16-extension-contract-v16.3.3.md",
-      "sha256": "43048dbecd646ffa554f706a544a5eb2f74466888a3f4ea37de4c72254ed6b5f"
+      "sha256": "28e9524bf7540fdfc12e45f0edfb815ed81945c6115a0ff90e0a8382492ceb5a"
     },
     {
-      "size": 7005,
+      "size": 7023,
       "filename": "editing-discipline-v16.3.3.md",
-      "sha256": "37653d515dce300f5d1d472cdca1ea8028b7606a9f039412d7228d5ef976e0e2"
+      "sha256": "35d6e8a344079917cdc14ace677ffa7f47435dff84c1a436b4dfb0fa04e25cb2"
     },
     {
-      "size": 6799,
+      "size": 6817,
       "filename": "mode-registry-v16.3.3.md",
-      "sha256": "1ba561f0c479e75442796feb382445c0175dd42f5438de34f24e395aa1c74394"
+      "sha256": "93246c1af2746e5ba614607cc9570fe86110f7e1bf05dff2231643ac6b034639"
     },
     {
-      "size": 28551,
+      "size": 28617,
       "filename": "persona-governor-v16.3.3.md",
-      "sha256": "d6096c476cc0ae2e36a9b5438ebb77fae17bdbbbc2276e488c496917d77ec534"
+      "sha256": "dfa6a0646a974a2b4ddf1b456833c6486a68f5eb00fae8164cfb7d8b54320a58"
     },
     {
-      "size": 36614,
+      "size": 36632,
       "filename": "ptr-specification-v16.3.3.md",
-      "sha256": "b18a9260ab60424baa9889ed39525fdca8691d464532efd21e5ea637b9fd4ece"
+      "sha256": "e3ff0af0b8d189b4342a29cebff313e763ec1398a4592d2ba939ffb5cfc1b72d"
     },
     {
-      "size": 17869,
+      "size": 17887,
       "filename": "stack-architect-v16.3.3.md",
-      "sha256": "7e0001ebbdf54b9440ce485cd2b4a221b3a71fa6043906e0e7043e77c2fc2c92"
+      "sha256": "5d1283657aea557028573b7836902c31befd3355d9c064e65b9ee01d150c68d6"
     }
   ],
   "algorithm": "SHA-256",
@@ -87,6 +87,6 @@
   "manifest_id": "integrity-manifest-v16.3.3",
   "file_count": 12,
   "manifest_version": "16.3.3",
-  "generated_utc": "2026-08-15T22:53:30Z",
-  "repair_state": "FINAL v16.3.3 corrected-set hashes calculated from the rendered files. These hashes are valid for this corrected set."
+  "generated_utc": "2026-08-16T00:00:00Z",
+  "repair_state": "FINAL v16.3.3 ratified-set hashes — all 12 covered files regenerated after ratification repair (status corrections, SHA-256 placeholder resolution, UTF-8 BOM removal from JSON artifacts)."
 }

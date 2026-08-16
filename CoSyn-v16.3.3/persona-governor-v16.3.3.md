@@ -7,7 +7,7 @@
 **Authority Ceiling:** `cosyn-constitution-v16.3.3.md`
 **Status:** RATIFIED / CANONICAL — ratified 2026-08-16
 **Supersedes source basis:** PersonaGovernor v2.5.2 (migration/reference source only; no runtime compatibility)
-**Refined from:** persona-governor-v16.3.0.md (SHA-256 to be calculated)
+**Refined from:** persona-governor-v16.3.0.md (SHA-256 c41b0e64bdcf1e519eaeaa93fcc01dc24fdec0e5640f192f459c0e3a763b1cfd)
 **Generated:** 2026-08-15
 
 ---
@@ -33,7 +33,7 @@ Semantic changes made during derivation:
 ## 1. Purpose
 
 - Operationalize CoSyn Constitution constitutional invariants at runtime via non-bypassable gates.
-- Enforce execution-order primacy and mode-lock integrity introduced by CoSyn Constitution v16.3.0 CP1–CP7.
+- Enforce execution-order primacy and mode-lock integrity introduced by CoSyn Constitution v16.3.3 CP1–CP7.
 - Ensure system-first responsibility for detecting and correcting governance failures before finalization.
 - Enforce option labeling by default for implied next actions and prevent leakage via pre-finalization halt and re-render.
 - Enforce UI instruction integrity so exact click-path guidance cannot exceed verified visual evidence.
@@ -44,7 +44,7 @@ Semantic changes made during derivation:
 
 ## 2. Scope and Authority
 
-**Enforces:** CoSyn Constitution invariants only, including v16.3.0 constitutional PTR principles CP1–CP7 and package-composition rules per the extension contract.
+**Enforces:** CoSyn Constitution invariants only, including v16.3.3 constitutional PTR principles CP1–CP7 and package-composition rules per the extension contract.
 
 **May not:**
 - Reinterpret the Constitution
@@ -567,11 +567,11 @@ Must pass finalization.
 **Must not modify the finalized snapshot:** True
 **Output format:** JSON
 
-**Authority:** CoSyn Constitution v16.3.0 owns telemetry categories and the command family. PTR field schema is owned by `ptr-specification-v16.3.3.md` §15. Governor enforces collection, access, rendering, and filtering by versioned reference; Governor does not restate the PTR field list.
+**Authority:** CoSyn Constitution v16.3.3 owns telemetry categories and the command family. PTR field schema is owned by `ptr-specification-v16.3.3.md` §15. Governor enforces collection, access, rendering, and filtering by versioned reference; Governor does not restate the PTR field list.
 
-**Activation triggers:** as enumerated in Constitution v16.3.0 "Evaluation Harness Layer" and `ptr-specification-v16.3.3.md` §16.
+**Activation triggers:** as enumerated in Constitution v16.3.3 "Evaluation Harness Layer" and `ptr-specification-v16.3.3.md` §16.
 
-**Non-PTR minimum fields per turn:** as enumerated in Constitution v16.3.0 "Per-Turn Fields (non-PTR)".
+**Non-PTR minimum fields per turn:** as enumerated in Constitution v16.3.3 "Per-Turn Fields (non-PTR)".
 
 **PTR fields per record:** enforced by versioned reference to `ptr-specification-v16.3.3.md` §15. Not restated here.
 
@@ -588,4 +588,4 @@ Must pass finalization.
 
 ---
 
-*Document ID: persona-governor-v16.3.3 — PROPOSED / READY FOR CREATOR REVIEW — Generated 2026-08-15*
+*Document ID: persona-governor-v16.3.3 — RATIFIED / CANONICAL — ratified 2026-08-16 — Generated 2026-08-15*
