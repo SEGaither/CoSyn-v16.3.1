@@ -1,0 +1,75 @@
+{
+  "artifact_id": "urn:cosyn:wbg:hierarchy-and-collision-validation:1.0.1",
+  "version": "1.0.1",
+  "date": "2026-08-17",
+  "status": "PASS \u2014 RATIFIED / CANONICAL VALIDATION",
+  "baseline_source": {
+    "uploaded_zip_sha256": "ddd5c72ae0e8dbc6429480149e2034e809b7956097c826a37e05f18420a03e92",
+    "historical_canonical_zip_sha256": "91ffbb843cc93db968fad5b40f66217113a040833726ce0aef4f03741333b0ac",
+    "outer_container_match": false,
+    "member_count": 11,
+    "internal_manifest_covered_hashes_pass": "10/10",
+    "content_fingerprint_sha256": "37ff43471c8b21756319ff5d9c603654bc56780b87176817a031e6d7691c4b98"
+  },
+  "actual_baseline_artifacts_read": [
+    "README-WBG-v1.0.0.md",
+    "writing-bind-template-v1.0.0.json",
+    "writing-diagnostic-and-evaluation-protocol-v1.0.0.md",
+    "writing-governance-and-authority-v1.0.0.md",
+    "writing-integrity-manifest-v1.0.0.json",
+    "writing-operation-state-and-revision-control-v1.0.0.md",
+    "writing-package-manifest-v1.0.0.json",
+    "writing-project-workbook-template-v1.0.0.md",
+    "Writing-Team-Personas-v2.3.1-canonical.md",
+    "writing-user-artistic-authority-v1.0.0.md",
+    "writing-voice-style-and-naturalness-v1.0.0.md"
+  ],
+  "collision_findings": [
+    {
+      "id": "C01",
+      "finding": "Resolved",
+      "issue": "Candidate r1 used stable non-URN artifact_id values, conflicting with WBG v1.0.0's required versioned URN convention.",
+      "repair": "v1.0.1 sync contract keeps versioned artifact_id and adds artifact_family_id for stable cross-version identity."
+    },
+    {
+      "id": "C02",
+      "finding": "Resolved",
+      "issue": "The v1.0.0 bind template validates an exact 11-member v1.0.0 package and cannot by itself bind the new hierarchy/extensions.",
+      "repair": "Added Hierarchical Bind Profile wrapper; the legacy bind template remains baseline owner and is not modified."
+    },
+    {
+      "id": "C03",
+      "finding": "Resolved",
+      "issue": "Candidate r1 Anti-Plagiarism Check and Gate had circular required dependencies.",
+      "repair": "Check has no Gate dependency; Gate depends one-way on Check."
+    },
+    {
+      "id": "C04",
+      "finding": "Resolved",
+      "issue": "Check/Gate body capability names did not exactly match their registration capability names.",
+      "repair": "Standardized on writing.originality.source-comparison-check and writing.originality.pre-emission-gate."
+    },
+    {
+      "id": "C05",
+      "finding": "No collision",
+      "issue": "Existing Source/Authorship and provenance rules overlap conceptually with anti-plagiarism.",
+      "repair": "No ownership conflict: baseline owns source/authorship/provenance discipline; anti-plagiarism owns source-comparison classification and originality disposition."
+    },
+    {
+      "id": "C06",
+      "finding": "No collision",
+      "issue": "Publisher persona and Publisher diagnostic cover publication readiness and pre-publication checks.",
+      "repair": "No ownership conflict: those are advisory evaluation/purview functions; Copyright Page Creator and AI Use Disclosure Creator own concrete publication artifact generation."
+    },
+    {
+      "id": "C07",
+      "finding": "No collision after clarification",
+      "issue": "User Artistic Authority could be misread as allowing an originality gate result to be artistically overridden.",
+      "repair": "Gate now states User Artistic Authority cannot falsify provenance, remove required attribution, or turn known source dependence into an originality PASS."
+    }
+  ],
+  "functional_capability_collision_result": "PASS \u2014 no unresolved duplicate functional owner after repairs",
+  "note": "The uploaded v1.0.0 ZIP container hash differs from the historical canonical archive hash, but the exact 11-member set was read and audited and all 10 internally declared member hashes passed. WBG v1.1.0 therefore uses the verified member-content fingerprint for baseline compatibility.",
+  "ratified_at": "2026-08-17T17:11:00-05:00",
+  "ratification_effect": "The User's explicit ratification makes WBG v1.1.0 canonical. The verified 11-member content fingerprint is the registered baseline compatibility anchor."
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_id": "urn:cosyn:wbg:writing-integrity-manifest:1.0.0",
+  "artifact_title": "WBG Writing Integrity Manifest",
+  "artifact_version": "1.0.0",
+  "package_id": "urn:cosyn:wbg:package:1.0.0",
+  "package_version": "1.0.0",
+  "status": "PROPOSED / READY FOR USER REVIEW",
+  "algorithm": "SHA-256",
+  "coverage": {
+    "package_member_count": 11,
+    "hashed_member_count": 10,
+    "self_excluded": "writing-integrity-manifest-v1.0.0.json",
+    "reason": "Integrity manifest excludes its own hash to avoid circular self-reference."
+  },
+  "hashes": {
+    "README-WBG-v1.0.0.md": "644f7c0ddfcddcce40a2a4ba418c97051d91c0d9ba8e08cda0b3be1678375c7f",
+    "writing-governance-and-authority-v1.0.0.md": "daefe7a83579f1bd7cd6930c4cb547b710bf7ac0ed5cc043589b73c24973765c",
+    "Writing-Team-Personas-v2.3.1-canonical.md": "faad29a2976ce1b3eeac2f8460ed81fc36a78b7b49344fa9743d2dd0cec530f3",
+    "writing-operation-state-and-revision-control-v1.0.0.md": "06fd5f01578c0b01a6a57d89007f99a3526b905568e27f668554342e3549440e",
+    "writing-user-artistic-authority-v1.0.0.md": "132e2e1dd151f4b0fe08fac9bb523322451a87e6ee59e6c995857719c4ef46a9",
+    "writing-package-manifest-v1.0.0.json": "750a0ec5fa90ae1ceaff006a1537de156dec24336621ff2da7d66629952fde46",
+    "writing-voice-style-and-naturalness-v1.0.0.md": "25f477e0ce23fc4acf2e2ada7e992cb6d7035089dcd9556e25f54e49966cd2e6",
+    "writing-diagnostic-and-evaluation-protocol-v1.0.0.md": "04c86e67239eb6d1cfc48a2559667e9c26e37840248e1752395f601e991e3681",
+    "writing-project-workbook-template-v1.0.0.md": "467a234bace997ae8821cde8d103a14187ef4e0a33392be9b059d803c43c4c7a",
+    "writing-bind-template-v1.0.0.json": "1a5669a0c8855b9a96abeb9dd88521a2ce84d9f5cd9e10dcbd80eeb13a230cb3"
+  }
+}

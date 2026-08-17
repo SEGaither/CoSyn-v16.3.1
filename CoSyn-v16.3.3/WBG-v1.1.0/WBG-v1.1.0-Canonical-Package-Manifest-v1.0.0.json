@@ -1,0 +1,146 @@
+{
+  "package": {
+    "name": "CoSyn Writing Bolt-on Governance",
+    "short_name": "WBG",
+    "version": "1.1.0",
+    "status": "RATIFIED / CANONICAL",
+    "canonical_filename": "WBG-v1.1.0-ratified.zip",
+    "ratified_at": "2026-08-17T17:11:00-05:00",
+    "required_parent_governance": {
+      "name": "CoSyn CGS",
+      "version": "16.3.3",
+      "relationship": "required prerequisite; WBG versioning is independent"
+    }
+  },
+  "hierarchy": [
+    "CoSyn CGS v16.3.3",
+    "WBG Root Authority v1.1.0",
+    "Registered WBG v1.0.0 Base Governance",
+    "Registered WBG Functional Extensions",
+    "Project-Specific Writing Governance",
+    "Manuscript / Project Artifacts"
+  ],
+  "baseline": {
+    "version": "1.0.0",
+    "member_count": 11,
+    "preservation": "byte-for-byte unchanged",
+    "historical_canonical_zip_sha256": "91ffbb843cc93db968fad5b40f66217113a040833726ce0aef4f03741333b0ac",
+    "registered_content_fingerprint_sha256": "37ff43471c8b21756319ff5d9c603654bc56780b87176817a031e6d7691c4b98",
+    "verification_record": "WBG-v1.0.0-Baseline-Content-Verification-v1.0.0.json"
+  },
+  "registration_contract": "WBG-Artifact-Registration-and-Sync-Contract-v1.0.1.md",
+  "hierarchical_bind_profile": "WBG-Hierarchical-Bind-Profile-v1.0.0.json",
+  "base_registry": "WBG-Base-Artifact-Registry-v1.0.1.json",
+  "extension_index": "WBG-Extension-Index-v1.0.1.json",
+  "members": [
+    {
+      "filename": "README-WBG-v1.0.0.md",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "README-WBG-v1.1.0.md",
+      "role": "canonical_entry_point"
+    },
+    {
+      "filename": "WBG-AI-Use-Disclosure-Creator-v1.0.2.md",
+      "role": "functional_extension"
+    },
+    {
+      "filename": "WBG-Anti-Plagiarism-Check-v1.0.3.md",
+      "role": "functional_extension"
+    },
+    {
+      "filename": "WBG-Anti-Plagiarism-Gate-v1.0.3.md",
+      "role": "functional_extension"
+    },
+    {
+      "filename": "WBG-Artifact-Registration-and-Sync-Contract-v1.0.1.md",
+      "role": "root_support_sync_registration"
+    },
+    {
+      "filename": "WBG-Base-Artifact-Registry-v1.0.1.json",
+      "role": "root_support_base_registry"
+    },
+    {
+      "filename": "WBG-Copyright-Page-Creator-v1.0.2.md",
+      "role": "functional_extension"
+    },
+    {
+      "filename": "WBG-Extension-Index-v1.0.1.json",
+      "role": "root_support_extension_discovery"
+    },
+    {
+      "filename": "WBG-Hierarchical-Bind-Profile-v1.0.0.json",
+      "role": "root_support_hierarchical_binding"
+    },
+    {
+      "filename": "WBG-Root-Authority-v1.1.0.md",
+      "role": "root_authority"
+    },
+    {
+      "filename": "WBG-v1.0.0-Baseline-Content-Verification-v1.0.0.json",
+      "role": "validation_evidence"
+    },
+    {
+      "filename": "WBG-v1.1.0-Canonical-Integrity-Manifest-v1.0.0.json",
+      "role": "canonical_integrity_manifest"
+    },
+    {
+      "filename": "WBG-v1.1.0-Canonical-Package-Manifest-v1.0.0.json",
+      "role": "canonical_package_manifest"
+    },
+    {
+      "filename": "WBG-v1.1.0-Hierarchy-and-Collision-Validation-v1.0.1.json",
+      "role": "validation_evidence"
+    },
+    {
+      "filename": "WBG-v1.1.0-Hierarchy-and-Collision-Validation-v1.0.1.md",
+      "role": "validation_report"
+    },
+    {
+      "filename": "WBG-v1.1.0-Ratification-and-Provenance-Record-v1.0.0.md",
+      "role": "ratification_provenance"
+    },
+    {
+      "filename": "writing-bind-template-v1.0.0.json",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "writing-diagnostic-and-evaluation-protocol-v1.0.0.md",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "writing-governance-and-authority-v1.0.0.md",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "writing-integrity-manifest-v1.0.0.json",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "writing-operation-state-and-revision-control-v1.0.0.md",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "writing-package-manifest-v1.0.0.json",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "writing-project-workbook-template-v1.0.0.md",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "Writing-Team-Personas-v2.3.1-canonical.md",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "writing-user-artistic-authority-v1.0.0.md",
+      "role": "registered_v1.0.0_base"
+    },
+    {
+      "filename": "writing-voice-style-and-naturalness-v1.0.0.md",
+      "role": "registered_v1.0.0_base"
+    }
+  ],
+  "precedence_note": "The v1.1.0 Root and canonical package controls govern package architecture. Legacy v1.0.0 package-control files remain authoritative only for their registered baseline scope."
+}

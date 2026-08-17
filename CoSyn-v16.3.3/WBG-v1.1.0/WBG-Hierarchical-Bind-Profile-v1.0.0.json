@@ -1,0 +1,50 @@
+{
+  "wbg_artifact": {
+    "schema_version": "1.0.1",
+    "artifact_family_id": "wbg.bind.hierarchical-profile",
+    "artifact_id": "urn:cosyn:wbg:hierarchical-bind-profile:1.0.0",
+    "artifact_name": "WBG Hierarchical Bind Profile",
+    "artifact_version": "1.0.0",
+    "filename": "WBG-Hierarchical-Bind-Profile-v1.0.0.json",
+    "artifact_class": "package_control",
+    "wbg_layer": "root_support",
+    "status": "RATIFIED",
+    "authority_ceiling": "urn:cosyn:wbg:wbg-root-authority:1.1.0",
+    "minimum_wbg_root": "1.1.0",
+    "required_parent_cgs": "16.3.3",
+    "capabilities_provided": [
+      "writing.binding.hierarchical-wbg-v1.1"
+    ],
+    "dependencies": [
+      "family:wbg.base.bind-template",
+      "family:wbg.root.authority",
+      "family:wbg.sync.registration-contract",
+      "family:wbg.base-artifact-registry"
+    ]
+  },
+  "baseline_binding": {
+    "owner": "urn:cosyn:wbg:writing-bind-template:1.0.0",
+    "role": "Validate/bind the exact registered WBG v1.0.0 base and its CGS v16.3.3 prerequisite.",
+    "do_not_modify_legacy_template": true
+  },
+  "hierarchical_sequence": [
+    "Validate/source-bind CoSyn CGS v16.3.3 as required by the baseline WBG bind template.",
+    "Validate the registered WBG v1.0.0 11-member content fingerprint.",
+    "Treat externally ratified baseline status as effective under the Root's grandfathering exception.",
+    "Load WBG Root Authority v1.1.0.",
+    "Load WBG Artifact Registration and Sync Contract v1.0.1.",
+    "Load Base Artifact Registry v1.0.1.",
+    "Discover available WBG extensions from the Extension Index and/or directly supplied conforming artifacts.",
+    "Validate each extension's versioned URN, family ID, integrity, dependencies, conflicts, status, and activation.",
+    "Register eligible RATIFIED extensions as ACTIVE or DORMANT.",
+    "Preserve project-specific governance beneath WBG.",
+    "If this is initial WBG setup and Project Governance Q&A is not already complete, preserve the baseline requirement that the next turn begins Project Governance Q&A."
+  ],
+  "failure_behavior": {
+    "mode": "FAIL_CLOSED_FOR_AFFECTED_WBG_CAPABILITY",
+    "do_not_claim_full_wbg_v1_1_bind_if_root_or_baseline_validation_fails": true,
+    "extension_failure_does_not_corrupt_unrelated_valid_extensions": true,
+    "duplicate_capability_owner": "FAIL_CLOSED_FOR_CONFLICTING_CAPABILITY"
+  },
+  "runtime_boundary": "This profile cannot load unavailable files by itself. Source availability remains a host/context function."
+}

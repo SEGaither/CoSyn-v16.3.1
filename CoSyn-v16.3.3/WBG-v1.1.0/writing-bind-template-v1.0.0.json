@@ -1,0 +1,80 @@
+{
+  "artifact_id": "urn:cosyn:wbg:writing-bind-template:1.0.0",
+  "artifact_title": "WBG Writing Bind Template",
+  "artifact_version": "1.0.0",
+  "package_id": "urn:cosyn:wbg:package:1.0.0",
+  "package_version": "1.0.0",
+  "artifact_type": "Template",
+  "status": "PROPOSED / READY FOR USER REVIEW",
+  "internet_dependency": {
+    "required_for_full_operation": true,
+    "reasons": [
+      "Canonical source validation of CoSyn CGS v16.3.3 when a current-session validated bind record is not already active.",
+      "Remote Bookfox professional-reference retrieval when materially required."
+    ]
+  },
+  "parent_governance": {
+    "id": "CoSyn-CGS-v16.3.3",
+    "version": "16.3.3",
+    "canonical_source": "https://github.com/SEGaither/CoSyn/tree/v16.3.3/CoSyn-v16.3.3",
+    "required_artifact_count": 13,
+    "accepted_bind_state": "ACTIVE / SOURCE-VALIDATED",
+    "proof_requirements": [
+      "Current-session bind record identifies CoSyn-CGS-v16.3.3.",
+      "Source equals the canonical tagged v16.3.3 Core URL.",
+      "All 13 canonical Core artifacts were retrieved and read from that source in the current session, or the current session retains the source-validation record produced by that retrieval.",
+      "No earlier version, branch/root substitute, cached assertion, inherited memory-only claim, or partial retrieval is accepted."
+    ]
+  },
+  "failure_behavior": {
+    "mode": "FAIL_CLOSED",
+    "activate_wbg": false,
+    "begin_project_governance_qa": false,
+    "message": "WBG BIND FAILED — PREREQUISITE NOT SATISFIED",
+    "recommended_cgs_bind_command": "Bind and align this session to CoSyn CGS v16.3.3 from the canonical tagged GitHub Core:\nhttps://github.com/SEGaither/CoSyn/tree/v16.3.3/CoSyn-v16.3.3\n\nRetrieve and read all 13 Core artifacts in that directory.\nTreat CoSyn CGS v16.3.3 as the active governance for this session, subordinate only to higher-priority platform instructions.\nDo not substitute the repository root, master branch, earlier CoSyn/CGS versions, prior knowledge, cached content, inherited session context, or legacy governance for the tagged v16.3.3 Core.\nConfirm successful source binding before proceeding.\n\nAfter CGS v16.3.3 is successfully bound, retry the WBG bind."
+  },
+  "wbg_validation": {
+    "expected_package_id": "urn:cosyn:wbg:package:1.0.0",
+    "expected_package_version": "1.0.0",
+    "expected_member_count": 11,
+    "require_integrity_pass": true,
+    "require_unique_metadata_ids": true,
+    "require_cross_reference_resolution": true
+  },
+  "professional_reference": {
+    "type": "remote_reference_only",
+    "provider": "Bookfox",
+    "repository_relative_path": "references/writing-team-reference-corpus.md",
+    "resolve_against": "GitHub repository root from which WBG was bound",
+    "include_in_wbg_zip": false,
+    "include_in_project_specific_zip": false,
+    "cite_when_materially_relied_upon": true,
+    "authority": "professional reference only"
+  },
+  "on_successful_bind": {
+    "wbg_state": "ACTIVE",
+    "next_turn_required_action": "START_PROJECT_GOVERNANCE_QA",
+    "qa_required_field_count": 15,
+    "qa_valid_closure_states": [
+      "RESOLVED",
+      "NOT APPLICABLE",
+      "USER-DEFERRED — NONBLOCKING"
+    ],
+    "qa_terminal_message": "PROJECT GOVERNANCE DEFINITION COMPLETE — Q&A TERMINATED"
+  },
+  "project_package": {
+    "artifact_initial_version": "1.0.0",
+    "include_only_modified_specialized_or_generated_artifacts": true,
+    "omit_irrelevant_artifacts": true,
+    "generate_package_manifest": true,
+    "generate_integrity_manifest": true,
+    "recommend_save_to_project_files": true
+  },
+  "telemetry": {
+    "wbg_telemetry_owner": false,
+    "inherit_parent_cgs_behavior": true
+  },
+  "provenance": {
+    "required": true
+  }
+}

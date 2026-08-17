@@ -1,0 +1,91 @@
+{
+  "wbg_artifact": {
+    "schema_version": "1.0.1",
+    "artifact_family_id": "wbg.extension-index",
+    "artifact_id": "urn:cosyn:wbg:extension-index:1.0.1",
+    "artifact_name": "WBG Extension Index",
+    "artifact_version": "1.0.1",
+    "filename": "WBG-Extension-Index-v1.0.1.json",
+    "artifact_class": "package_control",
+    "wbg_layer": "root_support",
+    "status": "RATIFIED",
+    "authority_ceiling": "urn:cosyn:wbg:wbg-root-authority:1.1.0",
+    "minimum_wbg_root": "1.1.0",
+    "capabilities_provided": [
+      "writing.wbg.extension-discovery"
+    ]
+  },
+  "authority_note": "Discovery/integrity metadata only. Substantive authority remains in each registered artifact.",
+  "entries": [
+    {
+      "artifact_family_id": "wbg.anti-plagiarism.check",
+      "artifact_id": "urn:cosyn:wbg:anti-plagiarism-check:1.0.3",
+      "artifact_version": "1.0.3",
+      "filename": "WBG-Anti-Plagiarism-Check-v1.0.3.md",
+      "status": "RATIFIED",
+      "minimum_wbg_root": "1.1.0",
+      "sha256": "b05f2cf6200f3947a946c637c0df562ff20a6d4f5781d7cc1a135ffbee3bf2ae",
+      "capabilities_provided": [
+        "writing.originality.source-comparison-check"
+      ],
+      "dependencies": [],
+      "handoffs": [
+        "family:wbg.anti-plagiarism.gate"
+      ],
+      "location": "same_package"
+    },
+    {
+      "artifact_family_id": "wbg.anti-plagiarism.gate",
+      "artifact_id": "urn:cosyn:wbg:anti-plagiarism-gate:1.0.3",
+      "artifact_version": "1.0.3",
+      "filename": "WBG-Anti-Plagiarism-Gate-v1.0.3.md",
+      "status": "RATIFIED",
+      "minimum_wbg_root": "1.1.0",
+      "sha256": "8d2c01709f606e7dcab943d81e8830bfa442d4fbe03aa9442ad999802e67d270",
+      "capabilities_provided": [
+        "writing.originality.pre-emission-gate"
+      ],
+      "dependencies": [
+        "family:wbg.anti-plagiarism.check"
+      ],
+      "handoffs": [],
+      "location": "same_package"
+    },
+    {
+      "artifact_family_id": "wbg.publication.copyright-page-creator",
+      "artifact_id": "urn:cosyn:wbg:copyright-page-creator:1.0.2",
+      "artifact_version": "1.0.2",
+      "filename": "WBG-Copyright-Page-Creator-v1.0.2.md",
+      "status": "RATIFIED",
+      "minimum_wbg_root": "1.1.0",
+      "sha256": "f60797807cf452336c82d27d3394b0463f876852e491b72d2d9fef7a9e7545f3",
+      "capabilities_provided": [
+        "writing.publication.copyright-page-creation"
+      ],
+      "dependencies": [],
+      "handoffs": [
+        "family:wbg.publication.ai-use-disclosure-creator",
+        "family:wbg.anti-plagiarism.check"
+      ],
+      "location": "same_package"
+    },
+    {
+      "artifact_family_id": "wbg.publication.ai-use-disclosure-creator",
+      "artifact_id": "urn:cosyn:wbg:ai-use-disclosure-creator:1.0.2",
+      "artifact_version": "1.0.2",
+      "filename": "WBG-AI-Use-Disclosure-Creator-v1.0.2.md",
+      "status": "RATIFIED",
+      "minimum_wbg_root": "1.1.0",
+      "sha256": "0c70e6b69a1e641e7b91ed29f69f941a1f10c3712922e3533dc30c116b6ea3b3",
+      "capabilities_provided": [
+        "writing.publication.ai-use-disclosure-creation"
+      ],
+      "dependencies": [],
+      "handoffs": [
+        "family:wbg.publication.copyright-page-creator",
+        "family:wbg.anti-plagiarism.check"
+      ],
+      "location": "same_package"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "package": "WBG v1.1.0",
+  "status": "RATIFIED / CANONICAL",
+  "manifest_version": "1.0.0",
+  "hash_algorithm": "SHA-256",
+  "self_hash_excluded": true,
+  "ratified_at": "2026-08-17T17:11:00-05:00",
+  "baseline_content_fingerprint_sha256": "37ff43471c8b21756319ff5d9c603654bc56780b87176817a031e6d7691c4b98",
+  "files": [
+    {
+      "filename": "README-WBG-v1.0.0.md",
+      "bytes": 4832,
+      "sha256": "644f7c0ddfcddcce40a2a4ba418c97051d91c0d9ba8e08cda0b3be1678375c7f"
+    },
+    {
+      "filename": "README-WBG-v1.1.0.md",
+      "bytes": 2285,
+      "sha256": "23ebc94f0c0a0c38714681e52f8d36f1093e79cd04ce5b08f4aac9967cc34b74"
+    },
+    {
+      "filename": "WBG-AI-Use-Disclosure-Creator-v1.0.2.md",
+      "bytes": 22990,
+      "sha256": "0c70e6b69a1e641e7b91ed29f69f941a1f10c3712922e3533dc30c116b6ea3b3"
+    },
+    {
+      "filename": "WBG-Anti-Plagiarism-Check-v1.0.3.md",
+      "bytes": 22345,
+      "sha256": "b05f2cf6200f3947a946c637c0df562ff20a6d4f5781d7cc1a135ffbee3bf2ae"
+    },
+    {
+      "filename": "WBG-Anti-Plagiarism-Gate-v1.0.3.md",
+      "bytes": 16612,
+      "sha256": "8d2c01709f606e7dcab943d81e8830bfa442d4fbe03aa9442ad999802e67d270"
+    },
+    {
+      "filename": "WBG-Artifact-Registration-and-Sync-Contract-v1.0.1.md",
+      "bytes": 6601,
+      "sha256": "2d01e2b7f4e9505a65767ebdd339f90be8da4b73db1b1c77bf5db80cad160396"
+    },
+    {
+      "filename": "WBG-Base-Artifact-Registry-v1.0.1.json",
+      "bytes": 6683,
+      "sha256": "cdcd1b83ac0d38792684568bbf6ef375a8beef743a87fcd52c3987813d7b801b"
+    },
+    {
+      "filename": "WBG-Copyright-Page-Creator-v1.0.2.md",
+      "bytes": 14353,
+      "sha256": "f60797807cf452336c82d27d3394b0463f876852e491b72d2d9fef7a9e7545f3"
+    },
+    {
+      "filename": "WBG-Extension-Index-v1.0.1.json",
+      "bytes": 3263,
+      "sha256": "fd3fbf68c8cf8706b31366510f5e1e16491d567086f14c6f48f363e0b3d80893"
+    },
+    {
+      "filename": "WBG-Hierarchical-Bind-Profile-v1.0.0.json",
+      "bytes": 2500,
+      "sha256": "223d049cb921eb954caf0be749653f485165507afd4ff41cc63ade7e7f9538a7"
+    },
+    {
+      "filename": "WBG-Root-Authority-v1.1.0.md",
+      "bytes": 5739,
+      "sha256": "75c4dda910689a9865e940d5e13dbbbadc45dd7b934385afeae545daadc613b3"
+    },
+    {
+      "filename": "WBG-v1.0.0-Baseline-Content-Verification-v1.0.0.json",
+      "bytes": 3690,
+      "sha256": "4de6a0ff7cbe90bb7b95205319c50550f649048044126ccf722f8fe38ea04116"
+    },
+    {
+      "filename": "WBG-v1.1.0-Canonical-Package-Manifest-v1.0.0.json",
+      "bytes": 4726,
+      "sha256": "00cd6c0821840315125629c667c6046118ce7f1afda7f3b2d90e4f60cca4fcbc"
+    },
+    {
+      "filename": "WBG-v1.1.0-Hierarchy-and-Collision-Validation-v1.0.1.json",
+      "bytes": 4172,
+      "sha256": "1649c2094d910c1c83564ce6115359cc6fa621958c12d08a7b09836a0b72077f"
+    },
+    {
+      "filename": "WBG-v1.1.0-Hierarchy-and-Collision-Validation-v1.0.1.md",
+      "bytes": 4331,
+      "sha256": "daae59ce269c1b1b204c0b707835a9fbb072c53e504d68c13051075a968d37d3"
+    },
+    {
+      "filename": "WBG-v1.1.0-Ratification-and-Provenance-Record-v1.0.0.md",
+      "bytes": 3564,
+      "sha256": "3e1f7b897a5f5808ec343898627692b2ea7c95e7614187976cac603354e0a0c1"
+    },
+    {
+      "filename": "writing-bind-template-v1.0.0.json",
+      "bytes": 3753,
+      "sha256": "1a5669a0c8855b9a96abeb9dd88521a2ce84d9f5cd9e10dcbd80eeb13a230cb3"
+    },
+    {
+      "filename": "writing-diagnostic-and-evaluation-protocol-v1.0.0.md",
+      "bytes": 3860,
+      "sha256": "04c86e67239eb6d1cfc48a2559667e9c26e37840248e1752395f601e991e3681"
+    },
+    {
+      "filename": "writing-governance-and-authority-v1.0.0.md",
+      "bytes": 6663,
+      "sha256": "daefe7a83579f1bd7cd6930c4cb547b710bf7ac0ed5cc043589b73c24973765c"
+    },
+    {
+      "filename": "writing-integrity-manifest-v1.0.0.json",
+      "bytes": 1729,
+      "sha256": "f8ca080e98f8d8ef8e190475a3432cd7f2ba3b657249cd4ae57cb4ea32877a5e"
+    },
+    {
+      "filename": "writing-operation-state-and-revision-control-v1.0.0.md",
+      "bytes": 6905,
+      "sha256": "06fd5f01578c0b01a6a57d89007f99a3526b905568e27f668554342e3549440e"
+    },
+    {
+      "filename": "writing-package-manifest-v1.0.0.json",
+      "bytes": 5047,
+      "sha256": "750a0ec5fa90ae1ceaff006a1537de156dec24336621ff2da7d66629952fde46"
+    },
+    {
+      "filename": "writing-project-workbook-template-v1.0.0.md",
+      "bytes": 5031,
+      "sha256": "467a234bace997ae8821cde8d103a14187ef4e0a33392be9b059d803c43c4c7a"
+    },
+    {
+      "filename": "Writing-Team-Personas-v2.3.1-canonical.md",
+      "bytes": 72481,
+      "sha256": "faad29a2976ce1b3eeac2f8460ed81fc36a78b7b49344fa9743d2dd0cec530f3"
+    },
+    {
+      "filename": "writing-user-artistic-authority-v1.0.0.md",
+      "bytes": 3794,
+      "sha256": "132e2e1dd151f4b0fe08fac9bb523322451a87e6ee59e6c995857719c4ef46a9"
+    },
+    {
+      "filename": "writing-voice-style-and-naturalness-v1.0.0.md",
+      "bytes": 3453,
+      "sha256": "25f477e0ce23fc4acf2e2ada7e992cb6d7035089dcd9556e25f54e49966cd2e6"
+    }
+  ]
+}
