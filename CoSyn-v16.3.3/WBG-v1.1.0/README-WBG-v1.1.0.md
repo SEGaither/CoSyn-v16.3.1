@@ -15,6 +15,69 @@
 7. Activate only extensions whose trigger applies.
 8. Apply project-specific writing governance beneath WBG.
 
+## Bind WBG to an Existing CGS v16.3.3 Writing Project
+
+```
+Bind Writing Bolt-on Governance (WBG) v1.1.0 to this existing CoSyn CGS v16.3.3 governed project.
+
+Existing parent governance:
+CoSyn CGS v16.3.3
+
+Do not replace, weaken, or rebind the existing CGS authority.
+
+Retrieve WBG directly from:
+
+https://github.com/SEGaither/CoSyn/tree/master/CoSyn-v16.3.3/WBG-v1.1.0
+
+Read and validate the WBG v1.1.0 hierarchy beginning with:
+
+1. README-WBG-v1.1.0.md
+2. WBG-Root-Authority-v1.1.0.md
+3. WBG-Artifact-Registration-and-Sync-Contract-v1.0.1.md
+4. WBG-Base-Artifact-Registry-v1.0.1.json
+5. WBG-Hierarchical-Bind-Profile-v1.0.0.json
+6. WBG-Extension-Index-v1.0.1.json
+
+Then load the registered WBG v1.0.0 base governance and all RATIFIED WBG functional extensions required for this writing project.
+
+Authority order:
+
+CoSyn CGS v16.3.3
+→ WBG Root Authority v1.1.0
+→ registered WBG base governance
+→ applicable registered WBG functional extensions
+→ existing project-specific writing governance
+→ manuscript/project artifacts
+
+Validate before claiming the bind:
+
+- existing CGS v16.3.3 bind remains intact;
+- WBG v1.1.0 is RATIFIED / CANONICAL;
+- WBG recognizes CGS v16.3.3 as required parent governance;
+- WBG is subordinate to CGS;
+- required WBG dependencies are present;
+- duplicate capability ownership does not exist;
+- extension conflicts fail closed;
+- project-specific governance remains subordinate to WBG;
+- no unrelated project governance is modified.
+
+The preserved README-WBG-v1.0.0.md and other v1.0.0 baseline files may contain historical pre-ratification status text.
+
+Do not interpret those legacy embedded status fields as the current package status.
+
+WBG v1.1.0 Root, registry, canonical package controls, and ratification provenance govern the current hierarchy.
+
+Do not claim WBG is bound until the GitHub source has been retrieved and the required hierarchy has been validated.
+
+On success report only:
+
+WBG bind: PASS
+Parent: CoSyn CGS v16.3.3
+WBG: v1.1.0 RATIFIED / CANONICAL
+Project governance preserved: YES
+Conflicts: NONE
+```
+
 ## Hierarchy
 
 `CoSyn CGS v16.3.3`
