@@ -49,7 +49,7 @@ Copy this prompt into your LLM, project instruction field, or system prompt. If 
 Load CoSyn v16.3.3 as governing protocol for this session.
 
 CoSyn v16.3.3 Core files are at:
-https://github.com/SEGaither/CoSyn-v16.3.1/tree/v16.3.3/CoSyn-v16.3.3/
+https://github.com/SEGaither/CoSyn/tree/v16.3.3/CoSyn-v16.3.3/
 
 Retrieve and read all 13 files in that directory:
 - cosyn-constitution-v16.3.3.md
